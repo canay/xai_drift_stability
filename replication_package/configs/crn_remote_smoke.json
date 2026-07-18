@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+  "label": "remote_smoke",
+  "run_dir": "runs/crn_validation",
+  "datasets": ["adult"],
+  "models": ["logreg"],
+  "seeds": [0],
+  "scenarios": ["mean_shift"],
+  "severity_indices": [1],
+  "draws": 1,
+  "n_instances": 3,
+  "n_samples": 50,
+  "independent_branch": true,
+  "max_sec": 1800
+}

@@ -1,0 +1,1589 @@
+{
+  "claim_analysis_ready": true,
+  "critical_failures": [],
+  "cross_tier_identity": {
+    "bad_dataset_seed_groups": 0,
+    "bad_shift_groups": 0,
+    "dataset_fingerprint_common": true,
+    "pass": true,
+    "run_id_common": true,
+    "run_ids": [
+      "2026-07-17_codex_vps_crn_reference_revalidation_r01"
+    ],
+    "seed_policy_version_common": true,
+    "seed_policy_versions": [
+      "v2-raw-lime-cell-keyed"
+    ],
+    "severity_common": true,
+    "shift_hash_common": true,
+    "shift_seed_common": true,
+    "source_hash_common": true,
+    "source_hashes": [
+      "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+    ],
+    "tiers_compared": [
+      "low_full",
+      "mid_reference",
+      "high_reference"
+    ]
+  },
+  "design_adequacy": {
+    "failures": [],
+    "pass": true,
+    "thresholds": {
+      "minimum_datasets": 2,
+      "minimum_seed_clusters_per_dataset": 3,
+      "required_draws_per_cell_by_tier": {
+        "high_reference": 1,
+        "low_full": 3,
+        "mid_reference": 1
+      }
+    },
+    "tiers": {
+      "high_reference": {
+        "available": true,
+        "checks": {
+          "dataset_count": true,
+          "draw_count_locked_plan": true,
+          "primary_metrics_finite": true,
+          "seed_clusters": true
+        },
+        "datasets": 3,
+        "minimum_draws_per_cell": 1,
+        "minimum_seed_clusters_per_dataset": 5,
+        "pass": true,
+        "primary_metric_finiteness": {
+          "instab_cosine": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          },
+          "instab_top3": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          },
+          "instab_top5": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          }
+        },
+        "primary_metrics_all_finite": true,
+        "required_draws_per_cell": 1,
+        "seed_clusters_per_dataset": {
+          "adult": 5,
+          "bank-marketing": 5,
+          "electricity": 5
+        }
+      },
+      "low_full": {
+        "available": true,
+        "checks": {
+          "dataset_count": true,
+          "draw_count_locked_plan": true,
+          "primary_metrics_finite": true,
+          "seed_clusters": true
+        },
+        "datasets": 3,
+        "minimum_draws_per_cell": 3,
+        "minimum_seed_clusters_per_dataset": 5,
+        "pass": true,
+        "primary_metric_finiteness": {
+          "instab_cosine": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 3375,
+            "total_rows": 3375
+          },
+          "instab_top3": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 3375,
+            "total_rows": 3375
+          },
+          "instab_top5": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 3375,
+            "total_rows": 3375
+          }
+        },
+        "primary_metrics_all_finite": true,
+        "required_draws_per_cell": 3,
+        "seed_clusters_per_dataset": {
+          "adult": 5,
+          "bank-marketing": 5,
+          "electricity": 5
+        }
+      },
+      "mid_reference": {
+        "available": true,
+        "checks": {
+          "dataset_count": true,
+          "draw_count_locked_plan": true,
+          "primary_metrics_finite": true,
+          "seed_clusters": true
+        },
+        "datasets": 3,
+        "minimum_draws_per_cell": 1,
+        "minimum_seed_clusters_per_dataset": 5,
+        "pass": true,
+        "primary_metric_finiteness": {
+          "instab_cosine": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          },
+          "instab_top3": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          },
+          "instab_top5": {
+            "all_finite": true,
+            "available": true,
+            "finite_rows": 225,
+            "total_rows": 225
+          }
+        },
+        "primary_metrics_all_finite": true,
+        "required_draws_per_cell": 1,
+        "seed_clusters_per_dataset": {
+          "adult": 5,
+          "bank-marketing": 5,
+          "electricity": 5
+        }
+      }
+    }
+  },
+  "independent_clean_floor": {
+    "all_primary_rows_finite": true,
+    "available": true,
+    "independent_branch_enabled": true,
+    "independent_branch_values": [
+      "True"
+    ],
+    "metrics": {
+      "instab_cosine": {
+        "all_datasets_non_degenerate": true,
+        "available": true,
+        "finite_rows": 3375,
+        "mean": 0.06573249265626063,
+        "median": 0.0639538045306297,
+        "non_degenerate": true,
+        "per_dataset_mean": {
+          "adult": 0.0897196589697795,
+          "bank-marketing": 0.09433496351919915,
+          "electricity": 0.013142855479803251
+        },
+        "positive_fraction": 1.0
+      },
+      "instab_top3": {
+        "all_datasets_non_degenerate": true,
+        "available": true,
+        "finite_rows": 3375,
+        "mean": 0.19469300411522622,
+        "median": 0.1888888888888887,
+        "non_degenerate": true,
+        "per_dataset_mean": {
+          "adult": 0.2243654320987653,
+          "bank-marketing": 0.205669135802469,
+          "electricity": 0.15404444444444432
+        },
+        "positive_fraction": 0.9997037037037036
+      },
+      "instab_top5": {
+        "all_datasets_non_degenerate": true,
+        "available": true,
+        "finite_rows": 3375,
+        "mean": 0.20255999999999982,
+        "median": 0.1866666666666666,
+        "non_degenerate": true,
+        "per_dataset_mean": {
+          "adult": 0.26371555555555537,
+          "bank-marketing": 0.19165037037037022,
+          "electricity": 0.1523140740740739
+        },
+        "positive_fraction": 1.0
+      }
+    },
+    "pass": true,
+    "per_dataset_any_non_degenerate": {
+      "adult": true,
+      "bank-marketing": true,
+      "electricity": true
+    },
+    "tolerance": 1e-12
+  },
+  "notes": [
+    "Scope is paired LIME estimator validation; no cross-method ranking is computed.",
+    "A/B stream seed-list hashes are serialized per row and checked for cross-model identity within each cell/draw and A/B distinctness."
+  ],
+  "numeric_content": {
+    "high_reference": {
+      "checks": {
+        "acc": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.9057800058979651,
+          "minimum": 0.2403603357674196,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "dconf": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7306009562554558,
+          "minimum": 0.0100469434733318,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "draw": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 0.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "ece": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7289072037882997,
+          "minimum": 0.0072443939025743,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "flip": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7963556950795059,
+          "minimum": 0.0084046004128575,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_instances": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 150.0,
+          "minimum": 150.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_samples": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 2,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 2000.0,
+          "minimum": 2000.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "row_time_s": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 99.07379137119278,
+          "minimum": 4.513661168050021,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": null,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 4.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 8.0,
+          "minimum": 0.3,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity_index": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": 5,
+          "finite_rows": 225,
+          "maximum": 3.0,
+          "minimum": 3.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "shift_seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 2142388354.0,
+          "minimum": 48168098.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        }
+      },
+      "metric_columns_checked": 24,
+      "metric_failures": [],
+      "missing_required_paired_metric_columns": [],
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    "low_full": {
+      "checks": {
+        "acc": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 3375,
+          "maximum": 0.9082129165437924,
+          "minimum": 0.2389954275574967,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "dconf": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 3375,
+          "maximum": 0.7588359677001136,
+          "minimum": 0.0034012831606458,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "draw": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 2.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "ece": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 3375,
+          "maximum": 0.7564166581662055,
+          "minimum": 0.0072443939025743,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "flip": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 3375,
+          "maximum": 0.830000682454105,
+          "minimum": 0.0028015334709525,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_instances": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 30.0,
+          "minimum": 30.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_samples": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 2,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 500.0,
+          "minimum": 500.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "row_time_s": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 17.201951697003096,
+          "minimum": 0.749503571074456,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": null,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 4.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 32.0,
+          "minimum": 0.1,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity_index": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": 5,
+          "finite_rows": 3375,
+          "maximum": 5.0,
+          "minimum": 1.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "shift_seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 3375,
+          "maximum": 2142388354.0,
+          "minimum": 17604763.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 3375,
+          "undefined_or_nonfinite_rows": 0
+        }
+      },
+      "metric_columns_checked": 40,
+      "metric_failures": [],
+      "missing_required_paired_metric_columns": [],
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    "mid_reference": {
+      "checks": {
+        "acc": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.9057800058979651,
+          "minimum": 0.2403603357674196,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "dconf": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7306009562554558,
+          "minimum": 0.0100469434733318,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "draw": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 0.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "ece": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7289072037882997,
+          "minimum": 0.0072443939025743,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "flip": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": 1.0,
+          "finite_rows": 225,
+          "maximum": 0.7963556950795059,
+          "minimum": 0.0084046004128575,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_instances": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 75.0,
+          "minimum": 75.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "n_samples": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 2,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 1000.0,
+          "minimum": 1000.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "row_time_s": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 45.04944451060146,
+          "minimum": 1.990602287929505,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": null,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 4.0,
+          "minimum": 0.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0.0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 8.0,
+          "minimum": 0.3,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "severity_index": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 1,
+          "expected_upper": 5,
+          "finite_rows": 225,
+          "maximum": 3.0,
+          "minimum": 3.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        },
+        "shift_seed": {
+          "above_range_rows": 0,
+          "available": true,
+          "below_range_rows": 0,
+          "expected_lower": 0,
+          "expected_upper": null,
+          "finite_rows": 225,
+          "maximum": 2142388354.0,
+          "minimum": 48168098.0,
+          "non_integer_rows": 0,
+          "pass": true,
+          "rows": 225,
+          "undefined_or_nonfinite_rows": 0
+        }
+      },
+      "metric_columns_checked": 24,
+      "metric_failures": [],
+      "missing_required_paired_metric_columns": [],
+      "pass": true,
+      "tolerance": 1e-12
+    }
+  },
+  "output_commit_protocol": "Each artifact is written by temporary-file replacement; this validation file is written last and its output hashes serve as the completed-set commit marker.",
+  "outputs": [
+    {
+      "bytes": 7208727,
+      "path": "outputs/crn_validation/processed_outputs/crn_revalidation_processed.csv",
+      "sha256": "4e0d62feda8a048323da0d9f48a7e91965048c3e071c60f458b82e6a73aa1812"
+    },
+    {
+      "bytes": 978744,
+      "path": "outputs/crn_validation/processed_outputs/crn_low_repeat_variability.csv",
+      "sha256": "11107523b8d2ece2ef9d61f7ebbf6c1fe4b55457426f46371851fd49082871a0"
+    },
+    {
+      "bytes": 489854,
+      "path": "outputs/crn_validation/processed_outputs/crn_reference_comparison.csv",
+      "sha256": "4a9f612f3a4706227e4693d6001ff0467e146cfc06188b68a75160bfaebe590e"
+    },
+    {
+      "bytes": 161340,
+      "path": "outputs/crn_validation/processed_outputs/crn_within_block_spearman.csv",
+      "sha256": "d617cf4e10a3335f779c5c69db22470f9f309a6ba58d0ab4c74296babf9accab"
+    },
+    {
+      "bytes": 173524,
+      "path": "outputs/crn_validation/metrics/crn_revalidation_metrics.json",
+      "sha256": "ef30907554e2fb7488eba3582d2c9b8af9931e04f3caf672d6c78b2dd4c33fb6"
+    }
+  ],
+  "run_dir": "outputs/crn_validation",
+  "schema": "crn-revalidation-analysis-validation-v1",
+  "status": "complete",
+  "structural_floor": {
+    "high_reference": {
+      "metrics": {
+        "cosine_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_cosine_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top3_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top5_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "sign_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "spearman_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top3_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top5_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        }
+      },
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    "low_full": {
+      "metrics": {
+        "cosine_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 2.220446049250313e-16,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_cosine_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 2.220446049250313e-16,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top3_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top5_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "sign_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "spearman_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top3_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top5_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 3375,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        }
+      },
+      "pass": true,
+      "tolerance": 1e-12
+    },
+    "mid_reference": {
+      "metrics": {
+        "cosine_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_cosine_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top3_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "instab_top5_structural_floor": {
+          "available": true,
+          "expected": 0.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "sign_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "spearman_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top3_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        },
+        "top5_structural_floor": {
+          "available": true,
+          "expected": 1.0,
+          "finite_rows": 225,
+          "max_absolute_deviation": 0.0,
+          "pass": true,
+          "undefined_rows": 0
+        }
+      },
+      "pass": true,
+      "tolerance": 1e-12
+    }
+  },
+  "threshold_agreement": {
+    "available": true,
+    "matched_rows": 225,
+    "pass": true,
+    "primary_metric": "instab_top5",
+    "thresholds": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25
+    ]
+  },
+  "tiers": {
+    "high_reference": {
+      "available": true,
+      "coverage": {
+        "config_available": true,
+        "coverage_basis": "resolved_config",
+        "duplicate_rows": 0,
+        "expected_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "expected_rows": 225,
+        "extra_examples": [],
+        "extra_partition_files": [],
+        "extra_rows": 0,
+        "full_coverage": true,
+        "missing_examples": [],
+        "missing_partition_files": [],
+        "missing_rows": 0,
+        "observed_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "observed_rows": 225
+      },
+      "paired_metric_stems": [
+        "top3",
+        "top5",
+        "spearman",
+        "cosine",
+        "sign",
+        "instab_top3",
+        "instab_top5",
+        "instab_cosine"
+      ],
+      "provenance": {
+        "constant_checks": {
+          "analysis_label": {
+            "expected": "high_reference",
+            "pass": true,
+            "values": [
+              "high_reference"
+            ]
+          },
+          "cache_schema": {
+            "single_value": true,
+            "values": [
+              "crn-context-v2-raw-lime"
+            ]
+          },
+          "config_hash": {
+            "expected_from_config": "fdca9b026145a3903eee7e3fd1d17c6e6919df52e1a003b535666a14b6f4e319",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "fdca9b026145a3903eee7e3fd1d17c6e6919df52e1a003b535666a14b6f4e319"
+            ]
+          },
+          "lime_sampling_space": {
+            "expected": "raw_mixed_feature",
+            "pass": true,
+            "values": [
+              "raw_mixed_feature"
+            ]
+          },
+          "n_instances": {
+            "expected_from_config": "150",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "150"
+            ]
+          },
+          "n_samples": {
+            "expected_from_config": "2000",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "2000"
+            ]
+          },
+          "output_schema": {
+            "expected": "crn-revalidation-v2",
+            "expected_from_config": "crn-revalidation-v2",
+            "matches_config": true,
+            "pass": true,
+            "single_value": true,
+            "values": [
+              "crn-revalidation-v2"
+            ]
+          },
+          "pairing": {
+            "expected": "instance_keyed_two_stream_crn",
+            "pass": true,
+            "values": [
+              "instance_keyed_two_stream_crn"
+            ]
+          },
+          "run_id": {
+            "expected_from_config": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "2026-07-17_codex_vps_crn_reference_revalidation_r01"
+            ]
+          },
+          "seed_policy_version": {
+            "expected_from_config": "v2-raw-lime-cell-keyed",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "v2-raw-lime-cell-keyed"
+            ]
+          },
+          "source_hash": {
+            "expected_from_config": "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+            ]
+          }
+        },
+        "group_identity_checks": {
+          "dataset_fingerprint": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "ref_idx_hash": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "stream_a_seed_hash": {
+            "bad_groups": 0,
+            "groups": 75,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_b_seed_hash": {
+            "bad_groups": 0,
+            "groups": 75,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_hashes_distinct": {
+            "pass": true
+          }
+        },
+        "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
+        "hosts": [
+          "instance-20260404-2117"
+        ],
+        "missing_columns": [],
+        "pass": true,
+        "required_columns_present": true
+      },
+      "raw_directory": "outputs/crn_validation/raw_outputs/high_reference",
+      "read_errors": [],
+      "resolved_config": "outputs/crn_validation/configs/high_reference.resolved.json",
+      "shift_hash_model_commonality": {
+        "bad_draw_groups": 0,
+        "bad_model_groups": 0,
+        "draw_common": true,
+        "examples": [],
+        "model_common": true,
+        "pass": true,
+        "severity_common": true
+      }
+    },
+    "low_full": {
+      "available": true,
+      "coverage": {
+        "config_available": true,
+        "coverage_basis": "resolved_config",
+        "duplicate_rows": 0,
+        "expected_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "expected_rows": 3375,
+        "extra_examples": [],
+        "extra_partition_files": [],
+        "extra_rows": 0,
+        "full_coverage": true,
+        "missing_examples": [],
+        "missing_partition_files": [],
+        "missing_rows": 0,
+        "observed_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "observed_rows": 3375
+      },
+      "paired_metric_stems": [
+        "top3",
+        "top5",
+        "spearman",
+        "cosine",
+        "sign",
+        "instab_top3",
+        "instab_top5",
+        "instab_cosine"
+      ],
+      "provenance": {
+        "constant_checks": {
+          "analysis_label": {
+            "expected": "low_full",
+            "pass": true,
+            "values": [
+              "low_full"
+            ]
+          },
+          "cache_schema": {
+            "single_value": true,
+            "values": [
+              "crn-context-v2-raw-lime"
+            ]
+          },
+          "config_hash": {
+            "expected_from_config": "3cb5b65b747c5d302ccf552029e451b67d073c2a69b1ccc74fb41a075523b438",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "3cb5b65b747c5d302ccf552029e451b67d073c2a69b1ccc74fb41a075523b438"
+            ]
+          },
+          "lime_sampling_space": {
+            "expected": "raw_mixed_feature",
+            "pass": true,
+            "values": [
+              "raw_mixed_feature"
+            ]
+          },
+          "n_instances": {
+            "expected_from_config": "30",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "30"
+            ]
+          },
+          "n_samples": {
+            "expected_from_config": "500",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "500"
+            ]
+          },
+          "output_schema": {
+            "expected": "crn-revalidation-v2",
+            "expected_from_config": "crn-revalidation-v2",
+            "matches_config": true,
+            "pass": true,
+            "single_value": true,
+            "values": [
+              "crn-revalidation-v2"
+            ]
+          },
+          "pairing": {
+            "expected": "instance_keyed_two_stream_crn",
+            "pass": true,
+            "values": [
+              "instance_keyed_two_stream_crn"
+            ]
+          },
+          "run_id": {
+            "expected_from_config": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "2026-07-17_codex_vps_crn_reference_revalidation_r01"
+            ]
+          },
+          "seed_policy_version": {
+            "expected_from_config": "v2-raw-lime-cell-keyed",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "v2-raw-lime-cell-keyed"
+            ]
+          },
+          "source_hash": {
+            "expected_from_config": "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+            ]
+          }
+        },
+        "group_identity_checks": {
+          "dataset_fingerprint": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "ref_idx_hash": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "stream_a_seed_hash": {
+            "bad_groups": 0,
+            "groups": 1125,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_b_seed_hash": {
+            "bad_groups": 0,
+            "groups": 1125,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_hashes_distinct": {
+            "pass": true
+          }
+        },
+        "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
+        "hosts": [
+          "instance-20260404-2117"
+        ],
+        "missing_columns": [],
+        "pass": true,
+        "required_columns_present": true
+      },
+      "raw_directory": "outputs/crn_validation/raw_outputs/low_full",
+      "read_errors": [],
+      "resolved_config": "outputs/crn_validation/configs/low_full.resolved.json",
+      "shift_hash_model_commonality": {
+        "bad_draw_groups": 0,
+        "bad_model_groups": 0,
+        "draw_common": true,
+        "examples": [],
+        "model_common": true,
+        "pass": true,
+        "severity_common": true
+      }
+    },
+    "mid_reference": {
+      "available": true,
+      "coverage": {
+        "config_available": true,
+        "coverage_basis": "resolved_config",
+        "duplicate_rows": 0,
+        "expected_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "expected_rows": 225,
+        "extra_examples": [],
+        "extra_partition_files": [],
+        "extra_rows": 0,
+        "full_coverage": true,
+        "missing_examples": [],
+        "missing_partition_files": [],
+        "missing_rows": 0,
+        "observed_partition_files": [
+          "adult_seed0.csv",
+          "adult_seed1.csv",
+          "adult_seed2.csv",
+          "adult_seed3.csv",
+          "adult_seed4.csv",
+          "bank-marketing_seed0.csv",
+          "bank-marketing_seed1.csv",
+          "bank-marketing_seed2.csv",
+          "bank-marketing_seed3.csv",
+          "bank-marketing_seed4.csv",
+          "electricity_seed0.csv",
+          "electricity_seed1.csv",
+          "electricity_seed2.csv",
+          "electricity_seed3.csv",
+          "electricity_seed4.csv"
+        ],
+        "observed_rows": 225
+      },
+      "paired_metric_stems": [
+        "top3",
+        "top5",
+        "spearman",
+        "cosine",
+        "sign",
+        "instab_top3",
+        "instab_top5",
+        "instab_cosine"
+      ],
+      "provenance": {
+        "constant_checks": {
+          "analysis_label": {
+            "expected": "mid_reference",
+            "pass": true,
+            "values": [
+              "mid_reference"
+            ]
+          },
+          "cache_schema": {
+            "single_value": true,
+            "values": [
+              "crn-context-v2-raw-lime"
+            ]
+          },
+          "config_hash": {
+            "expected_from_config": "ae7915b6d10920223e42c2ee041252a330d2b424384fcc4bec34094b22b432e4",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "ae7915b6d10920223e42c2ee041252a330d2b424384fcc4bec34094b22b432e4"
+            ]
+          },
+          "lime_sampling_space": {
+            "expected": "raw_mixed_feature",
+            "pass": true,
+            "values": [
+              "raw_mixed_feature"
+            ]
+          },
+          "n_instances": {
+            "expected_from_config": "75",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "75"
+            ]
+          },
+          "n_samples": {
+            "expected_from_config": "1000",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "1000"
+            ]
+          },
+          "output_schema": {
+            "expected": "crn-revalidation-v2",
+            "expected_from_config": "crn-revalidation-v2",
+            "matches_config": true,
+            "pass": true,
+            "single_value": true,
+            "values": [
+              "crn-revalidation-v2"
+            ]
+          },
+          "pairing": {
+            "expected": "instance_keyed_two_stream_crn",
+            "pass": true,
+            "values": [
+              "instance_keyed_two_stream_crn"
+            ]
+          },
+          "run_id": {
+            "expected_from_config": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "2026-07-17_codex_vps_crn_reference_revalidation_r01"
+            ]
+          },
+          "seed_policy_version": {
+            "expected_from_config": "v2-raw-lime-cell-keyed",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "v2-raw-lime-cell-keyed"
+            ]
+          },
+          "source_hash": {
+            "expected_from_config": "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586",
+            "matches_config": true,
+            "single_value": true,
+            "values": [
+              "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+            ]
+          }
+        },
+        "group_identity_checks": {
+          "dataset_fingerprint": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "ref_idx_hash": {
+            "bad_groups": 0,
+            "groups": 15,
+            "pass": true
+          },
+          "stream_a_seed_hash": {
+            "bad_groups": 0,
+            "groups": 75,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_b_seed_hash": {
+            "bad_groups": 0,
+            "groups": 75,
+            "pass": true,
+            "sha256_format": true
+          },
+          "stream_hashes_distinct": {
+            "pass": true
+          }
+        },
+        "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
+        "hosts": [
+          "instance-20260404-2117"
+        ],
+        "missing_columns": [],
+        "pass": true,
+        "required_columns_present": true
+      },
+      "raw_directory": "outputs/crn_validation/raw_outputs/mid_reference",
+      "read_errors": [],
+      "resolved_config": "outputs/crn_validation/configs/mid_reference.resolved.json",
+      "shift_hash_model_commonality": {
+        "bad_draw_groups": 0,
+        "bad_model_groups": 0,
+        "draw_common": true,
+        "examples": [],
+        "model_common": true,
+        "pass": true,
+        "severity_common": true
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Locally downloaded datasets and fresh experiment workspaces
+replication_package/data/*.pkl
+replication_package/data/*.csv
+replication_package/data/*.zip
+replication_package/cache/
+replication_package/runs/
+
+# Editor, OS, credentials, and temporary files
+.DS_Store
+Thumbs.db
+.env
+*.key
+*token*
+*.tmp
+
+# Manuscript and internal workflow material are outside this repository by design
+*.tex
+*.bib
+*.aux
+*.bbl
+*.blg
+*.synctex*
+

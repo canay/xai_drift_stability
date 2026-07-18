@@ -1,0 +1,42 @@
+{
+  "config_file_sha256": "07f340e94d9253700a6bd87450cc9ef165cc566cce81cf313bd73847261a2582",
+  "config_hash": "ae7915b6d10920223e42c2ee041252a330d2b424384fcc4bec34094b22b432e4",
+  "datasets": [
+    "adult",
+    "bank-marketing",
+    "electricity"
+  ],
+  "draws": 1,
+  "independent_branch": false,
+  "label": "mid_reference",
+  "max_sec": 1000000000,
+  "models": [
+    "logreg",
+    "rf",
+    "hgb"
+  ],
+  "n_instances": 75,
+  "n_samples": 1000,
+  "output_schema": "crn-revalidation-v2",
+  "run_dir": ".",
+  "run_id": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+  "scenarios": [
+    "mean_shift",
+    "noise",
+    "missing",
+    "quantize",
+    "gradual"
+  ],
+  "seed_policy_version": "v2-raw-lime-cell-keyed",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "severity_indices": [
+    3
+  ],
+  "source_hash": "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+}

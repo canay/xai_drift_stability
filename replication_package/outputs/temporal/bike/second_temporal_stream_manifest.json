@@ -1,0 +1,32 @@
+{
+  "csv_path": "data/bike_day.csv (downloaded on demand)",
+  "dataset_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip",
+  "feature_columns": [
+    "season",
+    "mnth",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed"
+  ],
+  "models": [
+    "logistic",
+    "random_forest",
+    "hgb"
+  ],
+  "run_started_utc": "2026-07-17T07:13:22Z",
+  "smoke": false,
+  "step": 30,
+  "test_size": 60,
+  "thread_env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "threshold_policy": "high demand is cnt >= median of initial chronological reference segment",
+  "train_size": 365
+}

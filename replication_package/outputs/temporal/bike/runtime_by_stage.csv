@@ -1,0 +1,6 @@
+stage,wall_seconds
+download_load_data,0.025768299999981002
+fit_rolling,13.05952690000048
+fit_static_reference,1.235134799999285
+permutation_explain,122.66500410000296
+score,2.00715279998982

@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+  "label": "low_full",
+  "run_dir": ".",
+  "datasets": ["adult", "bank-marketing", "electricity"],
+  "models": ["logreg", "rf", "hgb"],
+  "seeds": [0, 1, 2, 3, 4],
+  "scenarios": ["mean_shift", "noise", "missing", "quantize", "gradual"],
+  "severity_indices": [1, 2, 3, 4, 5],
+  "draws": 3,
+  "n_instances": 30,
+  "n_samples": 500,
+  "independent_branch": true,
+  "max_sec": 1000000000
+}

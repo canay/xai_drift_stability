@@ -1,0 +1,4927 @@
+{
+  "bootstrap": {
+    "ci_level": 0.95,
+    "cluster_unit": "seed within dataset",
+    "dataset_macro_weighting": "equal weight per dataset",
+    "dataset_strata_fixed": true,
+    "reps": 10000,
+    "seed": 20260717
+  },
+  "low_repeated_stream_variability": {
+    "available": true,
+    "base_cells": 1125,
+    "draw_sd_definition": "sample SD across paired draws (R-1 denominator)",
+    "draw_variance_definition": "sample variance across paired draws (R-1 denominator)",
+    "maximum_draws": 3,
+    "metrics": {
+      "cosine": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 8.775975197216748e-06,
+            "ci_upper": 1.3626226743420768e-05,
+            "estimate": 1.072587941104979e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 1.369375537130903e-05,
+              "ci_upper": 2.662492132633693e-05,
+              "estimate": 1.8252431182161614e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.117270967662518e-06,
+              "ci_upper": 8.434030851454007e-06,
+              "estimate": 7.775650909558262e-06,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 3.962609253001692e-06,
+              "ci_upper": 8.336503029857288e-06,
+              "estimate": 6.1495561414294885e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.002223386548458727,
+            "ci_upper": 0.002695650450477552,
+            "estimate": 0.0024349626190529753,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00283720326989718,
+              "ci_upper": 0.0039580618784661745,
+              "estimate": 0.00323124379412372,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.002053917927248028,
+              "ci_upper": 0.0022774166820187887,
+              "estimate": 0.0021659063072211977,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0015853194799705483,
+              "ci_upper": 0.0022735521030645862,
+              "estimate": 0.0019077377558140082,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 1.3131381340538325e-05,
+            "ci_upper": 2.0507816435589103e-05,
+            "estimate": 1.608881911657468e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 2.0540633056963547e-05,
+              "ci_upper": 3.9937381989505396e-05,
+              "estimate": 2.7378646773242423e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 1.0675906451493779e-05,
+              "ci_upper": 1.265104627718101e-05,
+              "estimate": 1.1663476364337394e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 5.943913879502536e-06,
+              "ci_upper": 1.250475454478593e-05,
+              "estimate": 9.224334212144234e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.94845423457418,
+            "ci_upper": 0.9579714193942341,
+            "estimate": 0.9532747666363498,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.9310297919230985,
+              "ci_upper": 0.9484768845089719,
+              "estimate": 0.9405844732779777,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.953281091287965,
+              "ci_upper": 0.9589053376559665,
+              "estimate": 0.9564725437263476,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.9518138493314001,
+              "ci_upper": 0.9737207164780475,
+              "estimate": 0.9627672829047238,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.003987142805736677,
+            "ci_upper": 0.004730937726387306,
+            "estimate": 0.0043373091196779465,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.005148166072520258,
+              "ci_upper": 0.006462539552013304,
+              "estimate": 0.00570508617762112,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.003491614303026837,
+              "ci_upper": 0.004395761152055242,
+              "estimate": 0.003927043825956288,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0027226367685536934,
+              "ci_upper": 0.00420080157239032,
+              "estimate": 0.0033797973554564307,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_cosine": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 8.764292496031604e-06,
+            "ci_upper": 1.3706631606113716e-05,
+            "estimate": 1.0725879411049784e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 1.3693755371309042e-05,
+              "ci_upper": 2.6624921326336913e-05,
+              "estimate": 1.825243118216161e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.11727096766251e-06,
+              "ci_upper": 8.434030851453991e-06,
+              "estimate": 7.77565090955825e-06,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 3.962609253001713e-06,
+              "ci_upper": 8.336503029857271e-06,
+              "estimate": 6.149556141429492e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0022203132027346713,
+            "ci_upper": 0.0027069551259284483,
+            "estimate": 0.0024349626190529757,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0028372032698971827,
+              "ci_upper": 0.003958075596255354,
+              "estimate": 0.003231243794123722,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.002053917927248033,
+              "ci_upper": 0.0022774166820187835,
+              "estimate": 0.0021659063072211973,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.001549724232274546,
+              "ci_upper": 0.0022735521030645815,
+              "estimate": 0.0019077377558140076,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 1.3142867037793257e-05,
+            "ci_upper": 2.04507830120847e-05,
+            "estimate": 1.608881911657468e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 2.0540633056963563e-05,
+              "ci_upper": 3.993738198950537e-05,
+              "estimate": 2.7378646773242423e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 1.0675906451493766e-05,
+              "ci_upper": 1.2651046277180987e-05,
+              "estimate": 1.1663476364337375e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 5.943913879502569e-06,
+              "ci_upper": 1.2504754544785906e-05,
+              "estimate": 9.224334212144239e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.04195054120096764,
+            "ci_upper": 0.05166792459961921,
+            "estimate": 0.04672523336365023,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.05152311549102791,
+              "ci_upper": 0.06837796889036553,
+              "estimate": 0.059415526722022285,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0410946623440333,
+              "ci_upper": 0.04671890871203484,
+              "estimate": 0.043527456273652315,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.02613588568524834,
+              "ci_upper": 0.048186150668599846,
+              "estimate": 0.03723271709527609,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.003985080280427919,
+            "ci_upper": 0.004735143166007921,
+            "estimate": 0.004337309119677945,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.005148166072520255,
+              "ci_upper": 0.0064850436454769594,
+              "estimate": 0.005705086177621119,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.003491614303026834,
+              "ci_upper": 0.00439576115205524,
+              "estimate": 0.003927043825956288,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0026859345686081103,
+              "ci_upper": 0.00418732092426523,
+              "estimate": 0.0033797973554564272,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_top3": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00020916902911141588,
+            "ci_upper": 0.00023236092059137316,
+            "estimate": 0.0002211248285322359,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00021519890260630995,
+              "ci_upper": 0.00024288980338363036,
+              "estimate": 0.0002290443529949702,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00019504343850022858,
+              "ci_upper": 0.00022174668495656145,
+              "estimate": 0.00020907178783721993,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00019279378143575676,
+              "ci_upper": 0.0002517969821673525,
+              "estimate": 0.0002252583447645176,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.015048256093431129,
+            "ci_upper": 0.015805821864366264,
+            "estimate": 0.015424303463093368,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.015168380240092844,
+              "ci_upper": 0.01649092117381989,
+              "estimate": 0.015814162762571367,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.014647081243413356,
+              "ci_upper": 0.015557069020707418,
+              "estimate": 0.015102075132060386,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.014514910731909253,
+              "ci_upper": 0.016089945795018237,
+              "estimate": 0.015356672494648348,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.000314292866941015,
+            "ci_upper": 0.00034861454046639226,
+            "estimate": 0.00033168724279835385,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00032279835390946495,
+              "ci_upper": 0.0003643347050754454,
+              "estimate": 0.0003435665294924552,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00029308641975308615,
+              "ci_upper": 0.0003326200274348421,
+              "estimate": 0.0003136076817558299,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00028919067215363515,
+              "ci_upper": 0.0003776954732510287,
+              "estimate": 0.00033788751714677634,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.14066168724279826,
+            "ci_upper": 0.15080181069958842,
+            "estimate": 0.14580905349794232,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.14373827160493818,
+              "ci_upper": 0.15506172839506166,
+              "estimate": 0.14938765432098755,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.11993086419753081,
+              "ci_upper": 0.13470617283950612,
+              "estimate": 0.12787160493827154,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.14775802469135796,
+              "ci_upper": 0.17257777777777772,
+              "estimate": 0.16016790123456787,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.026633744855967076,
+            "ci_upper": 0.02779267489711934,
+            "estimate": 0.027209876543209877,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.027348148148148142,
+              "ci_upper": 0.028572839506172835,
+              "estimate": 0.027960493827160492,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.02614320987654321,
+              "ci_upper": 0.0283358024691358,
+              "estimate": 0.027239506172839507,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.025333333333333336,
+              "ci_upper": 0.02754567901234568,
+              "estimate": 0.02642962962962963,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_top5": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00011800197530864191,
+            "ci_upper": 0.00013286809327846358,
+            "estimate": 0.00012566913580246903,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0001225481481481481,
+              "ci_upper": 0.0001550024691358024,
+              "estimate": 0.00013999012345679006,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00011499588477366248,
+              "ci_upper": 0.0001217119341563786,
+              "estimate": 0.00011777448559670774,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00010489547325102872,
+              "ci_upper": 0.00013372181069958833,
+              "estimate": 0.00011924279835390936,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.011276585556166594,
+            "ci_upper": 0.011949045715028469,
+            "estimate": 0.011617281071276278,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.01166476068767107,
+              "ci_upper": 0.01307058112901745,
+              "estimate": 0.012452108479300828,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.010714827301938217,
+              "ci_upper": 0.011132244695169142,
+              "estimate": 0.010922019986814467,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.01080531876400805,
+              "ci_upper": 0.012190798062877492,
+              "estimate": 0.011477714747713547,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00017729349794238678,
+            "ci_upper": 0.00019912781893004103,
+            "estimate": 0.00018850370370370354,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00018391111111111096,
+              "ci_upper": 0.00023250370370370366,
+              "estimate": 0.00020998518518518505,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0001724938271604937,
+              "ci_upper": 0.0001825679012345679,
+              "estimate": 0.00017666172839506163,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00015734320987654307,
+              "ci_upper": 0.00020039506172839482,
+              "estimate": 0.00017886419753086405,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.13865375308641964,
+            "ci_upper": 0.14456397530864185,
+            "estimate": 0.1416632098765431,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.17210370370370356,
+              "ci_upper": 0.18010074074074062,
+              "estimate": 0.17616592592592578,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.10641185185185173,
+              "ci_upper": 0.11346962962962955,
+              "estimate": 0.11055999999999991,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.13129185185185172,
+              "ci_upper": 0.1452355555555554,
+              "estimate": 0.13826370370370356,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.02039896296296296,
+            "ci_upper": 0.02120301234567901,
+            "estimate": 0.020815802469135797,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.02168888888888889,
+              "ci_upper": 0.02295111111111111,
+              "estimate": 0.022423703703703703,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.01889777777777777,
+              "ci_upper": 0.020438518518518512,
+              "estimate": 0.01968592592592592,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.019543703703703702,
+              "ci_upper": 0.020983703703703702,
+              "estimate": 0.020337777777777774,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "sign": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 5.23865226013277e-05,
+            "ci_upper": 6.742980308965281e-05,
+            "estimate": 5.985060147339218e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 5.180282088288564e-05,
+              "ci_upper": 6.313371541225349e-05,
+              "estimate": 5.851613288529667e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 2.2835608479688406e-05,
+              "ci_upper": 3.053562643937326e-05,
+              "estimate": 2.6840066008718816e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 7.337476064499875e-05,
+              "ci_upper": 0.00011501645040732336,
+              "estimate": 9.419560552616105e-05,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00634395987440286,
+            "ci_upper": 0.007016137569079444,
+            "estimate": 0.006690886195370816,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0065660769304215815,
+              "ci_upper": 0.007266815409396892,
+              "estimate": 0.006988075344245362,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.004246181285101633,
+              "ci_upper": 0.00495952587034484,
+              "estimate": 0.004633501590372337,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0075153662023109535,
+              "ci_upper": 0.009266432812646946,
+              "estimate": 0.008451081651494748,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 7.867408428531378e-05,
+            "ci_upper": 0.00010096233069118307,
+            "estimate": 8.977590221008827e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 7.743571062837406e-05,
+              "ci_upper": 9.470057311838024e-05,
+              "estimate": 8.777419932794501e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 3.4253412719532614e-05,
+              "ci_upper": 4.5803439659059886e-05,
+              "estimate": 4.026009901307822e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00011006214096749812,
+              "ci_upper": 0.00017252467561098503,
+              "estimate": 0.00014129340828924157,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.9225341927849244,
+            "ci_upper": 0.9290730917619759,
+            "estimate": 0.9257149989722212,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.9013893052215274,
+              "ci_upper": 0.9105209816932038,
+              "estimate": 0.9061855654633433,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.949517572982573,
+              "ci_upper": 0.9543043959538405,
+              "estimate": 0.9518884790723681,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.910986455026455,
+              "ci_upper": 0.9277731216931218,
+              "estimate": 0.9190709523809524,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.011989291694930584,
+            "ci_upper": 0.012427939825606492,
+            "estimate": 0.012203143098328283,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.012300572925017374,
+              "ci_upper": 0.012899785893119218,
+              "estimate": 0.012607988883544436,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.008159774464218896,
+              "ci_upper": 0.008946082723860506,
+              "estimate": 0.008524650287983614,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.015055167548500888,
+              "ci_upper": 0.015945608465608472,
+              "estimate": 0.015476790123456796,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "spearman": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 8.769025001567347e-05,
+            "ci_upper": 0.00010089774572031554,
+            "estimate": 9.447113720853412e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 9.300358363873511e-05,
+              "ci_upper": 0.00011167684386341283,
+              "estimate": 0.0001020638796107469,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 2.92769689720478e-05,
+              "ci_upper": 3.789903740726497e-05,
+              "estimate": 3.2909492075697375e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00013156005337663172,
+              "ci_upper": 0.00016488685460466765,
+              "estimate": 0.00014844003993915805,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.007932735278431514,
+            "ci_upper": 0.008342694337113672,
+            "estimate": 0.008138109371949975,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.008302196506883412,
+              "ci_upper": 0.009060562668634052,
+              "estimate": 0.00867706405265913,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.004737564490737907,
+              "ci_upper": 0.0052199614033393545,
+              "estimate": 0.00495617467952269,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.010371259257251022,
+              "ci_upper": 0.011190919510085185,
+              "estimate": 0.010781089383668103,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00013156797484062494,
+            "ci_upper": 0.0001514757175182782,
+            "estimate": 0.00014170670581280115,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00013950537545810265,
+              "ci_upper": 0.00016821101398791828,
+              "estimate": 0.0001530958194161203,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 4.414328677004577e-05,
+              "ci_upper": 5.6848556110897466e-05,
+              "estimate": 4.9364238113546076e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00019734008006494762,
+              "ci_upper": 0.00024733028190700157,
+              "estimate": 0.00022266005990873714,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.859540853655377,
+            "ci_upper": 0.8699206458931276,
+            "estimate": 0.8647185503393063,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.8330177393132285,
+              "ci_upper": 0.8426709129095681,
+              "estimate": 0.8381711526259693,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.9189543355119826,
+              "ci_upper": 0.9270315032679738,
+              "estimate": 0.9231132461873639,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.8183195767195768,
+              "ci_upper": 0.8474229276895944,
+              "estimate": 0.8328712522045855,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.014108493095501641,
+            "ci_upper": 0.014898447702319169,
+            "estimate": 0.014525281287364038,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.014972433253165057,
+              "ci_upper": 0.01556699661588048,
+              "estimate": 0.015263375763741668,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.008636862745098027,
+              "ci_upper": 0.009940740740740733,
+              "estimate": 0.009256383442265786,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.018031746031746034,
+              "ci_upper": 0.019847619047619048,
+              "estimate": 0.01905608465608466,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "top3": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00020891312299954273,
+            "ci_upper": 0.0002322146014327083,
+            "estimate": 0.0002211248285322359,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00021519890260630987,
+              "ci_upper": 0.00024288980338363033,
+              "estimate": 0.00022904435299497008,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00019539094650205751,
+              "ci_upper": 0.00022249657064471869,
+              "estimate": 0.0002090717878372199,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0001927937814357568,
+              "ci_upper": 0.00025179698216735264,
+              "estimate": 0.00022525834476451768,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01504383557603127,
+            "ci_upper": 0.01579939628629488,
+            "estimate": 0.01542430346309337,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.015149892907596227,
+              "ci_upper": 0.016490921173819895,
+              "estimate": 0.015814162762571367,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.014647081243413362,
+              "ci_upper": 0.015557069020707415,
+              "estimate": 0.015102075132060388,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.014531707427914469,
+              "ci_upper": 0.016089945795018244,
+              "estimate": 0.015356672494648355,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003141739826245998,
+            "ci_upper": 0.00034899885688157285,
+            "estimate": 0.00033168724279835385,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00032279835390946484,
+              "ci_upper": 0.00036433470507544547,
+              "estimate": 0.0003435665294924552,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00029308641975308626,
+              "ci_upper": 0.0003325651577503428,
+              "estimate": 0.00031360768175582983,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.000297037037037037,
+              "ci_upper": 0.0003778326474622773,
+              "estimate": 0.0003378875171467765,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.8491192592592594,
+            "ci_upper": 0.8593795884773664,
+            "estimate": 0.8541909465020577,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.8449382716049383,
+              "ci_upper": 0.8563160493827162,
+              "estimate": 0.8506123456790124,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.865293827160494,
+              "ci_upper": 0.8791928395061727,
+              "estimate": 0.8721283950617285,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.8274222222222223,
+              "ci_upper": 0.8522419753086421,
+              "estimate": 0.8398320987654323,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.026640329218107005,
+            "ci_upper": 0.027809053497942385,
+            "estimate": 0.027209876543209877,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.027348148148148142,
+              "ci_upper": 0.028572839506172835,
+              "estimate": 0.02796049382716049,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.026143209876543217,
+              "ci_upper": 0.02839506172839506,
+              "estimate": 0.02723950617283951,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.02533333333333334,
+              "ci_upper": 0.027545679012345687,
+              "estimate": 0.026429629629629636,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "top5": {
+        "paired_draw_population_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00011819363511659804,
+            "ci_upper": 0.0001327276268861453,
+            "estimate": 0.00012566913580246906,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0001226074074074074,
+              "ci_upper": 0.0001550024691358023,
+              "estimate": 0.00013999012345679003,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00011496296296296295,
+              "ci_upper": 0.00012167901234567903,
+              "estimate": 0.0001177744855967078,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00010489547325102872,
+              "ci_upper": 0.00013359670781892992,
+              "estimate": 0.00011924279835390937,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_sd": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.011273541565866395,
+            "ci_upper": 0.01194718431283942,
+            "estimate": 0.011617281071276284,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.011664760687671078,
+              "ci_upper": 0.013079770624660777,
+              "estimate": 0.012452108479300826,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.010690969353999803,
+              "ci_upper": 0.011132244695169147,
+              "estimate": 0.010922019986814472,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.010805318764008049,
+              "ci_upper": 0.012193672270667326,
+              "estimate": 0.011477714747713547,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_draw_variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00017721736625514388,
+            "ci_upper": 0.0001993152263374484,
+            "estimate": 0.00018850370370370362,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00018382222222222225,
+              "ci_upper": 0.00023250370370370352,
+              "estimate": 0.0002099851851851851,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0001724938271604938,
+              "ci_upper": 0.00018256790123456795,
+              "estimate": 0.00017666172839506168,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0001573432098765431,
+              "ci_upper": 0.00020058271604938248,
+              "estimate": 0.00017886419753086405,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "paired_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.8554162962962965,
+            "ci_upper": 0.8614292098765435,
+            "estimate": 0.8583367901234569,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.8194785185185186,
+              "ci_upper": 0.8278962962962965,
+              "estimate": 0.8238340740740743,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.8865985185185187,
+              "ci_upper": 0.8935881481481482,
+              "estimate": 0.8894400000000001,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.8547644444444448,
+              "ci_upper": 0.8687081481481483,
+              "estimate": 0.8617362962962964,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "stream_abs_diff_mean": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.02038711111111111,
+            "ci_upper": 0.021208888888888888,
+            "estimate": 0.020815802469135804,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.02174814814814815,
+              "ci_upper": 0.022951111111111117,
+              "estimate": 0.02242370370370371,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.01886222222222221,
+              "ci_upper": 0.020438518518518516,
+              "estimate": 0.01968592592592592,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.01954370370370371,
+              "ci_upper": 0.020983703703703706,
+              "estimate": 0.02033777777777778,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      }
+    },
+    "minimum_draws": 3,
+    "repeated_draws_available": true
+  },
+  "matched_high_budget_reference": {
+    "available": true,
+    "high_budget_reference_definition": "mean paired estimate across high-budget draws for the same dataset-model-seed-scenario-severity cell",
+    "high_reference_base_cells": 225,
+    "high_reference_cells_missing_in_low": 0,
+    "high_reference_cells_missing_in_mid": 0,
+    "low_cells_outside_high_reference_subset": 900,
+    "matched_base_cells": 225,
+    "metrics": {
+      "cosine": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01477402867132392,
+            "ci_upper": 0.01870791815257901,
+            "estimate": 0.016661533824853827,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.02415128916217274,
+              "ci_upper": 0.028787847573885406,
+              "estimate": 0.02596903243478743,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.011492821447714149,
+              "ci_upper": 0.0158694842703462,
+              "estimate": 0.01345440494824238,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.005914999137587572,
+              "ci_upper": 0.01547862689651706,
+              "estimate": 0.010561164091531669,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": -0.018072872365544196,
+            "ci_upper": -0.013569749558098344,
+            "estimate": -0.015740255263009376,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": -0.027249829115201834,
+              "ci_upper": -0.023165531794006277,
+              "estimate": -0.02511457626861076,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": -0.015816732499149853,
+              "ci_upper": -0.010984371184873725,
+              "estimate": -0.01310816910563723,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": -0.015147590499388148,
+              "ci_upper": -0.0028484503301721264,
+              "estimate": -0.008998020414780136,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.006242823173004278,
+            "ci_upper": 0.008626020291134061,
+            "estimate": 0.007411733214580198,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.008340388935777595,
+              "ci_upper": 0.012287356774276054,
+              "estimate": 0.009810476173903142,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.005959995813605772,
+              "ci_upper": 0.007626321981735363,
+              "estimate": 0.006793158897670569,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0029517646637821334,
+              "ci_upper": 0.008288043413865095,
+              "estimate": 0.005631564572166884,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.01181129108375362,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 9.586185351709857e-05,
+            "ci_upper": 0.0001977117330724185,
+            "estimate": 0.00013950659706515775,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00013936296521400497,
+              "ci_upper": 0.0004072925449191751,
+              "estimate": 0.0002387666248368529,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.55879942565588e-05,
+              "ci_upper": 0.00011718987475362284,
+              "estimate": 9.605892006236978e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 2.649568871761019e-05,
+              "ci_upper": 0.00014089280387489096,
+              "estimate": 8.369424629625057e-05,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.44484099078106465,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0005927676987307143,
+            "ci_upper": 0.0008503888760980454,
+            "estimate": 0.0007124677004706742,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.001204325309578166,
+              "ci_upper": 0.0017642546134149111,
+              "estimate": 0.0014462055079447033,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0002931777778195665,
+              "ci_upper": 0.0005081909222494884,
+              "estimate": 0.0004028311358055742,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 7.163011601027152e-05,
+              "ci_upper": 0.0005059836952801191,
+              "estimate": 0.0002883664576617454,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 8.170484274993284e-06,
+            "ci_upper": 1.9097109460767053e-05,
+            "estimate": 1.2634734151236355e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 1.0544350625250055e-05,
+              "ci_upper": 4.027299102830062e-05,
+              "estimate": 2.169681475146179e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 6.440388126949248e-06,
+              "ci_upper": 1.1111370371519323e-05,
+              "estimate": 8.451438499808005e-06,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 3.6526185680441084e-06,
+              "ci_upper": 1.3155261208459558e-05,
+              "estimate": 7.75594920243927e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_cosine": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.014784548728771696,
+            "ci_upper": 0.018679645458053052,
+            "estimate": 0.01666153382485383,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.02415128916217274,
+              "ci_upper": 0.028751362534598174,
+              "estimate": 0.025969032434787424,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.011513170098537803,
+              "ci_upper": 0.015869484270346214,
+              "estimate": 0.013454404948242387,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0059149991375875765,
+              "ci_upper": 0.015478626896517087,
+              "estimate": 0.010561164091531683,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.013529846702268216,
+            "ci_upper": 0.018106869970747036,
+            "estimate": 0.015740255263009376,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.023157724885666236,
+              "ci_upper": 0.027257636023541844,
+              "estimate": 0.025114576268610744,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.010984371184873748,
+              "ci_upper": 0.015816732499149864,
+              "estimate": 0.013108169105637241,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.002848450330172122,
+              "ci_upper": 0.015147590499388167,
+              "estimate": 0.008998020414780145,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.006238113023259791,
+            "ci_upper": 0.008648672070308833,
+            "estimate": 0.007411733214580198,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.008340388935777588,
+              "ci_upper": 0.01238202538876966,
+              "estimate": 0.009810476173903137,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.005959995813605783,
+              "ci_upper": 0.007626321981735369,
+              "estimate": 0.0067931588976705756,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.002975085730468659,
+              "ci_upper": 0.008288043413865104,
+              "estimate": 0.005631564572166881,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.011811291083753618,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 9.625456832119271e-05,
+            "ci_upper": 0.0001997695073958335,
+            "estimate": 0.00013950659706515772,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00013936296521400518,
+              "ci_upper": 0.00040729254491917507,
+              "estimate": 0.00023876662483685298,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.526262476011352e-05,
+              "ci_upper": 0.00011718987475362304,
+              "estimate": 9.605892006236968e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 2.649568871760992e-05,
+              "ci_upper": 0.00014089280387489102,
+              "estimate": 8.369424629625047e-05,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.44484099078106454,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0005934510740951051,
+            "ci_upper": 0.0008501357119814029,
+            "estimate": 0.0007124677004706685,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0012043253095781485,
+              "ci_upper": 0.0017689871513050267,
+              "estimate": 0.0014462055079446873,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.000293177777819607,
+              "ci_upper": 0.0005081909222494675,
+              "estimate": 0.00040283113580558713,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 7.163011601024219e-05,
+              "ci_upper": 0.0005059836952801394,
+              "estimate": 0.000288366457661731,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 8.17359246645932e-06,
+            "ci_upper": 1.899750359216392e-05,
+            "estimate": 1.2634734151227606e-05,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 1.0670762631159498e-05,
+              "ci_upper": 4.027299102828873e-05,
+              "estimate": 2.1696814751439445e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 6.258048135162432e-06,
+              "ci_upper": 1.1111370371506623e-05,
+              "estimate": 8.45143849982655e-06,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 3.6526185679729657e-06,
+              "ci_upper": 1.302022955022318e-05,
+              "estimate": 7.755949202416826e-06,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_top3": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.033934115226337415,
+            "ci_upper": 0.039570452674897096,
+            "estimate": 0.03677860082304523,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.045530864197530815,
+              "ci_upper": 0.058548148148148106,
+              "estimate": 0.05247901234567896,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.02211851851851849,
+              "ci_upper": 0.029091358024691334,
+              "estimate": 0.025604938271604916,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.028607407407407394,
+              "ci_upper": 0.036849382716049345,
+              "estimate": 0.03225185185185182,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.030128353909464983,
+            "ci_upper": 0.03639012345679008,
+            "estimate": 0.033279012345678975,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.04529382716049379,
+              "ci_upper": 0.057995061728395025,
+              "estimate": 0.0520839506172839,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.014197530864197495,
+              "ci_upper": 0.02269135802469132,
+              "estimate": 0.01844444444444441,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.02442320987654319,
+              "ci_upper": 0.03538271604938266,
+              "estimate": 0.0293086419753086,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01663703703703705,
+            "ci_upper": 0.02263703703703704,
+            "estimate": 0.019644444444444454,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.017007407407407416,
+              "ci_upper": 0.030696296296296322,
+              "estimate": 0.023881481481481497,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.014133333333333368,
+              "ci_upper": 0.021822222222222225,
+              "estimate": 0.01785185185185187,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013096296296296297,
+              "ci_upper": 0.021288888888888895,
+              "estimate": 0.0172,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.026785332677404478,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0005173304526748972,
+            "ci_upper": 0.0009243300411522636,
+            "estimate": 0.0007174540466392322,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005464691358024693,
+              "ci_upper": 0.0015705349794238699,
+              "estimate": 0.0010585020576131695,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0003727242798353912,
+              "ci_upper": 0.0007974650205761332,
+              "estimate": 0.0005759506172839509,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0003028477366255143,
+              "ci_upper": 0.0007789135802469129,
+              "estimate": 0.000517909465020576,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5341270196482127,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0022355692272519397,
+            "ci_upper": 0.002982344993141286,
+            "estimate": 0.0025890352080475505,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0034917530864197457,
+              "ci_upper": 0.005376812071330584,
+              "estimate": 0.0043505569272976625,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0010840054869684487,
+              "ci_upper": 0.0017179478737997258,
+              "estimate": 0.0013943868312757185,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.001604466392318241,
+              "ci_upper": 0.0026694375857338804,
+              "estimate": 0.0020221618655692705,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00026735253772290906,
+            "ci_upper": 0.0003582533150434401,
+            "estimate": 0.0003111111111111121,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0002646090534979451,
+              "ci_upper": 0.00031810699588477305,
+              "estimate": 0.00029245541838134514,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00021111111111111092,
+              "ci_upper": 0.00037599451303155175,
+              "estimate": 0.00029163237311385606,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0002556927297668043,
+              "ci_upper": 0.00046378600823045483,
+              "estimate": 0.00034924554183813516,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "instab_top5": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.03171353086419741,
+            "ci_upper": 0.03567906172839491,
+            "estimate": 0.03370469135802456,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0438607407407406,
+              "ci_upper": 0.050805925925925775,
+              "estimate": 0.04745481481481467,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.022728888888888795,
+              "ci_upper": 0.030248888888888752,
+              "estimate": 0.02648296296296284,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.024319999999999904,
+              "ci_upper": 0.029644444444444307,
+              "estimate": 0.027176296296296164,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.029156493827160335,
+            "ci_upper": 0.034226172839506,
+            "estimate": 0.03172938271604923,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.040968888888888735,
+              "ci_upper": 0.04977777777777762,
+              "estimate": 0.045825185185185024,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.02114666666666652,
+              "ci_upper": 0.02999999999999986,
+              "estimate": 0.02564148148148134,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.01943999999999982,
+              "ci_upper": 0.027703703703703526,
+              "estimate": 0.0237214814814813,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01434370370370372,
+            "ci_upper": 0.019330444444444456,
+            "estimate": 0.016960000000000017,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.01858666666666669,
+              "ci_upper": 0.025137777777777797,
+              "estimate": 0.0227377777777778,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00814222222222226,
+              "ci_upper": 0.02063111111111112,
+              "estimate": 0.014515555555555573,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.011662222222222208,
+              "ci_upper": 0.015982222222222238,
+              "estimate": 0.013626666666666672,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.022007854938915477,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003773095308641979,
+            "ci_upper": 0.0005828742222222232,
+            "estimate": 0.00048434567901234636,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005189925925925935,
+              "ci_upper": 0.0008499911111111126,
+              "estimate": 0.0007139437037037049,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00015037037037037043,
+              "ci_upper": 0.0006577007407407417,
+              "estimate": 0.0004040355555555562,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00026600296296296354,
+              "ci_upper": 0.00040138074074074154,
+              "estimate": 0.00033505777777777804,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5031940455957359,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.001707666353909454,
+            "ci_upper": 0.002154710189300397,
+            "estimate": 0.0019358564609053377,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.002819749135802455,
+              "ci_upper": 0.003885457777777758,
+              "estimate": 0.0033934222222222047,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.000923083456790116,
+              "ci_upper": 0.0016157767901234456,
+              "estimate": 0.0012376928395061626,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0009711506172839443,
+              "ci_upper": 0.0013817580246913478,
+              "estimate": 0.001176454320987646,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00018691316872428046,
+            "ci_upper": 0.00024197530864197533,
+            "estimate": 0.00021423868312757266,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00019762962962963283,
+              "ci_upper": 0.0002744691358024693,
+              "estimate": 0.0002360493827160511,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0001326851851851826,
+              "ci_upper": 0.00024345679012345627,
+              "estimate": 0.000184395061728394,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0001766419753086433,
+              "ci_upper": 0.00027022222222222237,
+              "estimate": 0.00022227160493827294,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "sign": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.025153252630428554,
+            "ci_upper": 0.028584355026317995,
+            "estimate": 0.026853848668478304,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0390853133286467,
+              "ci_upper": 0.041926501399834726,
+              "estimate": 0.04033422162199942,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.01433040155317935,
+              "ci_upper": 0.01935748761526542,
+              "estimate": 0.01711263302541082,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.01882888888888886,
+              "ci_upper": 0.027197195767195738,
+              "estimate": 0.023114691358024665,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": -0.027650792557750888,
+            "ci_upper": -0.02436926009364437,
+            "estimate": -0.025960102058435398,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": -0.041727983169094277,
+              "ci_upper": -0.038441211586767124,
+              "estimate": -0.0397909492565048,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": -0.01915314874425991,
+              "ci_upper": -0.014101112200556676,
+              "estimate": -0.01673399536677319,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": -0.02545971781305112,
+              "ci_upper": -0.0176905996472663,
+              "estimate": -0.021355361552028197,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01225335466179912,
+            "ci_upper": 0.015368326862437985,
+            "estimate": 0.013839298931521164,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.01802350933017597,
+              "ci_upper": 0.022644911878245223,
+              "estimate": 0.02030586660253327,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.006983866010532673,
+              "ci_upper": 0.010351622944956302,
+              "estimate": 0.00866774447774449,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0086410582010582,
+              "ci_upper": 0.016013968253968273,
+              "estimate": 0.01254428571428573,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.02118435526798777,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003528923765864009,
+            "ci_upper": 0.0005476335393585231,
+            "estimate": 0.0004487769081203212,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005906767754560168,
+              "ci_upper": 0.0010330523392698056,
+              "estimate": 0.0007906567410832955,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00013455414385300543,
+              "ci_upper": 0.00024256263400272362,
+              "estimate": 0.00019440684315001153,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00018306724783740666,
+              "ci_upper": 0.0005333215537079035,
+              "estimate": 0.0003612671401276567,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5153562568394924,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0014225671613857607,
+            "ci_upper": 0.0017709234124505017,
+            "estimate": 0.0015909728387342819,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0026528473178711017,
+              "ci_upper": 0.0031591461384394308,
+              "estimate": 0.0028742471770441787,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0004419868756389644,
+              "ci_upper": 0.0008144240293123939,
+              "estimate": 0.0006356179391278766,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0008860042390330515,
+              "ci_upper": 0.00171837000342936,
+              "estimate": 0.0012630534000307903,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 7.743048172160462e-05,
+            "ci_upper": 0.00012761174492726635,
+            "estimate": 0.00010268427680667343,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 6.586934772167429e-05,
+              "ci_upper": 0.00010025632924617111,
+              "estimate": 8.497805188152131e-05,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 2.0112078483196518e-05,
+              "ci_upper": 4.322830507988984e-05,
+              "estimate": 3.0842602437610716e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00011711183197556598,
+              "ci_upper": 0.0002637085660395888,
+              "estimate": 0.00019223217610088826,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "spearman": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.03697595643884265,
+            "ci_upper": 0.041545014173674136,
+            "estimate": 0.03925631814052751,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.05318634019996312,
+              "ci_upper": 0.059483142043141944,
+              "estimate": 0.056464493893150336,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.019152854030501137,
+              "ci_upper": 0.025634291938997834,
+              "estimate": 0.022717734204793057,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.033470899470899526,
+              "ci_upper": 0.04370255317637876,
+              "estimate": 0.03858672632363914,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": -0.039044358788105686,
+            "ci_upper": -0.03404509227255639,
+            "estimate": -0.036628238198199194,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": -0.05711068238302887,
+              "ci_upper": -0.05092720451586098,
+              "estimate": -0.054116915545571985,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": -0.025476034858387807,
+              "ci_upper": -0.019027581699346447,
+              "estimate": -0.02254544662309371,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": -0.03863800291182849,
+              "ci_upper": -0.02674933655291602,
+              "estimate": -0.033222352425931904,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.016807061744355874,
+            "ci_upper": 0.02226162573177381,
+            "estimate": 0.01958437506397765,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.022392967032967007,
+              "ci_upper": 0.029765921118404336,
+              "estimate": 0.02622286861535183,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.010570849673202595,
+              "ci_upper": 0.013342091503267994,
+              "estimate": 0.01167228758169935,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013637863174775975,
+              "ci_upper": 0.027838689312514837,
+              "estimate": 0.020857968994881772,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.029275450934296173,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0006311451914159406,
+            "ci_upper": 0.0010855680162326195,
+            "estimate": 0.0008570520274063827,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0009131671147249148,
+              "ci_upper": 0.001647234921067432,
+              "estimate": 0.0012806983020332292,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0002389574599513008,
+              "ci_upper": 0.0003351437857234409,
+              "estimate": 0.0002827867627835451,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0004644768623498787,
+              "ci_upper": 0.001550865172454869,
+              "estimate": 0.001007671017402374,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.4988846634539345,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0028819220212186534,
+            "ci_upper": 0.0037429039979138246,
+            "estimate": 0.00331243674038796,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.005029249936811083,
+              "ci_upper": 0.006376495958455559,
+              "estimate": 0.005702872947633322,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.000757253118458716,
+              "ci_upper": 0.0013186546917851826,
+              "estimate": 0.0010956405843906094,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.002093844293272841,
+              "ci_upper": 0.004183749085007057,
+              "estimate": 0.0031387966891399492,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00012737938256463096,
+            "ci_upper": 0.0001811790658380802,
+            "estimate": 0.0001535563290298946,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 7.757828330621109e-05,
+              "ci_upper": 0.0001713647155991921,
+              "estimate": 0.0001244714994527016,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 3.4799404075323e-05,
+              "ci_upper": 5.103846811053581e-05,
+              "estimate": 4.167955700797421e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00023407869320566486,
+              "ci_upper": 0.00036386719296765404,
+              "estimate": 0.000294517930629008,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "top3": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.033991687242798316,
+            "ci_upper": 0.03961152263374481,
+            "estimate": 0.03677860082304523,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.045530864197530795,
+              "ci_upper": 0.05854814814814807,
+              "estimate": 0.052479012345678935,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.022118518518518485,
+              "ci_upper": 0.029091358024691334,
+              "estimate": 0.025604938271604906,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.028617283950617252,
+              "ci_upper": 0.03684938271604936,
+              "estimate": 0.03225185185185183,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": -0.0364099176954732,
+            "ci_upper": -0.03017934156378597,
+            "estimate": -0.03327901234567896,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": -0.05799506172839499,
+              "ci_upper": -0.04549123456790125,
+              "estimate": -0.05208395061728388,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": -0.02269135802469131,
+              "ci_upper": -0.01419753086419751,
+              "estimate": -0.01844444444444441,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": -0.03538271604938267,
+              "ci_upper": -0.024365432098765398,
+              "estimate": -0.029308641975308608,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01662703703703704,
+            "ci_upper": 0.022647037037037056,
+            "estimate": 0.019644444444444454,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.017007407407407395,
+              "ci_upper": 0.030696296296296312,
+              "estimate": 0.023881481481481483,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.01413333333333337,
+              "ci_upper": 0.021822222222222222,
+              "estimate": 0.017851851851851876,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013037037037037036,
+              "ci_upper": 0.0212888888888889,
+              "estimate": 0.0172,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.02678533267740448,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.000520034156378601,
+            "ci_upper": 0.0009283347050754464,
+            "estimate": 0.0007174540466392323,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005464691358024688,
+              "ci_upper": 0.0015705349794238696,
+              "estimate": 0.001058502057613169,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0003727242798353918,
+              "ci_upper": 0.0007974650205761338,
+              "estimate": 0.0005759506172839516,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00030297942386831283,
+              "ci_upper": 0.0007567572016460909,
+              "estimate": 0.0005179094650205765,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5341270196482127,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0022355154549611356,
+            "ci_upper": 0.0029791775948788384,
+            "estimate": 0.002589035208047557,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0034917530864197513,
+              "ci_upper": 0.005280115226337442,
+              "estimate": 0.004350556927297663,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0010876323731138756,
+              "ci_upper": 0.0017296515775034591,
+              "estimate": 0.0013943868312757362,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0016044663923182468,
+              "ci_upper": 0.002646200274348414,
+              "estimate": 0.0020221618655692723,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0002670759030635594,
+            "ci_upper": 0.0003586648376772026,
+            "estimate": 0.0003111111111111227,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00026460905349792957,
+              "ci_upper": 0.0003181069958847871,
+              "estimate": 0.0002924554183813499,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00021111111111109306,
+              "ci_upper": 0.0003759945130316178,
+              "estimate": 0.00029163237311388257,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0002556927297667888,
+              "ci_upper": 0.00046378600823047234,
+              "estimate": 0.0003492455418381357,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      },
+      "top5": {
+        "abs_bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.031662148148148016,
+            "ci_upper": 0.03567311111111096,
+            "estimate": 0.033704691358024556,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.043919999999999834,
+              "ci_upper": 0.050805925925925755,
+              "estimate": 0.04745481481481466,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.022456296296296176,
+              "ci_upper": 0.030248888888888735,
+              "estimate": 0.026482962962962826,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.024248888888888813,
+              "ci_upper": 0.029644444444444307,
+              "estimate": 0.027176296296296178,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "bias_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": -0.034268691358024524,
+            "ci_upper": -0.029163432098765252,
+            "estimate": -0.03172938271604921,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": -0.0497777777777776,
+              "ci_upper": -0.04096888888888871,
+              "estimate": -0.04582518518518501,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": -0.03023703703703688,
+              "ci_upper": -0.021146666666666508,
+              "estimate": -0.02564148148148132,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": -0.02770370370370353,
+              "ci_upper": -0.019244444444444248,
+              "estimate": -0.023721481481481295,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01434370370370372,
+            "ci_upper": 0.019392666666666676,
+            "estimate": 0.016960000000000017,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.018577777777777815,
+              "ci_upper": 0.025137777777777794,
+              "estimate": 0.022737777777777794,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.008142222222222247,
+              "ci_upper": 0.02063111111111112,
+              "estimate": 0.014515555555555565,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.011662222222222216,
+              "ci_upper": 0.015982222222222255,
+              "estimate": 0.013626666666666686,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.022007854938915477,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003781941728395067,
+            "ci_upper": 0.0005831906666666676,
+            "estimate": 0.00048434567901234636,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005189925925925932,
+              "ci_upper": 0.0008499911111111114,
+              "estimate": 0.0007139437037037043,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00015037037037037045,
+              "ci_upper": 0.000649232592592594,
+              "estimate": 0.00040403555555555617,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00026600296296296365,
+              "ci_upper": 0.0003999525925925958,
+              "estimate": 0.0003350577777777785,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.503194045595736,
+        "mse_vs_high_reference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0017176971028806365,
+            "ci_upper": 0.002157367259259238,
+            "estimate": 0.0019358564609053294,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0028593837037036744,
+              "ci_upper": 0.00389849283950615,
+              "estimate": 0.0033934222222221965,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0009313599999999873,
+              "ci_upper": 0.0016082923456789897,
+              "estimate": 0.0012376928395061591,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0009711506172839342,
+              "ci_upper": 0.0013817580246913304,
+              "estimate": 0.0011764543209876325,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "variance": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.00018643580246912854,
+            "ci_upper": 0.00024200905349791422,
+            "estimate": 0.00021423868312756111,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0001976296296296376,
+              "ci_upper": 0.00027446913580244536,
+              "estimate": 0.00023604938271604148,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00013269135802468465,
+              "ci_upper": 0.00024345679012341748,
+              "estimate": 0.00018439506172838958,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00017664197530861792,
+              "ci_upper": 0.00027392592592591076,
+              "estimate": 0.00022227160493825228,
+              "n_seed_clusters": 5
+            }
+          }
+        }
+      }
+    },
+    "mid_reference_available": true,
+    "mse_definition": "mean squared low-estimate error against the matched high-budget reference; equivalently population draw variance plus squared finite-sample bias",
+    "reference_term": "high-budget reference",
+    "variance_definition": "sample variance across repeated low paired estimates (R-1 denominator)"
+  },
+  "mid_high_convergence": {
+    "available": true,
+    "interpretation": "Descriptive mid-versus-high budget agreement; no undeclared acceptance threshold is imposed.",
+    "metrics": {
+      "cosine": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.006242823173004278,
+            "ci_upper": 0.008626020291134061,
+            "estimate": 0.007411733214580198,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.008340388935777595,
+              "ci_upper": 0.012287356774276054,
+              "estimate": 0.009810476173903142,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.005959995813605772,
+              "ci_upper": 0.007626321981735363,
+              "estimate": 0.006793158897670569,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0029517646637821334,
+              "ci_upper": 0.008288043413865095,
+              "estimate": 0.005631564572166884,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.01181129108375362,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 9.586185351709857e-05,
+            "ci_upper": 0.0001977117330724185,
+            "estimate": 0.00013950659706515775,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00013936296521400497,
+              "ci_upper": 0.0004072925449191751,
+              "estimate": 0.0002387666248368529,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.55879942565588e-05,
+              "ci_upper": 0.00011718987475362284,
+              "estimate": 9.605892006236978e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 2.649568871761019e-05,
+              "ci_upper": 0.00014089280387489096,
+              "estimate": 8.369424629625057e-05,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.44484099078106465
+      },
+      "instab_cosine": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.006238113023259791,
+            "ci_upper": 0.008648672070308833,
+            "estimate": 0.007411733214580198,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.008340388935777588,
+              "ci_upper": 0.01238202538876966,
+              "estimate": 0.009810476173903137,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.005959995813605783,
+              "ci_upper": 0.007626321981735369,
+              "estimate": 0.0067931588976705756,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.002975085730468659,
+              "ci_upper": 0.008288043413865104,
+              "estimate": 0.005631564572166881,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.011811291083753618,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 9.625456832119271e-05,
+            "ci_upper": 0.0001997695073958335,
+            "estimate": 0.00013950659706515772,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.00013936296521400518,
+              "ci_upper": 0.00040729254491917507,
+              "estimate": 0.00023876662483685298,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 7.526262476011352e-05,
+              "ci_upper": 0.00011718987475362304,
+              "estimate": 9.605892006236968e-05,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 2.649568871760992e-05,
+              "ci_upper": 0.00014089280387489102,
+              "estimate": 8.369424629625047e-05,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.44484099078106454
+      },
+      "instab_top3": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01663703703703705,
+            "ci_upper": 0.02263703703703704,
+            "estimate": 0.019644444444444454,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.017007407407407416,
+              "ci_upper": 0.030696296296296322,
+              "estimate": 0.023881481481481497,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.014133333333333368,
+              "ci_upper": 0.021822222222222225,
+              "estimate": 0.01785185185185187,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013096296296296297,
+              "ci_upper": 0.021288888888888895,
+              "estimate": 0.0172,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.026785332677404478,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0005173304526748972,
+            "ci_upper": 0.0009243300411522636,
+            "estimate": 0.0007174540466392322,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005464691358024693,
+              "ci_upper": 0.0015705349794238699,
+              "estimate": 0.0010585020576131695,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0003727242798353912,
+              "ci_upper": 0.0007974650205761332,
+              "estimate": 0.0005759506172839509,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0003028477366255143,
+              "ci_upper": 0.0007789135802469129,
+              "estimate": 0.000517909465020576,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5341270196482127
+      },
+      "instab_top5": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01434370370370372,
+            "ci_upper": 0.019330444444444456,
+            "estimate": 0.016960000000000017,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.01858666666666669,
+              "ci_upper": 0.025137777777777797,
+              "estimate": 0.0227377777777778,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00814222222222226,
+              "ci_upper": 0.02063111111111112,
+              "estimate": 0.014515555555555573,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.011662222222222208,
+              "ci_upper": 0.015982222222222238,
+              "estimate": 0.013626666666666672,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.022007854938915477,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003773095308641979,
+            "ci_upper": 0.0005828742222222232,
+            "estimate": 0.00048434567901234636,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005189925925925935,
+              "ci_upper": 0.0008499911111111126,
+              "estimate": 0.0007139437037037049,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00015037037037037043,
+              "ci_upper": 0.0006577007407407417,
+              "estimate": 0.0004040355555555562,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00026600296296296354,
+              "ci_upper": 0.00040138074074074154,
+              "estimate": 0.00033505777777777804,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5031940455957359
+      },
+      "sign": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01225335466179912,
+            "ci_upper": 0.015368326862437985,
+            "estimate": 0.013839298931521164,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.01802350933017597,
+              "ci_upper": 0.022644911878245223,
+              "estimate": 0.02030586660253327,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.006983866010532673,
+              "ci_upper": 0.010351622944956302,
+              "estimate": 0.00866774447774449,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0086410582010582,
+              "ci_upper": 0.016013968253968273,
+              "estimate": 0.01254428571428573,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.02118435526798777,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003528923765864009,
+            "ci_upper": 0.0005476335393585231,
+            "estimate": 0.0004487769081203212,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005906767754560168,
+              "ci_upper": 0.0010330523392698056,
+              "estimate": 0.0007906567410832955,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00013455414385300543,
+              "ci_upper": 0.00024256263400272362,
+              "estimate": 0.00019440684315001153,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00018306724783740666,
+              "ci_upper": 0.0005333215537079035,
+              "estimate": 0.0003612671401276567,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5153562568394924
+      },
+      "spearman": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.016807061744355874,
+            "ci_upper": 0.02226162573177381,
+            "estimate": 0.01958437506397765,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.022392967032967007,
+              "ci_upper": 0.029765921118404336,
+              "estimate": 0.02622286861535183,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.010570849673202595,
+              "ci_upper": 0.013342091503267994,
+              "estimate": 0.01167228758169935,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013637863174775975,
+              "ci_upper": 0.027838689312514837,
+              "estimate": 0.020857968994881772,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.029275450934296173,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0006311451914159406,
+            "ci_upper": 0.0010855680162326195,
+            "estimate": 0.0008570520274063827,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0009131671147249148,
+              "ci_upper": 0.001647234921067432,
+              "estimate": 0.0012806983020332292,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0002389574599513008,
+              "ci_upper": 0.0003351437857234409,
+              "estimate": 0.0002827867627835451,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.0004644768623498787,
+              "ci_upper": 0.001550865172454869,
+              "estimate": 0.001007671017402374,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.4988846634539345
+      },
+      "top3": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01662703703703704,
+            "ci_upper": 0.022647037037037056,
+            "estimate": 0.019644444444444454,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.017007407407407395,
+              "ci_upper": 0.030696296296296312,
+              "estimate": 0.023881481481481483,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.01413333333333337,
+              "ci_upper": 0.021822222222222222,
+              "estimate": 0.017851851851851876,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.013037037037037036,
+              "ci_upper": 0.0212888888888889,
+              "estimate": 0.0172,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.02678533267740448,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.000520034156378601,
+            "ci_upper": 0.0009283347050754464,
+            "estimate": 0.0007174540466392323,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005464691358024688,
+              "ci_upper": 0.0015705349794238696,
+              "estimate": 0.001058502057613169,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.0003727242798353918,
+              "ci_upper": 0.0007974650205761338,
+              "estimate": 0.0005759506172839516,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00030297942386831283,
+              "ci_upper": 0.0007567572016460909,
+              "estimate": 0.0005179094650205765,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.5341270196482127
+      },
+      "top5": {
+        "mid_high_absolute_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.01434370370370372,
+            "ci_upper": 0.019392666666666676,
+            "estimate": 0.016960000000000017,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.018577777777777815,
+              "ci_upper": 0.025137777777777794,
+              "estimate": 0.022737777777777794,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.008142222222222247,
+              "ci_upper": 0.02063111111111112,
+              "estimate": 0.014515555555555565,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.011662222222222216,
+              "ci_upper": 0.015982222222222255,
+              "estimate": 0.013626666666666686,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_high_rmse": 0.022007854938915477,
+        "mid_high_squared_difference": {
+          "available": true,
+          "bootstrap_reps": 10000,
+          "ci_level": 0.95,
+          "cluster_unit": "seed within dataset",
+          "dataset_strata_fixed": true,
+          "estimand": "unweighted dataset macro mean",
+          "macro": {
+            "ci_lower": 0.0003781941728395067,
+            "ci_upper": 0.0005831906666666676,
+            "estimate": 0.00048434567901234636,
+            "n_datasets": 3,
+            "n_seed_clusters": 15
+          },
+          "per_dataset": {
+            "adult": {
+              "ci_lower": 0.0005189925925925932,
+              "ci_upper": 0.0008499911111111114,
+              "estimate": 0.0007139437037037043,
+              "n_seed_clusters": 5
+            },
+            "bank-marketing": {
+              "ci_lower": 0.00015037037037037045,
+              "ci_upper": 0.000649232592592594,
+              "estimate": 0.00040403555555555617,
+              "n_seed_clusters": 5
+            },
+            "electricity": {
+              "ci_lower": 0.00026600296296296365,
+              "ci_upper": 0.0003999525925925958,
+              "estimate": 0.0003350577777777785,
+              "n_seed_clusters": 5
+            }
+          }
+        },
+        "mid_to_low_absolute_error_ratio": 0.503194045595736
+      }
+    },
+    "reference_term": "high-budget reference"
+  },
+  "paired_estimator": "(paired_a + paired_b) / 2",
+  "run_dir": "outputs/crn_validation",
+  "schema": "crn-revalidation-analysis-metrics-v1",
+  "scope_note": "Results characterize the paired LIME estimator only; no cross-method rank is produced.",
+  "status": "complete",
+  "threshold_agreement_top5": {
+    "available": true,
+    "candidate": "draw-averaged low-budget paired estimate",
+    "deployment_note": "Estimator-agreement diagnostic; not deployment performance or ground-truth detection power.",
+    "label_rule": "positive when instability >= threshold",
+    "matched_rows": 225,
+    "primary_metric": "instab_top5",
+    "reference": "matched finite high-budget paired estimate",
+    "results": {
+      "0.05": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro metric",
+        "macro": {
+          "balanced_accuracy": {
+            "ci_lower": 0.8011904761904761,
+            "ci_upper": 0.8536019536019536,
+            "estimate": 0.8256172839506174
+          },
+          "false_alarm_rate": {
+            "ci_lower": 0.2873015873015873,
+            "ci_upper": 0.3916971916971917,
+            "estimate": 0.3432098765432099
+          },
+          "precision": {
+            "ci_lower": 0.8185811161614016,
+            "ci_upper": 0.8666267345512629,
+            "estimate": 0.8399195326278659
+          },
+          "sensitivity_detection_rate": {
+            "ci_lower": 0.9833333333333334,
+            "ci_upper": 1.0,
+            "estimate": 0.9944444444444445
+          },
+          "specificity": {
+            "ci_lower": 0.6083028083028083,
+            "ci_upper": 0.7126984126984127,
+            "estimate": 0.6567901234567901
+          }
+        },
+        "n_seed_clusters": 15,
+        "per_dataset": {
+          "adult": {
+            "counts": {
+              "fn": 1,
+              "fp": 5,
+              "tn": 10,
+              "tp": 59
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8083333333333333,
+                "ci_upper": 0.8333333333333333,
+                "estimate": 0.825
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.3333333333333333,
+                "ci_upper": 0.3333333333333333,
+                "estimate": 0.3333333333333333
+              },
+              "precision": {
+                "ci_lower": 0.9193548387096774,
+                "ci_upper": 0.9230769230769231,
+                "estimate": 0.921875
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 0.95,
+                "ci_upper": 1.0,
+                "estimate": 0.9833333333333333
+              },
+              "specificity": {
+                "ci_lower": 0.6666666666666666,
+                "ci_upper": 0.6666666666666666,
+                "estimate": 0.6666666666666666
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "counts": {
+              "fn": 0,
+              "fp": 14,
+              "tn": 21,
+              "tp": 40
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.7571428571428571,
+                "ci_upper": 0.8428571428571429,
+                "estimate": 0.8
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.3142857142857143,
+                "ci_upper": 0.4857142857142857,
+                "estimate": 0.4
+              },
+              "precision": {
+                "ci_lower": 0.7017543859649122,
+                "ci_upper": 0.7843137254901961,
+                "estimate": 0.7407407407407407
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.5142857142857142,
+                "ci_upper": 0.6857142857142857,
+                "estimate": 0.6
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "counts": {
+              "fn": 0,
+              "fp": 8,
+              "tn": 19,
+              "tp": 48
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8076923076923077,
+                "ci_upper": 0.9230769230769231,
+                "estimate": 0.8518518518518519
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.15384615384615385,
+                "ci_upper": 0.38461538461538464,
+                "estimate": 0.2962962962962963
+              },
+              "precision": {
+                "ci_lower": 0.8214285714285714,
+                "ci_upper": 0.9245283018867925,
+                "estimate": 0.8571428571428571
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.6153846153846154,
+                "ci_upper": 0.8461538461538461,
+                "estimate": 0.7037037037037037
+              }
+            },
+            "n_seed_clusters": 5
+          }
+        },
+        "pooled_counts": {
+          "fn": 1,
+          "fp": 27,
+          "tn": 50,
+          "tp": 147
+        },
+        "pooled_metrics": {
+          "balanced_accuracy": 0.8212969462969463,
+          "false_alarm_rate": 0.35064935064935066,
+          "precision": 0.8448275862068966,
+          "sensitivity_detection_rate": 0.9932432432432432,
+          "specificity": 0.6493506493506493
+        },
+        "rows": 225
+      },
+      "0.10": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro metric",
+        "macro": {
+          "balanced_accuracy": {
+            "ci_lower": 0.8650974431048958,
+            "ci_upper": 0.9037703444904532,
+            "estimate": 0.8836289258250725
+          },
+          "false_alarm_rate": {
+            "ci_lower": 0.17594852933198799,
+            "ci_upper": 0.2557277497277497,
+            "estimate": 0.21535280778978258
+          },
+          "precision": {
+            "ci_lower": 0.7556618819776714,
+            "ci_upper": 0.8229689718213479,
+            "estimate": 0.7873673091696348
+          },
+          "sensitivity_detection_rate": {
+            "ci_lower": 0.9587261680284936,
+            "ci_upper": 1.0,
+            "estimate": 0.9826106594399278
+          },
+          "specificity": {
+            "ci_lower": 0.7442722502722502,
+            "ci_upper": 0.824051470668012,
+            "estimate": 0.7846471922102173
+          }
+        },
+        "n_seed_clusters": 15,
+        "per_dataset": {
+          "adult": {
+            "counts": {
+              "fn": 1,
+              "fp": 13,
+              "tn": 26,
+              "tp": 35
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.7756045519203414,
+                "ci_upper": 0.8625,
+                "estimate": 0.8194444444444444
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.2564102564102564,
+                "ci_upper": 0.425,
+                "estimate": 0.3333333333333333
+              },
+              "precision": {
+                "ci_lower": 0.6730769230769231,
+                "ci_upper": 0.7777777777777778,
+                "estimate": 0.7291666666666666
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 0.9210526315789473,
+                "ci_upper": 1.0,
+                "estimate": 0.9722222222222222
+              },
+              "specificity": {
+                "ci_lower": 0.575,
+                "ci_upper": 0.7435897435897436,
+                "estimate": 0.6666666666666666
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "counts": {
+              "fn": 0,
+              "fp": 11,
+              "tn": 38,
+              "tp": 26
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.86,
+                "ci_upper": 0.9166666666666667,
+                "estimate": 0.8877551020408163
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.16666666666666666,
+                "ci_upper": 0.28,
+                "estimate": 0.22448979591836735
+              },
+              "precision": {
+                "ci_lower": 0.6410256410256411,
+                "ci_upper": 0.7777777777777778,
+                "estimate": 0.7027027027027027
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.72,
+                "ci_upper": 0.8333333333333334,
+                "estimate": 0.7755102040816326
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "counts": {
+              "fn": 1,
+              "fp": 3,
+              "tn": 31,
+              "tp": 40
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.9285714285714286,
+                "ci_upper": 0.9730989956958394,
+                "estimate": 0.9436872309899569
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.029411764705882353,
+                "ci_upper": 0.14285714285714285,
+                "estimate": 0.08823529411764706
+              },
+              "precision": {
+                "ci_lower": 0.8888888888888888,
+                "ci_upper": 0.975609756097561,
+                "estimate": 0.9302325581395349
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 0.9302325581395349,
+                "ci_upper": 1.0,
+                "estimate": 0.975609756097561
+              },
+              "specificity": {
+                "ci_lower": 0.8571428571428571,
+                "ci_upper": 0.9705882352941176,
+                "estimate": 0.9117647058823529
+              }
+            },
+            "n_seed_clusters": 5
+          }
+        },
+        "pooled_counts": {
+          "fn": 2,
+          "fp": 27,
+          "tn": 95,
+          "tp": 101
+        },
+        "pooled_metrics": {
+          "balanced_accuracy": 0.8796355244310043,
+          "false_alarm_rate": 0.22131147540983606,
+          "precision": 0.7890625,
+          "sensitivity_detection_rate": 0.9805825242718447,
+          "specificity": 0.7786885245901639
+        },
+        "rows": 225
+      },
+      "0.15": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro metric",
+        "macro": {
+          "balanced_accuracy": {
+            "ci_lower": 0.8718298537824223,
+            "ci_upper": 0.9127946329033284,
+            "estimate": 0.8920614924019472
+          },
+          "false_alarm_rate": {
+            "ci_lower": 0.15660300565960944,
+            "ci_upper": 0.22628004343916477,
+            "estimate": 0.19118565717141425
+          },
+          "precision": {
+            "ci_lower": 0.6631136950904392,
+            "ci_upper": 0.7849183866583528,
+            "estimate": 0.7216335809686193
+          },
+          "sensitivity_detection_rate": {
+            "ci_lower": 0.9540229885057471,
+            "ci_upper": 1.0,
+            "estimate": 0.9753086419753086
+          },
+          "specificity": {
+            "ci_lower": 0.7737199565608353,
+            "ci_upper": 0.8433969943403906,
+            "estimate": 0.8088143428285858
+          }
+        },
+        "n_seed_clusters": 15,
+        "per_dataset": {
+          "adult": {
+            "counts": {
+              "fn": 0,
+              "fp": 13,
+              "tn": 33,
+              "tp": 29
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8229166666666667,
+                "ci_upper": 0.8888888888888888,
+                "estimate": 0.8586956521739131
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.2222222222222222,
+                "ci_upper": 0.3541666666666667,
+                "estimate": 0.2826086956521739
+              },
+              "precision": {
+                "ci_lower": 0.6136363636363636,
+                "ci_upper": 0.75,
+                "estimate": 0.6904761904761905
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.6458333333333334,
+                "ci_upper": 0.7777777777777778,
+                "estimate": 0.717391304347826
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "counts": {
+              "fn": 0,
+              "fp": 6,
+              "tn": 52,
+              "tp": 17
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.925,
+                "ci_upper": 0.9732142857142857,
+                "estimate": 0.9482758620689655
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.05357142857142857,
+                "ci_upper": 0.15,
+                "estimate": 0.10344827586206896
+              },
+              "precision": {
+                "ci_lower": 0.625,
+                "ci_upper": 0.875,
+                "estimate": 0.7391304347826086
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.85,
+                "ci_upper": 0.9464285714285714,
+                "estimate": 0.896551724137931
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "counts": {
+              "fn": 2,
+              "fp": 9,
+              "tn": 39,
+              "tp": 25
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8287106446776612,
+                "ci_upper": 0.9183130699088147,
+                "estimate": 0.869212962962963
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.13043478260869565,
+                "ci_upper": 0.25,
+                "estimate": 0.1875
+              },
+              "precision": {
+                "ci_lower": 0.6363636363636364,
+                "ci_upper": 0.8285714285714286,
+                "estimate": 0.7352941176470589
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 0.8620689655172413,
+                "ci_upper": 1.0,
+                "estimate": 0.9259259259259259
+              },
+              "specificity": {
+                "ci_lower": 0.75,
+                "ci_upper": 0.8695652173913043,
+                "estimate": 0.8125
+              }
+            },
+            "n_seed_clusters": 5
+          }
+        },
+        "pooled_counts": {
+          "fn": 2,
+          "fp": 28,
+          "tn": 124,
+          "tp": 71
+        },
+        "pooled_metrics": {
+          "balanced_accuracy": 0.894196106705119,
+          "false_alarm_rate": 0.18421052631578946,
+          "precision": 0.7171717171717171,
+          "sensitivity_detection_rate": 0.9726027397260274,
+          "specificity": 0.8157894736842105
+        },
+        "rows": 225
+      },
+      "0.20": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro metric",
+        "macro": {
+          "balanced_accuracy": {
+            "ci_lower": 0.9394554371723322,
+            "ci_upper": 0.9665614236509757,
+            "estimate": 0.9531036368608149
+          },
+          "false_alarm_rate": {
+            "ci_lower": 0.06687715269804823,
+            "ci_upper": 0.1210891256553357,
+            "estimate": 0.09379272627837025
+          },
+          "precision": {
+            "ci_lower": 0.6076628352490422,
+            "ci_upper": 0.8084291187739464,
+            "estimate": 0.7111111111111111
+          },
+          "sensitivity_detection_rate": {
+            "ci_lower": 1.0,
+            "ci_upper": 1.0,
+            "estimate": 1.0
+          },
+          "specificity": {
+            "ci_lower": 0.8789108743446642,
+            "ci_upper": 0.9331228473019518,
+            "estimate": 0.9062072737216297
+          }
+        },
+        "n_seed_clusters": 15,
+        "per_dataset": {
+          "adult": {
+            "counts": {
+              "fn": 0,
+              "fp": 8,
+              "tn": 45,
+              "tp": 22
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8909090909090909,
+                "ci_upper": 0.9519230769230769,
+                "estimate": 0.9245283018867925
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.09615384615384616,
+                "ci_upper": 0.21818181818181817,
+                "estimate": 0.1509433962264151
+              },
+              "precision": {
+                "ci_lower": 0.6363636363636364,
+                "ci_upper": 0.8275862068965517,
+                "estimate": 0.7333333333333333
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.7818181818181819,
+                "ci_upper": 0.9038461538461539,
+                "estimate": 0.8490566037735849
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "counts": {
+              "fn": 0,
+              "fp": 9,
+              "tn": 60,
+              "tp": 6
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.910958904109589,
+                "ci_upper": 0.9615384615384616,
+                "estimate": 0.9347826086956521
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.07692307692307693,
+                "ci_upper": 0.1780821917808219,
+                "estimate": 0.13043478260869565
+              },
+              "precision": {
+                "ci_lower": 0.13333333333333333,
+                "ci_upper": 0.6666666666666666,
+                "estimate": 0.4
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.821917808219178,
+                "ci_upper": 0.9230769230769231,
+                "estimate": 0.8695652173913043
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "counts": {
+              "fn": 0,
+              "fp": 0,
+              "tn": 54,
+              "tp": 21
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.0,
+                "ci_upper": 0.0,
+                "estimate": 0.0
+              },
+              "precision": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              }
+            },
+            "n_seed_clusters": 5
+          }
+        },
+        "pooled_counts": {
+          "fn": 0,
+          "fp": 17,
+          "tn": 159,
+          "tp": 49
+        },
+        "pooled_metrics": {
+          "balanced_accuracy": 0.9517045454545454,
+          "false_alarm_rate": 0.09659090909090909,
+          "precision": 0.7424242424242424,
+          "sensitivity_detection_rate": 1.0,
+          "specificity": 0.9034090909090909
+        },
+        "rows": 225
+      },
+      "0.25": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro metric",
+        "macro": {
+          "balanced_accuracy": {
+            "ci_lower": 0.8980152027027027,
+            "ci_upper": 0.9419434608887732,
+            "estimate": 0.9277706014838367
+          },
+          "false_alarm_rate": {
+            "ci_lower": 0.11437489241320577,
+            "ci_upper": 0.16878390857968323,
+            "estimate": 0.14445879703232645
+          },
+          "precision": {
+            "ci_lower": 0.19111111111111112,
+            "ci_upper": 0.5364705882352941,
+            "estimate": 0.3394771241830066
+          },
+          "sensitivity_detection_rate": {
+            "ci_lower": 1.0,
+            "ci_upper": 1.0,
+            "estimate": 1.0
+          },
+          "specificity": {
+            "ci_lower": 0.8312160914203167,
+            "ci_upper": 0.8856251075867941,
+            "estimate": 0.8555412029676736
+          }
+        },
+        "n_seed_clusters": 15,
+        "per_dataset": {
+          "adult": {
+            "counts": {
+              "fn": 0,
+              "fp": 14,
+              "tn": 50,
+              "tp": 11
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.8846153846153846,
+                "ci_upper": 0.9032258064516129,
+                "estimate": 0.890625
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.1935483870967742,
+                "ci_upper": 0.23076923076923078,
+                "estimate": 0.21875
+              },
+              "precision": {
+                "ci_lower": 0.4,
+                "ci_upper": 0.52,
+                "estimate": 0.44
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.7692307692307693,
+                "ci_upper": 0.8064516129032258,
+                "estimate": 0.78125
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "counts": {
+              "fn": 0,
+              "fp": 5,
+              "tn": 69,
+              "tp": 1
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.9459459459459459,
+                "ci_upper": 0.9931506849315068,
+                "estimate": 0.9662162162162162
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.0136986301369863,
+                "ci_upper": 0.12,
+                "estimate": 0.06756756756756757
+              },
+              "precision": {
+                "ci_lower": 0.0,
+                "ci_upper": 0.6666666666666666,
+                "estimate": 0.16666666666666666
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.88,
+                "ci_upper": 0.9863013698630136,
+                "estimate": 0.9324324324324325
+              }
+            },
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "counts": {
+              "fn": 0,
+              "fp": 10,
+              "tn": 58,
+              "tp": 7
+            },
+            "metrics": {
+              "balanced_accuracy": {
+                "ci_lower": 0.904109589041096,
+                "ci_upper": 0.9596774193548387,
+                "estimate": 0.9264705882352942
+              },
+              "false_alarm_rate": {
+                "ci_lower": 0.08064516129032258,
+                "ci_upper": 0.1917808219178082,
+                "estimate": 0.14705882352941177
+              },
+              "precision": {
+                "ci_lower": 0.06666666666666667,
+                "ci_upper": 0.7368421052631579,
+                "estimate": 0.4117647058823529
+              },
+              "sensitivity_detection_rate": {
+                "ci_lower": 1.0,
+                "ci_upper": 1.0,
+                "estimate": 1.0
+              },
+              "specificity": {
+                "ci_lower": 0.8082191780821918,
+                "ci_upper": 0.9193548387096774,
+                "estimate": 0.8529411764705882
+              }
+            },
+            "n_seed_clusters": 5
+          }
+        },
+        "pooled_counts": {
+          "fn": 0,
+          "fp": 29,
+          "tn": 177,
+          "tp": 19
+        },
+        "pooled_metrics": {
+          "balanced_accuracy": 0.9296116504854368,
+          "false_alarm_rate": 0.1407766990291262,
+          "precision": 0.3958333333333333,
+          "sensitivity_detection_rate": 1.0,
+          "specificity": 0.8592233009708737
+        },
+        "rows": 225
+      }
+    },
+    "thresholds": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25
+    ]
+  },
+  "validation_summary": {
+    "claim_analysis_ready": true,
+    "cross_tier_identity_pass": true,
+    "design_adequacy_pass": true,
+    "independent_clean_floor_pass": true,
+    "numeric_content_pass": {
+      "high_reference": true,
+      "low_full": true,
+      "mid_reference": true
+    },
+    "structural_floor_pass": {
+      "high_reference": true,
+      "low_full": true,
+      "mid_reference": true
+    },
+    "threshold_agreement_pass": true
+  },
+  "within_block_spearman": {
+    "available": true,
+    "blocks": 225,
+    "defined_correlations": 2025,
+    "design": "draw-averaged values within dataset-model-seed-scenario blocks correlated across severity",
+    "metrics": {
+      "instab_cosine_paired_vs_dconf": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.9426666666666664,
+          "ci_upper": 0.9706666666666667,
+          "estimate": 0.9568888888888889,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.9373333333333334,
+            "ci_upper": 0.9666666666666665,
+            "estimate": 0.952,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9506666666666665,
+            "ci_upper": 0.9813333333333333,
+            "estimate": 0.9666666666666666,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.916,
+            "ci_upper": 0.9879999999999999,
+            "estimate": 0.952,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_cosine_paired_vs_ece": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.7391111111111112,
+          "ci_upper": 0.7844444444444444,
+          "estimate": 0.7617777777777778,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.8519999999999998,
+            "ci_upper": 0.9239999999999998,
+            "estimate": 0.8866666666666667,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.5506666666666666,
+            "ci_upper": 0.6333333333333333,
+            "estimate": 0.592,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.768,
+            "ci_upper": 0.8493333333333333,
+            "estimate": 0.8066666666666666,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_cosine_paired_vs_flip": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.944551281348634,
+          "ci_upper": 0.9717749283064968,
+          "estimate": 0.9584415949731634,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.9433247849194905,
+            "ci_upper": 0.9673247849194905,
+            "estimate": 0.9553247849194906,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9506666666666665,
+            "ci_upper": 0.9813333333333333,
+            "estimate": 0.9666666666666666,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.9173333333333332,
+            "ci_upper": 0.9893333333333333,
+            "estimate": 0.9533333333333331,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top3_paired_vs_dconf": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.9433651966265726,
+          "ci_upper": 0.9582771764468095,
+          "estimate": 0.9515441576704315,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.917930946468144,
+            "ci_upper": 0.9523205107125691,
+            "estimate": 0.9394721066181585,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9591169581028092,
+            "ci_upper": 0.9693333333333332,
+            "estimate": 0.9635584790514045,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.939601887341732,
+            "ci_upper": 0.9632208715111499,
+            "estimate": 0.951601887341732,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top3_paired_vs_ece": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.7458125636296943,
+          "ci_upper": 0.7862977065552335,
+          "estimate": 0.7661300027972779,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.8359570358570814,
+            "ci_upper": 0.9169352206750654,
+            "estimate": 0.8787188454445415,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.5741212323097307,
+            "ci_upper": 0.6466666666666666,
+            "estimate": 0.6087878989763974,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.7842771024222415,
+            "ci_upper": 0.8374894255195487,
+            "estimate": 0.810883263970895,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top3_paired_vs_flip": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.9463377565265629,
+          "ci_upper": 0.9591056314307378,
+          "estimate": 0.9530968637547064,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.926589064720968,
+            "ci_upper": 0.9553076880918049,
+            "estimate": 0.9427968915376492,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9591169581028092,
+            "ci_upper": 0.9693333333333332,
+            "estimate": 0.9635584790514045,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.9422514571807132,
+            "ci_upper": 0.9632208715111499,
+            "estimate": 0.9529352206750653,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top5_paired_vs_dconf": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.9536652419310262,
+          "ci_upper": 0.9689957257930786,
+          "estimate": 0.9624415949731636,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.9373333333333331,
+            "ci_upper": 0.976,
+            "estimate": 0.9613333333333334,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9666666666666666,
+            "ci_upper": 0.9756623924597452,
+            "estimate": 0.970329059126412,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.9463290591264117,
+            "ci_upper": 0.9646581182528238,
+            "estimate": 0.9556623924597452,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top5_paired_vs_ece": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.7433287519719134,
+          "ci_upper": 0.7874552160271732,
+          "estimate": 0.7650389860342696,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.8559999999999999,
+            "ci_upper": 0.9386666666666666,
+            "estimate": 0.8973333333333333,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.5479999999999999,
+            "ci_upper": 0.6396970302625253,
+            "estimate": 0.591454565643064,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.785991451586157,
+            "ci_upper": 0.8276623924597452,
+            "estimate": 0.8063290591264117,
+            "n_seed_clusters": 5
+          }
+        }
+      },
+      "instab_top5_paired_vs_flip": {
+        "available": true,
+        "bootstrap_reps": 10000,
+        "ci_level": 0.95,
+        "cluster_unit": "seed within dataset",
+        "dataset_strata_fixed": true,
+        "estimand": "unweighted dataset macro mean",
+        "macro": {
+          "ci_lower": 0.9566638171953855,
+          "ci_upper": 0.9699914515861572,
+          "estimate": 0.9639943010574381,
+          "n_datasets": 3,
+          "n_seed_clusters": 15
+        },
+        "per_dataset": {
+          "adult": {
+            "ci_lower": 0.9449957257930783,
+            "ci_upper": 0.9799829031723144,
+            "estimate": 0.9646581182528238,
+            "n_seed_clusters": 5
+          },
+          "bank-marketing": {
+            "ci_lower": 0.9666666666666666,
+            "ci_upper": 0.9756623924597452,
+            "estimate": 0.970329059126412,
+            "n_seed_clusters": 5
+          },
+          "electricity": {
+            "ci_lower": 0.9493333333333333,
+            "ci_upper": 0.9646581182528238,
+            "estimate": 0.9569957257930785,
+            "n_seed_clusters": 5
+          }
+        }
+      }
+    },
+    "undefined_correlations": 0
+  }
+}

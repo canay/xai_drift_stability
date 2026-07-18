@@ -1,0 +1,11 @@
+{
+  "caveat": "External temporal validation for explanation-drift behavior; not a transportation-demand paper.",
+  "dataset": "UCI Bike Sharing daily",
+  "instability_transition_count": 10,
+  "model_seed_policy": "fixed across rolling windows",
+  "n_rows": 66,
+  "n_windows": 11,
+  "permutation_seed_policy": "fixed across windows",
+  "run_completed_utc": "2026-07-17T07:15:41Z",
+  "zero_vector_policy": "nonnegative PI: both-zero=0; one-zero=1; first window=N/A; absolute-PI reported as sensitivity"
+}

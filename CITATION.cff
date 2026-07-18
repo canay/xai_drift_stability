@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or its archived outputs, please cite the associated article."
+title: "Replication package for Paired-Sampling Explanation-Drift Estimation Under Tabular Data Shift"
+type: software
+authors:
+  - family-names: Canay
+    given-names: Özkan
+    affiliation: Sakarya University
+repository-code: "https://github.com/canay/xai_drift_stability"
+license: MIT
+version: 0.1.0
+date-released: 2026-07-18
+keywords:
+  - explainable artificial intelligence
+  - explanation drift
+  - model monitoring
+  - common random numbers
+  - tabular data shift
+

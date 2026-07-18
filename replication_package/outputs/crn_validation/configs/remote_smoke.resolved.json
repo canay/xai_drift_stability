@@ -1,0 +1,30 @@
+{
+  "config_file_sha256": "3f0b7400a8b03f479e035d5c23f15f731d02ef1d619e6113fe81b3b695794a22",
+  "config_hash": "04f1d667ae46fb7c7ab43d5d4bedd8b24169feea68d92e2f8af4cf8157d1d03c",
+  "datasets": [
+    "adult"
+  ],
+  "draws": 1,
+  "independent_branch": true,
+  "label": "remote_smoke",
+  "max_sec": 1800,
+  "models": [
+    "logreg"
+  ],
+  "n_instances": 3,
+  "n_samples": 50,
+  "output_schema": "crn-revalidation-v2",
+  "run_dir": ".",
+  "run_id": "2026-07-17_codex_vps_crn_reference_revalidation_r01",
+  "scenarios": [
+    "mean_shift"
+  ],
+  "seed_policy_version": "v2-raw-lime-cell-keyed",
+  "seeds": [
+    0
+  ],
+  "severity_indices": [
+    1
+  ],
+  "source_hash": "87ef2c7a1290e0903953df61b73ac366320a16ccdd5cbc956e95457c77240586"
+}

@@ -1,0 +1,16 @@
+{
+  "runner": "src/code/run_second_temporal_stream.py",
+  "dataset": "UCI Bike Sharing Dataset",
+  "seed": 42,
+  "models": ["logistic", "random_forest", "hgb"],
+  "modes": ["rolling", "static_reference"],
+  "windows": 11,
+  "expected_rows": 66,
+  "expected_transitions_per_series": 10,
+  "zero_vector_policy": {
+    "both_zero": 0.0,
+    "one_zero": 1.0,
+    "no_previous": null
+  },
+  "sensitivity": "absolute permutation importance"
+}

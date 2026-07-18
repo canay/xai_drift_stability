@@ -1,0 +1,111 @@
+{
+  "analysis_version": "main-grid-analysis-v2",
+  "bootstrap_design": {
+    "datasets": "fixed strata",
+    "method_estimands": "reported separately; no universal rank",
+    "models": "fixed contexts",
+    "replicate_unit": "seed cluster"
+  },
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260717,
+  "counts": {
+    "bad_model_shared_shift_hash_groups": 0,
+    "bad_model_shared_shift_seed_groups": 0,
+    "conditions": 26,
+    "duplicate_scientific_keys": 0,
+    "methods": 3,
+    "models": 3,
+    "rows": 3510,
+    "rows_per_dataset": {
+      "adult": 1170,
+      "bank-marketing": 1170,
+      "electricity": 1170
+    },
+    "seeds": 5
+  },
+  "errors": [],
+  "generated_at_utc": "2026-07-17T07:21:37.899302+00:00",
+  "input_manifest": [
+    {
+      "bytes": 1011759,
+      "path": "source_reference/results/raw_all.csv (not redistributed)",
+      "sha256": "bfaae8e6552dd3471a3573ca88a158d38292308239616eb81772717714266f73"
+    },
+    {
+      "bytes": 1021509,
+      "path": "outputs/main_grid/raw_outputs/main_grid/raw_adult.csv",
+      "sha256": "3f25cdf64f4a63100139aede334d16134d8a6b020db1ab8b68cd00016f3ce194"
+    },
+    {
+      "bytes": 1029119,
+      "path": "outputs/main_grid/raw_outputs/main_grid/raw_bank-marketing.csv",
+      "sha256": "c9b850bdaf1a65d7f556ff1c6678392f100c524a1132541eeb10bb36f959bc9c"
+    },
+    {
+      "bytes": 1026045,
+      "path": "outputs/main_grid/raw_outputs/main_grid/raw_electricity.csv",
+      "sha256": "8c2153965225446ab5f62b0577eda65f661ca31e52e8e057a8374539baa22567"
+    }
+  ],
+  "legacy_key_alignment": true,
+  "nonfinite_counts": {
+    "acc": 0,
+    "cosine_all": 0,
+    "cosine_stable_local_only": 0,
+    "dconf": 0,
+    "ece": 0,
+    "expl_time_s": 0,
+    "flip": 0,
+    "mean_conf": 0,
+    "sign_all": 0,
+    "sign_stable_local_only": 0,
+    "spearman_all": 0,
+    "spearman_stable_local_only": 0,
+    "stable_frac": 0,
+    "top3_all": 0,
+    "top3_stable_local_only": 0,
+    "top5_all": 0,
+    "top5_stable_local_only": 0
+  },
+  "observed_sets": {
+    "datasets": [
+      "adult",
+      "bank-marketing",
+      "electricity"
+    ],
+    "methods": [
+      "lime",
+      "pi",
+      "shap"
+    ],
+    "models": [
+      "hgb",
+      "logreg",
+      "rf"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "passed": true,
+  "provenance_values": {
+    "host": [
+      "canayxps15"
+    ],
+    "run_id": [
+      "2026-07-17_codex_canayxps15_full_remediation_r01"
+    ],
+    "schema_version": [
+      "main-grid-v2-raw-lime-crn"
+    ],
+    "seed_policy_version": [
+      "v2-raw-lime-cell-keyed"
+    ]
+  },
+  "structural_gpi_stable_na_cells": 5850,
+  "warnings": []
+}

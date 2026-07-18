@@ -1,0 +1,13 @@
+{
+  "runner": "src/code/run_temporal.py",
+  "seeds": [0, 1, 2, 3, 4],
+  "windows": 10,
+  "n_explain": 100,
+  "n_lime_instances": 30,
+  "n_lime_samples": 500,
+  "methods": ["shap", "lime", "pi"],
+  "expected_rows": 450,
+  "raw_categorical_day_preserved": true,
+  "reference_window": 1
+}
+

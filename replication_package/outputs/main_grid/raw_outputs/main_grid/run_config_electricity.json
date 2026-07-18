@@ -1,0 +1,133 @@
+{
+  "common_hash": "3d11a8551542c6f574fb638af8cf0b243bce7eea1281c74a9d0bdb836b0a9111",
+  "conditions": [
+    {
+      "scenario": "baseline",
+      "severity": 0.0
+    },
+    {
+      "scenario": "mean_shift",
+      "severity": 0.25
+    },
+    {
+      "scenario": "mean_shift",
+      "severity": 0.5
+    },
+    {
+      "scenario": "mean_shift",
+      "severity": 1.0
+    },
+    {
+      "scenario": "mean_shift",
+      "severity": 1.5
+    },
+    {
+      "scenario": "mean_shift",
+      "severity": 2.0
+    },
+    {
+      "scenario": "noise",
+      "severity": 0.1
+    },
+    {
+      "scenario": "noise",
+      "severity": 0.25
+    },
+    {
+      "scenario": "noise",
+      "severity": 0.5
+    },
+    {
+      "scenario": "noise",
+      "severity": 0.75
+    },
+    {
+      "scenario": "noise",
+      "severity": 1.0
+    },
+    {
+      "scenario": "missing",
+      "severity": 0.1
+    },
+    {
+      "scenario": "missing",
+      "severity": 0.2
+    },
+    {
+      "scenario": "missing",
+      "severity": 0.3
+    },
+    {
+      "scenario": "missing",
+      "severity": 0.4
+    },
+    {
+      "scenario": "missing",
+      "severity": 0.5
+    },
+    {
+      "scenario": "quantize",
+      "severity": 32.0
+    },
+    {
+      "scenario": "quantize",
+      "severity": 16.0
+    },
+    {
+      "scenario": "quantize",
+      "severity": 8.0
+    },
+    {
+      "scenario": "quantize",
+      "severity": 4.0
+    },
+    {
+      "scenario": "quantize",
+      "severity": 2.0
+    },
+    {
+      "scenario": "gradual",
+      "severity": 0.2
+    },
+    {
+      "scenario": "gradual",
+      "severity": 0.4
+    },
+    {
+      "scenario": "gradual",
+      "severity": 0.6
+    },
+    {
+      "scenario": "gradual",
+      "severity": 0.8
+    },
+    {
+      "scenario": "gradual",
+      "severity": 1.0
+    }
+  ],
+  "config_hash": "5855bde5428f6c78b33e46113ac4d3cf098a159e1086425690f402d15e2fcd14",
+  "dataset": "electricity",
+  "host": "canayxps15",
+  "lime_samples": 500,
+  "methods": [
+    "shap",
+    "lime",
+    "pi"
+  ],
+  "n_lime": 30,
+  "n_pi_eval": 500,
+  "n_ref": 200,
+  "pi_repeats": 3,
+  "run_id": "2026-07-17_codex_canayxps15_full_remediation_r01",
+  "schema_version": "main-grid-v2-raw-lime-crn",
+  "seed_policy_version": "v2-raw-lime-cell-keyed",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_hash": "6e6bd31ec2e42fd048c877cf75c14a87f2c5eb5772e42f699ca48eeaf04112c2"
+}

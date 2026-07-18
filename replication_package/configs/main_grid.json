@@ -1,0 +1,20 @@
+{
+  "runner": "src/code/run_experiment.py",
+  "datasets": ["adult", "bank-marketing", "electricity"],
+  "seeds": [0, 1, 2, 3, 4],
+  "conditions": "baseline plus all five scenarios at all five severity levels",
+  "n_ref": 200,
+  "n_lime": 30,
+  "lime_samples": 500,
+  "n_pi_eval": 500,
+  "pi_repeats": 3,
+  "expected_rows_per_dataset": 1170,
+  "expected_total_rows": 3510,
+  "thread_policy": {
+    "OMP_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "NUMEXPR_NUM_THREADS": 1
+  }
+}
+

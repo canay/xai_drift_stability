@@ -1,0 +1,28 @@
+{
+  "cache_schema": "temporal-v2-raw-space-lime",
+  "config_hash": "2f0551386c3480bb7676746d2387490c7623e474170c111e7c0fa1238c421a97",
+  "dataset": "electricity",
+  "host": "canayxps15",
+  "lime_sampling_space": "raw_mixed_feature",
+  "methods": [
+    "shap",
+    "lime",
+    "pi"
+  ],
+  "n_explain": 100,
+  "n_lime_instances": 30,
+  "n_lime_samples": 500,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.12",
+  "seed_policy_version": "v2-raw-lime-cell-keyed",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_hash": "401dcbb27ea88a966cfbca7cd8063507f41f826f89d3b05dacd3c216b5c5e53a",
+  "temporal_reference_window": 1,
+  "windows": 10
+}
