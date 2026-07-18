@@ -9,6 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "provenance" / "SHA256SUMS"
 
 
+def canonical_digest(path: Path) -> str:
+    data = path.read_bytes()
+    if path.suffix.lower() != ".png":
+        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
 def main() -> int:
     files = sorted(
         path for path in ROOT.rglob("*")
@@ -19,7 +26,7 @@ def main() -> int:
     )
     lines = []
     for path in files:
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        digest = canonical_digest(path)
         relative = path.relative_to(ROOT).as_posix()
         lines.append(f"{digest}  {relative}")
     OUTPUT.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
@@ -29,4 +36,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

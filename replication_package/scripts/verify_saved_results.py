@@ -10,6 +10,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def canonical_digest(path: Path) -> str:
+    data = path.read_bytes()
+    if path.suffix.lower() != ".png":
+        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
 def load_json(relative: str):
     return json.loads((ROOT / relative).read_text(encoding="utf-8"))
 
@@ -28,7 +35,7 @@ def verify_checksums() -> None:
             continue
         expected, relative = line.split("  ", 1)
         path = ROOT / relative
-        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = canonical_digest(path)
         if actual != expected:
             raise AssertionError(f"checksum mismatch: {relative}")
 
