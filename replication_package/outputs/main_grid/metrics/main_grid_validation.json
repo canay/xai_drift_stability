@@ -94,10 +94,10 @@
   "passed": true,
   "provenance_values": {
     "host": [
-      "canayxps15"
+      "Windows workstation C (pseudonymized)"
     ],
     "run_id": [
-      "2026-07-17_codex_canayxps15_full_remediation_r01"
+      "2026-07-17_codex_Windows workstation C (pseudonymized)_full_remediation_r01"
     ],
     "schema_version": [
       "main-grid-v2-raw-lime-crn"

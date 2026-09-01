@@ -108,7 +108,7 @@
   ],
   "config_hash": "720d619ecff379d265d117fc247e28a6d8802e13e9a07dfad6c64e218e79818a",
   "dataset": "adult",
-  "host": "canayxps15",
+  "host": "Windows workstation C (pseudonymized)",
   "lime_samples": 500,
   "methods": [
     "shap",
@@ -119,7 +119,7 @@
   "n_pi_eval": 500,
   "n_ref": 200,
   "pi_repeats": 3,
-  "run_id": "2026-07-17_codex_canayxps15_full_remediation_r01",
+  "run_id": "2026-07-17_codex_Windows workstation C (pseudonymized)_full_remediation_r01",
   "schema_version": "main-grid-v2-raw-lime-crn",
   "seed_policy_version": "v2-raw-lime-cell-keyed",
   "seeds": [

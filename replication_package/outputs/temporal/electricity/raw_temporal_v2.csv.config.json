@@ -2,7 +2,7 @@
   "cache_schema": "temporal-v2-raw-space-lime",
   "config_hash": "2f0551386c3480bb7676746d2387490c7623e474170c111e7c0fa1238c421a97",
   "dataset": "electricity",
-  "host": "canayxps15",
+  "host": "Windows workstation C (pseudonymized)",
   "lime_sampling_space": "raw_mixed_feature",
   "methods": [
     "shap",

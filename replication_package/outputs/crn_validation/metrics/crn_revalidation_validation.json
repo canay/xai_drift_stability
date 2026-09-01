@@ -1174,7 +1174,7 @@
         },
         "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
         "hosts": [
-          "instance-20260404-2117"
+          "Oracle ARM VPS (pseudonymized)"
         ],
         "missing_columns": [],
         "pass": true,
@@ -1370,7 +1370,7 @@
         },
         "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
         "hosts": [
-          "instance-20260404-2117"
+          "Oracle ARM VPS (pseudonymized)"
         ],
         "missing_columns": [],
         "pass": true,
@@ -1566,7 +1566,7 @@
         },
         "host_note": "Multiple hosts are reported but are not a validity failure; CRN partitions may be distributed and timing is outside this analysis.",
         "hosts": [
-          "instance-20260404-2117"
+          "Oracle ARM VPS (pseudonymized)"
         ],
         "missing_columns": [],
         "pass": true,
