@@ -1,0 +1,36 @@
+{
+  "schema": "f02-gate-b-run-manifest-v1",
+  "date_time": "2026-08-26 16:43 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "run_id": "2026-08-26_codex_local_gate_b_strong_baselines",
+  "host": "Windows workstation B (pseudonymized)",
+  "location": "local",
+  "status": "verified",
+  "role": "validation",
+  "decision": "PASS",
+  "coverage": {
+    "datasets": 2,
+    "models": 2,
+    "dataset_seed_clusters": 10,
+    "scientific_cells": 240,
+    "raw_metric_rows": 7440,
+    "atomic_units": "10/10",
+    "independent_validation": "20/20"
+  },
+  "duration_seconds": 998.6717921001837,
+  "primary_hashes": {
+    "config": "4D136B934216BC3C04D6559050829F14688EC59CF17AA15DDC64F0D92F1C1E2D",
+    "criteria_lock": "6522BD00F8C4CDA109F3FCF26E3E618D7F5A66B84C4889839D34FF29EB28F24D",
+    "processed_rows": "3D797EFC9D15FE65084BDCA19D88C13C24ECE7810905DCCFA9111F1D67785905",
+    "decision": "FA44D05F43D4897E49C0AD7E1356BB5BDC37C544ED08C7093D32A40A4B97AE07",
+    "validation": "8D3B91D3FBEA010019AF382B4FCDE8EDB0D51939355E54976B68B5903AD40F0A",
+    "unit_aggregate": "6CCD80F335FC573960B73D453B64930E2B66A19EDB2DC4E76601512198280A5E"
+  },
+  "external_boundaries": {
+    "slime": "official stabilized-lime 0.1.0, BSD-3-Clause, commit 1bd42253693dd4cc50723579e0b3070e51869aec; installed files hash-match commit",
+    "glime": "clean-room implementation from NeurIPS paper equations; official repository was inspected but not copied because it declares no license and its pinned tabular path calls a missing helper"
+  },
+  "claim_boundary": "Gate B supports matched-budget generalization to two stochastic explainer families and strong stabilized baselines; detector utility remains unauthorized until Gate C."
+}

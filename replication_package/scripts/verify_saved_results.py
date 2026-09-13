@@ -12,8 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def canonical_digest(path: Path) -> str:
     data = path.read_bytes()
-    if path.suffix.lower() != ".png":
-        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     return hashlib.sha256(data).hexdigest()
 
 
@@ -24,6 +22,53 @@ def load_json(relative: str):
 def csv_rows(relative: str) -> int:
     with (ROOT / relative).open(newline="", encoding="utf-8") as handle:
         return sum(1 for _ in csv.reader(handle)) - 1
+
+
+def csv_records(relative: str) -> list[dict[str, str]]:
+    with (ROOT / relative).open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def verify_secondary_audits() -> None:
+    base = "outputs/secondary_audits/"
+    if csv_rows(base + "baseline_extended_by_seed.csv") != 45:
+        raise AssertionError("baseline extended evidence must contain 45 seed rows")
+    summary = csv_records(base + "baseline_extended_summary.csv")
+    if len(summary) != 9:
+        raise AssertionError("baseline extended summary must contain nine rows")
+
+    expected = {
+        ("adult", "logreg"): (0.763, 0.905, 0.763),
+        ("adult", "rf"): (0.759, 0.914, 0.796),
+        ("adult", "hgb"): (0.796, 0.928, 0.827),
+        ("bank-marketing", "logreg"): (0.660, 0.906, 0.547),
+        ("bank-marketing", "rf"): (0.612, 0.927, 0.610),
+        ("bank-marketing", "hgb"): (0.733, 0.935, 0.623),
+        ("electricity", "logreg"): (0.742, 0.828, 0.797),
+        ("electricity", "rf"): (0.835, 0.928, 0.908),
+        ("electricity", "hgb"): (0.900, 0.967, 0.957),
+    }
+    observed = {}
+    for row in summary:
+        key = (row["dataset"], row["model"])
+        observed[key] = tuple(round(float(row[field]), 3) for field in (
+            "balanced_accuracy_mean", "auroc_mean", "average_precision_mean"
+        ))
+    if observed != expected:
+        raise AssertionError(
+            "baseline BalAcc/AUROC/AP values do not match Table 3 "
+            "(baseline performance)"
+        )
+
+    if csv_rows(base + "standard_drift_monitor_cells.csv") != 1125:
+        raise AssertionError("KS comparator evidence must contain 1125 cells")
+    if csv_rows(base + "explanation_vs_standard_monitor_summary.csv") != 6:
+        raise AssertionError("KS ordering summary must contain six rows")
+    if csv_rows(base + "lime_budget_raw_corrected.csv") != 810:
+        raise AssertionError("corrected LIME budget evidence must contain 810 rows")
+    correction = load_json(base + "lime_budget_correction_summary.json")
+    if correction.get("corrected_mismatched_n_explained") != 0:
+        raise AssertionError("corrected LIME budget evidence retains row-count drift")
 
 
 def verify_checksums() -> None:
@@ -41,6 +86,8 @@ def verify_checksums() -> None:
 
 
 def main() -> int:
+    if csv_rows("results/raw_all.csv") != 3510:
+        raise AssertionError("legacy grid snapshot must contain 3510 rows")
     main_validation = load_json("outputs/main_grid/metrics/main_grid_validation.json")
     if not main_validation.get("passed"):
         raise AssertionError("main-grid validation is not claim-analysis ready")
@@ -59,10 +106,11 @@ def main() -> int:
         if observed != count:
             raise AssertionError(f"{tier}: expected {count} rows, found {observed}")
 
+    verify_secondary_audits()
     verify_checksums()
     print(
-        "PASS: saved main-grid and paired-estimator evidence is complete and "
-        "internally consistent"
+        "PASS: saved main-grid, paired-estimator, baseline, KS, and budget "
+        "evidence is complete and internally consistent"
     )
     return 0
 

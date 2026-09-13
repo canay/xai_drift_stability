@@ -1,0 +1,11 @@
+{
+  "at": "2026-08-26T15:57:24+03:00",
+  "completed_this_invocation": 240,
+  "completed_total": 240,
+  "exit_code": 0,
+  "schema_version": 1,
+  "skipped_existing": 0,
+  "status": "COMPLETED",
+  "units_expected": 240,
+  "wall_seconds": 34.61334869987331
+}

@@ -33,6 +33,7 @@ EXPECTED_METHODS = ("lime", "pi", "shap")
 EXPECTED_SEEDS = (0, 1, 2, 3, 4)
 EXPECTED_SCHEMA = "main-grid-v2-raw-lime-crn"
 EXPECTED_SEED_POLICY = "v2-raw-lime-cell-keyed"
+EXPECTED_RUN_ID = "2026-07-17_codex_canayxps15_full_remediation_r01"
 EXPECTED_CONDITIONS = {
     ("baseline", 0.0),
     *(("gradual", x) for x in (0.2, 0.4, 0.6, 0.8, 1.0)),
@@ -40,6 +41,14 @@ EXPECTED_CONDITIONS = {
     *(("missing", x) for x in (0.1, 0.2, 0.3, 0.4, 0.5)),
     *(("noise", x) for x in (0.1, 0.25, 0.5, 0.75, 1.0)),
     *(("quantize", x) for x in (2.0, 4.0, 8.0, 16.0, 32.0)),
+}
+SEVERITY_ORDER = {
+    "gradual": {value: index for index, value in enumerate((0.2, 0.4, 0.6, 0.8, 1.0), 1)},
+    "mean_shift": {value: index for index, value in enumerate((0.25, 0.5, 1.0, 1.5, 2.0), 1)},
+    "missing": {value: index for index, value in enumerate((0.1, 0.2, 0.3, 0.4, 0.5), 1)},
+    "noise": {value: index for index, value in enumerate((0.1, 0.25, 0.5, 0.75, 1.0), 1)},
+    # Fewer bins represent stronger quantization.
+    "quantize": {value: index for index, value in enumerate((32.0, 16.0, 8.0, 4.0, 2.0), 1)},
 }
 KEY = ["dataset", "model", "scenario", "severity", "seed", "method"]
 PREDICTIVE_METRICS = [
@@ -239,7 +248,9 @@ def validate_grid(
         errors.append("the dataset-model-method-seed-condition Cartesian grid is incomplete")
 
     exact_provenance = {
-        "run_id": [run_dir.name],
+        # In the public package the run is stored under outputs/main_grid,
+        # while every archived row retains the original execution run_id.
+        "run_id": [EXPECTED_RUN_ID],
         "schema_version": [EXPECTED_SCHEMA],
         "seed_policy_version": [EXPECTED_SEED_POLICY],
     }
@@ -754,6 +765,10 @@ def within_block_correlations(
 def monotonicity(frame: pd.DataFrame) -> pd.DataFrame:
     drift = add_baseline_deltas(frame)
     drift = drift[~drift["scenario"].eq("baseline")].copy()
+    drift["severity_index"] = [
+        SEVERITY_ORDER[scenario][float(severity)]
+        for scenario, severity in zip(drift["scenario"], drift["severity"])
+    ]
     endpoints = [
         ("explanation", "cosine_instability", True),
         ("explanation", "top5_instability", True),
@@ -772,8 +787,12 @@ def monotonicity(frame: pd.DataFrame) -> pd.DataFrame:
             data["method"] = "not_applicable"
         fields = ["dataset", "model", "scenario", "seed", "method"]
         for key, group in data.groupby(fields, observed=True, sort=True):
-            ordered = group.sort_values("severity", kind="stable")
-            severity = ordered["severity"].to_numpy(float)
+            # All scenarios follow severity_index in the experimental order.
+            # Raw severity increases for four scenarios but decreases for
+            # quantization (32 -> 2 bins), so sorting the parameter itself
+            # reverses the quantization trajectory.
+            ordered = group.sort_values("severity_index", kind="stable")
+            severity = ordered["severity_index"].to_numpy(float)
             values = ordered[endpoint].to_numpy(float)
             differences = np.diff(values)
             rows.append({

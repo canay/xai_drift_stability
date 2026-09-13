@@ -1,0 +1,57 @@
+{
+  "schema": "f02-gate-b-criteria-v1",
+  "locked_at": "2026-08-26T16:31:00+03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "evidence_rule": "Only phase=full may decide Gate B; smoke is feasibility evidence only.",
+  "primary_metric": "normalized vector-contrast squared error against the method-population reference",
+  "normalization": "mean per-feature squared magnitude of clean and shifted population explanations plus 1e-12",
+  "cluster_unit": "seed within dataset; datasets receive equal macro weight",
+  "criteria": [
+    {
+      "criterion_id": "B1_LIME_PAIRING",
+      "comparison": "paired_lime / independent_lime on non-null cells",
+      "point_ratio_max": 0.8,
+      "bootstrap_upper_strictly_below": 1.0,
+      "required": true
+    },
+    {
+      "criterion_id": "B2_KERNELSHAP_PAIRING",
+      "comparison": "paired_kernelshap / independent_kernelshap on non-null cells",
+      "point_ratio_max": 0.8,
+      "bootstrap_upper_strictly_below": 1.0,
+      "required": true
+    },
+    {
+      "criterion_id": "B3_HETEROGENEITY",
+      "comparison": "paired/independent point ratio below one within dataset-model strata for both explainer families",
+      "minimum_improving_stratum_fraction": 0.75,
+      "required": true
+    },
+    {
+      "criterion_id": "B4_GLIME_NONINFERIORITY",
+      "comparison": "paired_lime / independent_glime_binomial at the same per-side perturbation budget",
+      "bootstrap_upper_max": 1.1,
+      "required": true
+    },
+    {
+      "criterion_id": "B5_SLIME_COST_NONINFERIORITY",
+      "comparison": "paired_lime at S-LIME total-query-matched budget / independent S-LIME natural stopping",
+      "bootstrap_upper_max": 1.1,
+      "required": true
+    },
+    {
+      "criterion_id": "B6_NO_SHIFT_FAR",
+      "comparison": "paired no-shift FAR no greater than independent FAR in both LIME and KernelSHAP",
+      "far_threshold_relative_to_reference_explanation": 0.1,
+      "required": true
+    },
+    {
+      "criterion_id": "B7_SEMANTIC_AND_PROVENANCE",
+      "comparison": "all locked semantic, marginal-law, exact-reference, coverage, hash, and finite-value checks pass",
+      "required": true
+    }
+  ],
+  "gate_rule": "PASS only if B1--B7 all pass; otherwise KILL/PIVOT and Gate C stays closed."
+}

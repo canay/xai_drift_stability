@@ -1,0 +1,2293 @@
+{
+  "config_sha256": "18C56D6A5EC4E0D3762C89BF49EA0A007D1FA41F9973706221213ACB4AEE588D",
+  "criteria": [
+    {
+      "criterion_id": "C1_HELDOUT_FAR_REDUCTION",
+      "observed": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260827,
+        "ci_lower": 0.0,
+        "ci_upper": 0.024999999999999994,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.04999999999999999,
+            "other": 0.1,
+            "paired": 0.15,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.05,
+            "paired": 0.05,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.0,
+            "paired": 0.0,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.1,
+            "paired": 0.1,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.0,
+            "paired": 0.0,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.05,
+            "paired": 0.05,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.2,
+            "paired": 0.2,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.15,
+            "paired": 0.15,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.2,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.05,
+            "other": 0.05,
+            "paired": 0.1,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_independent",
+        "metric": "far",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.009999999999999998
+      },
+      "pass": false
+    },
+    {
+      "criterion_id": "C2_POWER_NONINFERIORITY",
+      "observed": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260828,
+        "ci_lower": 0.0016666666666666663,
+        "ci_upper": 0.011666666666666676,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.01666666666666672,
+            "other": 0.5,
+            "paired": 0.5166666666666667,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.016666666666666663,
+            "other": 0.48333333333333334,
+            "paired": 0.5,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.48333333333333334,
+            "paired": 0.48333333333333334,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.4666666666666667,
+            "paired": 0.4666666666666667,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.48333333333333334,
+            "paired": 0.48333333333333334,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.2,
+            "paired": 0.2,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.016666666666666663,
+            "other": 0.31666666666666665,
+            "paired": 0.3333333333333333,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.16666666666666666,
+            "paired": 0.16666666666666666,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.2,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.016666666666666663,
+            "other": 0.31666666666666665,
+            "paired": 0.3333333333333333,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_independent",
+        "metric": "power",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.006666666666666671
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "C3_AUROC_NONINFERIORITY",
+      "observed": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260829,
+        "ci_lower": -0.007250000000000012,
+        "ci_upper": 0.003166666666666673,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": -1.1102230246251565e-16,
+            "other": 0.7608333333333334,
+            "paired": 0.7608333333333333,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.0016666666666665941,
+            "other": 0.8058333333333333,
+            "paired": 0.8041666666666667,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.010833333333333361,
+            "other": 0.7833333333333333,
+            "paired": 0.7941666666666667,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.0033333333333331883,
+            "other": 0.7791666666666667,
+            "paired": 0.7758333333333335,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.02416666666666656,
+            "other": 0.7083333333333333,
+            "paired": 0.6841666666666667,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0025000000000001688,
+            "other": 0.7316666666666667,
+            "paired": 0.7291666666666665,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.006666666666666599,
+            "other": 0.615,
+            "paired": 0.6216666666666666,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.004166666666666652,
+            "other": 0.5375,
+            "paired": 0.5333333333333333,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0008333333333334636,
+            "other": 0.6125,
+            "paired": 0.6116666666666666,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0024999999999999467,
+            "other": 0.585,
+            "paired": 0.5874999999999999,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_independent",
+        "metric": "auroc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.0016666666666666828
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "C4_AUPRC_NONINFERIORITY",
+      "observed": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260830,
+        "ci_lower": -0.0029931484705223756,
+        "ci_upper": 0.0004987872495937906,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": -0.00023067703946633156,
+            "other": 0.9174627957797343,
+            "paired": 0.917232118740268,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": -2.7119345574866394e-05,
+            "other": 0.9327116884538371,
+            "paired": 0.9326845691082623,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.004066227859029881,
+            "other": 0.9291806651564598,
+            "paired": 0.9332468930154897,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.0007925193007888298,
+            "other": 0.9185885471586014,
+            "paired": 0.9177960278578126,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.005875439061311827,
+            "other": 0.9024716374456478,
+            "paired": 0.896596198384336,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0022191540329706827,
+            "other": 0.8636454791081222,
+            "paired": 0.8614263250751515,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.00016717774956742648,
+            "other": 0.8029202306174549,
+            "paired": 0.8030874083670223,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0059904964210102385,
+            "other": 0.7762102863357049,
+            "paired": 0.7702197899146946,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.001528572042742593,
+            "other": 0.8053579123002085,
+            "paired": 0.8038293402574659,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0007908568308263586,
+            "other": 0.8280456711394379,
+            "paired": 0.8288365279702643,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_independent",
+        "metric": "auprc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.0011639714804441703
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "C5_VALIDATION_TRANSFER",
+      "observed": {
+        "observed": {
+          "independent_far": 0.0375,
+          "independent_power": 0.36666666666666664,
+          "paired_far": 0.0375,
+          "paired_power": 0.375,
+          "power_difference": 0.00833333333333336
+        },
+        "pass": true,
+        "rule": "paired FAR <= independent FAR and paired power difference >= -0.05",
+        "schema": "f02-gate-c-validation-pretest-v1",
+        "test_rows_read": 0,
+        "thresholds_sha256": "B8FC5A6B9D51D06FB942729D6E6C5518ECC699F27B7AD7A10F45FE141A619687",
+        "validation_unit_hashes": {
+          "adult_seed3.json": "727D00E77314B0471FEC97A1FEA25E94DC7E8C1847200F6168E59D397B96C230",
+          "adult_seed4.json": "61257DFB775DD1EC08E74D151CCFFE4E1C8D36C8A1CD2A9CFFFA5C2CDF853959",
+          "electricity_seed3.json": "B90BA508A4258FCD6EAE64335669B53A82353710EF1111E814A1B0924FA97B1C",
+          "electricity_seed4.json": "BFFE3F558298D22AC8F2BD10DD6E36DE2A9F879F59D10DA054B5DCCF653B0F10"
+        },
+        "validation_units": [
+          "raw_outputs\\full\\adult_seed3.json",
+          "raw_outputs\\full\\adult_seed4.json",
+          "raw_outputs\\full\\electricity_seed3.json",
+          "raw_outputs\\full\\electricity_seed4.json"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "C6_BASELINE_COMPLETENESS",
+      "observed": {
+        "explanation_shift": {
+          "complete": true,
+          "confusion_total": 800,
+          "delay_trajectories": 200,
+          "expected_delay_trajectories": 200,
+          "expected_n": 800,
+          "n": 800
+        },
+        "input": {
+          "complete": true,
+          "confusion_total": 800,
+          "delay_trajectories": 200,
+          "expected_delay_trajectories": 200,
+          "expected_n": 800,
+          "n": 800
+        },
+        "output": {
+          "complete": true,
+          "confusion_total": 800,
+          "delay_trajectories": 200,
+          "expected_delay_trajectories": 200,
+          "expected_n": 800,
+          "n": 800
+        }
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "C7_SEMANTIC_AND_PROVENANCE",
+      "observed": {
+        "calibration_hash_pass": true,
+        "coverage_pass": true,
+        "finite_pass": true,
+        "independent_artifact_validation_pass": true,
+        "lock_hash_pass": true,
+        "paired_and_independent_mask_pass": true,
+        "provenance_pass": true,
+        "read_errors": [],
+        "semantic_smoke_pass": true,
+        "shared_independent_threshold_pass": true,
+        "split_disjoint_pass": true,
+        "validation_hash_pass": true,
+        "validation_pretest_pass": true,
+        "windows_disjoint_pass": true
+      },
+      "pass": true
+    }
+  ],
+  "criteria_lock_sha256": "E5008F62EDDB04ECA0F9D93A2111F4F296C6167C1E04C61529640CF47E9F0A15",
+  "decision": "KILL_PIVOT",
+  "expected_rows_per_unit": 400,
+  "expected_units": 20,
+  "gate_d_authorized": false,
+  "observed_rows": 8000,
+  "observed_units": 20,
+  "paired_minus_baseline_intervals": {
+    "explanation_shift": {
+      "auprc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260930,
+        "ci_lower": -0.05700091158889658,
+        "ci_upper": -0.012738996116890054,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.0271249109529349,
+            "other": 0.8901072077873331,
+            "paired": 0.917232118740268,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.00850452278798719,
+            "other": 0.9241800463202751,
+            "paired": 0.9326845691082623,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.01924173836022336,
+            "other": 0.9140051546552663,
+            "paired": 0.9332468930154897,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.012321486534731974,
+            "other": 0.9054745413230806,
+            "paired": 0.9177960278578126,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.0332019947457054,
+            "other": 0.9297981931300414,
+            "paired": 0.896596198384336,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.009547208170390009,
+            "other": 0.8709735332455415,
+            "paired": 0.8614263250751515,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0989680785503122,
+            "other": 0.9020554869173345,
+            "paired": 0.8030874083670223,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.13439498715443243,
+            "other": 0.9046147770691271,
+            "paired": 0.7702197899146946,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.10386490626988298,
+            "other": 0.9076942465273489,
+            "paired": 0.8038293402574659,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.04149299683662966,
+            "other": 0.870329524806894,
+            "paired": 0.8288365279702643,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_shift",
+        "metric": "auprc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.03542775130914753
+      },
+      "auroc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260929,
+        "ci_lower": -0.08150000000000002,
+        "ci_upper": 0.017208333333333336,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.07250000000000001,
+            "other": 0.6883333333333332,
+            "paired": 0.7608333333333333,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.023749999999999938,
+            "other": 0.7804166666666668,
+            "paired": 0.8041666666666667,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.049583333333333424,
+            "other": 0.7445833333333333,
+            "paired": 0.7941666666666667,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.052916666666666834,
+            "other": 0.7229166666666667,
+            "paired": 0.7758333333333335,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.10291666666666666,
+            "other": 0.7870833333333334,
+            "paired": 0.6841666666666667,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.06999999999999984,
+            "other": 0.6591666666666667,
+            "paired": 0.7291666666666665,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.11125000000000007,
+            "other": 0.7329166666666667,
+            "paired": 0.6216666666666666,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.20000000000000007,
+            "other": 0.7333333333333334,
+            "paired": 0.5333333333333333,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.13250000000000006,
+            "other": 0.7441666666666666,
+            "paired": 0.6116666666666666,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.03416666666666668,
+            "other": 0.6216666666666666,
+            "paired": 0.5874999999999999,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_shift",
+        "metric": "auroc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.031208333333333352
+      },
+      "far": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260927,
+        "ci_lower": 6.938893903907228e-18,
+        "ci_upper": 0.09000000000000001,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.09999999999999999,
+            "other": 0.05,
+            "paired": 0.15,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.05,
+            "other": 0.0,
+            "paired": 0.05,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.05,
+            "other": 0.05,
+            "paired": 0.0,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.1,
+            "other": 0.0,
+            "paired": 0.1,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.0,
+            "paired": 0.0,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.09999999999999999,
+            "other": 0.15,
+            "paired": 0.05,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.1,
+            "other": 0.1,
+            "paired": 0.2,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.15,
+            "other": 0.0,
+            "paired": 0.15,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.1,
+            "other": 0.1,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.05,
+            "other": 0.05,
+            "paired": 0.1,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_shift",
+        "metric": "far",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.05
+      },
+      "power": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260928,
+        "ci_lower": -0.07833333333333334,
+        "ci_upper": -0.02833333333333335,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.08333333333333337,
+            "other": 0.43333333333333335,
+            "paired": 0.5166666666666667,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.06666666666666665,
+            "other": 0.43333333333333335,
+            "paired": 0.5,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.016666666666666663,
+            "other": 0.4666666666666667,
+            "paired": 0.48333333333333334,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.06666666666666665,
+            "other": 0.4,
+            "paired": 0.4666666666666667,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.016666666666666663,
+            "other": 0.4666666666666667,
+            "paired": 0.48333333333333334,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.2,
+            "other": 0.4,
+            "paired": 0.2,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.1166666666666667,
+            "other": 0.45,
+            "paired": 0.3333333333333333,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.18333333333333332,
+            "other": 0.35,
+            "paired": 0.16666666666666666,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.21666666666666667,
+            "other": 0.4166666666666667,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.08333333333333337,
+            "other": 0.4166666666666667,
+            "paired": 0.3333333333333333,
+            "seed": 9
+          }
+        ],
+        "comparator": "explanation_shift",
+        "metric": "power",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.055
+      }
+    },
+    "input": {
+      "auprc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260940,
+        "ci_lower": -0.031893599442259064,
+        "ci_upper": 0.008580046254187401,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.04382971782286549,
+            "other": 0.8734024009174025,
+            "paired": 0.917232118740268,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.019792665869000303,
+            "other": 0.912891903239262,
+            "paired": 0.9326845691082623,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.03282610697046506,
+            "other": 0.9004207860450246,
+            "paired": 0.9332468930154897,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.06555357352223101,
+            "other": 0.8522424543355815,
+            "paired": 0.9177960278578126,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.0016641790708200599,
+            "other": 0.8982603774551561,
+            "paired": 0.896596198384336,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.015081428418163956,
+            "other": 0.8463448966569875,
+            "paired": 0.8614263250751515,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.07359750920952557,
+            "other": 0.8766849175765479,
+            "paired": 0.8030874083670223,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.10165487176801902,
+            "other": 0.8718746616827137,
+            "paired": 0.7702197899146946,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0800843101361215,
+            "other": 0.8839136503935874,
+            "paired": 0.8038293402574659,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.057531054383563984,
+            "other": 0.8863675823538283,
+            "paired": 0.8288365279702643,
+            "seed": 9
+          }
+        ],
+        "comparator": "input",
+        "metric": "auprc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": -0.013744843196532432
+      },
+      "auroc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260939,
+        "ci_lower": -0.02033333333333335,
+        "ci_upper": 0.08879166666666669,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.11166666666666658,
+            "other": 0.6491666666666667,
+            "paired": 0.7608333333333333,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.03499999999999992,
+            "other": 0.7691666666666668,
+            "paired": 0.8041666666666667,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.07708333333333339,
+            "other": 0.7170833333333333,
+            "paired": 0.7941666666666667,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.19666666666666688,
+            "other": 0.5791666666666666,
+            "paired": 0.7758333333333335,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.027083333333333348,
+            "other": 0.71125,
+            "paired": 0.6841666666666667,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.17583333333333317,
+            "other": 0.5533333333333333,
+            "paired": 0.7291666666666665,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.025833333333333375,
+            "other": 0.6475,
+            "paired": 0.6216666666666666,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.1020833333333333,
+            "other": 0.6354166666666666,
+            "paired": 0.5333333333333333,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.050000000000000155,
+            "other": 0.6616666666666667,
+            "paired": 0.6116666666666666,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.09041666666666659,
+            "other": 0.6779166666666665,
+            "paired": 0.5874999999999999,
+            "seed": 9
+          }
+        ],
+        "comparator": "input",
+        "metric": "auroc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.03008333333333332
+      },
+      "far": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260937,
+        "ci_lower": -0.025000000000000005,
+        "ci_upper": 0.065,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.09999999999999999,
+            "other": 0.05,
+            "paired": 0.15,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.05,
+            "other": 0.0,
+            "paired": 0.05,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.0,
+            "paired": 0.0,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.05,
+            "other": 0.05,
+            "paired": 0.1,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.0,
+            "paired": 0.0,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.15000000000000002,
+            "other": 0.2,
+            "paired": 0.05,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.2,
+            "paired": 0.2,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.15,
+            "paired": 0.15,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.15000000000000002,
+            "other": 0.05,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0,
+            "other": 0.1,
+            "paired": 0.1,
+            "seed": 9
+          }
+        ],
+        "comparator": "input",
+        "metric": "far",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.02
+      },
+      "power": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260938,
+        "ci_lower": -0.028333333333333335,
+        "ci_upper": 0.035041666666666076,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.25000000000000006,
+            "other": 0.26666666666666666,
+            "paired": 0.5166666666666667,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.18333333333333335,
+            "other": 0.31666666666666665,
+            "paired": 0.5,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.2,
+            "other": 0.2833333333333333,
+            "paired": 0.48333333333333334,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.16666666666666669,
+            "other": 0.3,
+            "paired": 0.4666666666666667,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.09999999999999998,
+            "other": 0.38333333333333336,
+            "paired": 0.48333333333333334,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.23333333333333334,
+            "other": 0.43333333333333335,
+            "paired": 0.2,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.10000000000000003,
+            "other": 0.43333333333333335,
+            "paired": 0.3333333333333333,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.2166666666666667,
+            "other": 0.38333333333333336,
+            "paired": 0.16666666666666666,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.2,
+            "other": 0.4,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.1166666666666667,
+            "other": 0.45,
+            "paired": 0.3333333333333333,
+            "seed": 9
+          }
+        ],
+        "comparator": "input",
+        "metric": "power",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.003333333333333327
+      }
+    },
+    "output": {
+      "auprc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260950,
+        "ci_lower": -0.008225614968439408,
+        "ci_upper": 0.02569894689953716,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.07020517545742999,
+            "other": 0.847026943282838,
+            "paired": 0.917232118740268,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.04230186969853589,
+            "other": 0.8903826994097264,
+            "paired": 0.9326845691082623,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.07498282626260899,
+            "other": 0.8582640667528807,
+            "paired": 0.9332468930154897,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.08521491066625053,
+            "other": 0.832581117191562,
+            "paired": 0.9177960278578126,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.012570207253774779,
+            "other": 0.8840259911305612,
+            "paired": 0.896596198384336,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.011538016370248871,
+            "other": 0.8498883087049026,
+            "paired": 0.8614263250751515,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.06650777276483344,
+            "other": 0.8695951811318557,
+            "paired": 0.8030874083670223,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.04264374202163668,
+            "other": 0.8128635319363313,
+            "paired": 0.7702197899146946,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.04540265544742661,
+            "other": 0.8492319957048925,
+            "paired": 0.8038293402574659,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.0561532712565358,
+            "other": 0.8849897992268001,
+            "paired": 0.8288365279702643,
+            "seed": 9
+          }
+        ],
+        "comparator": "output",
+        "metric": "auprc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.008610556421841654
+      },
+      "auroc": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260949,
+        "ci_lower": 0.007956249999999951,
+        "ci_upper": 0.10071979166666642,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.1120833333333332,
+            "other": 0.64875,
+            "paired": 0.7608333333333333,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.06958333333333333,
+            "other": 0.7345833333333334,
+            "paired": 0.8041666666666667,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.17041666666666666,
+            "other": 0.62375,
+            "paired": 0.7941666666666667,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.19000000000000006,
+            "other": 0.5858333333333334,
+            "paired": 0.7758333333333335,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.016666666666666607,
+            "other": 0.7008333333333333,
+            "paired": 0.6841666666666667,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.14083333333333314,
+            "other": 0.5883333333333334,
+            "paired": 0.7291666666666665,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.02375000000000005,
+            "other": 0.6454166666666666,
+            "paired": 0.6216666666666666,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.01041666666666674,
+            "other": 0.5437500000000001,
+            "paired": 0.5333333333333333,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.0012499999999998623,
+            "other": 0.6104166666666667,
+            "paired": 0.6116666666666666,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.09500000000000008,
+            "other": 0.6825,
+            "paired": 0.5874999999999999,
+            "seed": 9
+          }
+        ],
+        "comparator": "output",
+        "metric": "auroc",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.05383333333333328
+      },
+      "far": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260947,
+        "ci_lower": 0.024999999999999998,
+        "ci_upper": 0.075,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.15,
+            "paired": 0.15,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.05,
+            "paired": 0.05,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.05,
+            "other": 0.05,
+            "paired": 0.0,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.0,
+            "other": 0.1,
+            "paired": 0.1,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": -0.05,
+            "other": 0.05,
+            "paired": 0.0,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.05,
+            "other": 0.0,
+            "paired": 0.05,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.2,
+            "other": 0.0,
+            "paired": 0.2,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.09999999999999999,
+            "other": 0.05,
+            "paired": 0.15,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.15000000000000002,
+            "other": 0.05,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.1,
+            "other": 0.0,
+            "paired": 0.1,
+            "seed": 9
+          }
+        ],
+        "comparator": "output",
+        "metric": "far",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.049999999999999996
+      },
+      "power": {
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260948,
+        "ci_lower": 0.07666666666666669,
+        "ci_upper": 0.14499999999999996,
+        "cluster_values": [
+          {
+            "dataset": "adult",
+            "difference": 0.2833333333333334,
+            "other": 0.23333333333333334,
+            "paired": 0.5166666666666667,
+            "seed": 5
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.21666666666666667,
+            "other": 0.2833333333333333,
+            "paired": 0.5,
+            "seed": 6
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.21666666666666667,
+            "other": 0.26666666666666666,
+            "paired": 0.48333333333333334,
+            "seed": 7
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.2,
+            "other": 0.26666666666666666,
+            "paired": 0.4666666666666667,
+            "seed": 8
+          },
+          {
+            "dataset": "adult",
+            "difference": 0.18333333333333335,
+            "other": 0.3,
+            "paired": 0.48333333333333334,
+            "seed": 9
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.06666666666666665,
+            "other": 0.26666666666666666,
+            "paired": 0.2,
+            "seed": 5
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.06666666666666665,
+            "other": 0.26666666666666666,
+            "paired": 0.3333333333333333,
+            "seed": 6
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.06666666666666668,
+            "other": 0.23333333333333334,
+            "paired": 0.16666666666666666,
+            "seed": 7
+          },
+          {
+            "dataset": "electricity",
+            "difference": -0.033333333333333326,
+            "other": 0.23333333333333334,
+            "paired": 0.2,
+            "seed": 8
+          },
+          {
+            "dataset": "electricity",
+            "difference": 0.09999999999999998,
+            "other": 0.23333333333333334,
+            "paired": 0.3333333333333333,
+            "seed": 9
+          }
+        ],
+        "comparator": "output",
+        "metric": "power",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "paired": "explanation_paired",
+        "point_difference": 0.11000000000000001
+      }
+    }
+  },
+  "phase": "full",
+  "primary_intervals": {
+    "auprc": {
+      "bootstrap_reps": 5000,
+      "bootstrap_seed": 20260830,
+      "ci_lower": -0.0029931484705223756,
+      "ci_upper": 0.0004987872495937906,
+      "cluster_values": [
+        {
+          "dataset": "adult",
+          "difference": -0.00023067703946633156,
+          "other": 0.9174627957797343,
+          "paired": 0.917232118740268,
+          "seed": 5
+        },
+        {
+          "dataset": "adult",
+          "difference": -2.7119345574866394e-05,
+          "other": 0.9327116884538371,
+          "paired": 0.9326845691082623,
+          "seed": 6
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.004066227859029881,
+          "other": 0.9291806651564598,
+          "paired": 0.9332468930154897,
+          "seed": 7
+        },
+        {
+          "dataset": "adult",
+          "difference": -0.0007925193007888298,
+          "other": 0.9185885471586014,
+          "paired": 0.9177960278578126,
+          "seed": 8
+        },
+        {
+          "dataset": "adult",
+          "difference": -0.005875439061311827,
+          "other": 0.9024716374456478,
+          "paired": 0.896596198384336,
+          "seed": 9
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.0022191540329706827,
+          "other": 0.8636454791081222,
+          "paired": 0.8614263250751515,
+          "seed": 5
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.00016717774956742648,
+          "other": 0.8029202306174549,
+          "paired": 0.8030874083670223,
+          "seed": 6
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.0059904964210102385,
+          "other": 0.7762102863357049,
+          "paired": 0.7702197899146946,
+          "seed": 7
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.001528572042742593,
+          "other": 0.8053579123002085,
+          "paired": 0.8038293402574659,
+          "seed": 8
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0007908568308263586,
+          "other": 0.8280456711394379,
+          "paired": 0.8288365279702643,
+          "seed": 9
+        }
+      ],
+      "comparator": "explanation_independent",
+      "metric": "auprc",
+      "n_dataset_seed_clusters": 10,
+      "n_datasets": 2,
+      "paired": "explanation_paired",
+      "point_difference": -0.0011639714804441703
+    },
+    "auroc": {
+      "bootstrap_reps": 5000,
+      "bootstrap_seed": 20260829,
+      "ci_lower": -0.007250000000000012,
+      "ci_upper": 0.003166666666666673,
+      "cluster_values": [
+        {
+          "dataset": "adult",
+          "difference": -1.1102230246251565e-16,
+          "other": 0.7608333333333334,
+          "paired": 0.7608333333333333,
+          "seed": 5
+        },
+        {
+          "dataset": "adult",
+          "difference": -0.0016666666666665941,
+          "other": 0.8058333333333333,
+          "paired": 0.8041666666666667,
+          "seed": 6
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.010833333333333361,
+          "other": 0.7833333333333333,
+          "paired": 0.7941666666666667,
+          "seed": 7
+        },
+        {
+          "dataset": "adult",
+          "difference": -0.0033333333333331883,
+          "other": 0.7791666666666667,
+          "paired": 0.7758333333333335,
+          "seed": 8
+        },
+        {
+          "dataset": "adult",
+          "difference": -0.02416666666666656,
+          "other": 0.7083333333333333,
+          "paired": 0.6841666666666667,
+          "seed": 9
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.0025000000000001688,
+          "other": 0.7316666666666667,
+          "paired": 0.7291666666666665,
+          "seed": 5
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.006666666666666599,
+          "other": 0.615,
+          "paired": 0.6216666666666666,
+          "seed": 6
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.004166666666666652,
+          "other": 0.5375,
+          "paired": 0.5333333333333333,
+          "seed": 7
+        },
+        {
+          "dataset": "electricity",
+          "difference": -0.0008333333333334636,
+          "other": 0.6125,
+          "paired": 0.6116666666666666,
+          "seed": 8
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0024999999999999467,
+          "other": 0.585,
+          "paired": 0.5874999999999999,
+          "seed": 9
+        }
+      ],
+      "comparator": "explanation_independent",
+      "metric": "auroc",
+      "n_dataset_seed_clusters": 10,
+      "n_datasets": 2,
+      "paired": "explanation_paired",
+      "point_difference": -0.0016666666666666828
+    },
+    "far": {
+      "bootstrap_reps": 5000,
+      "bootstrap_seed": 20260827,
+      "ci_lower": 0.0,
+      "ci_upper": 0.024999999999999994,
+      "cluster_values": [
+        {
+          "dataset": "adult",
+          "difference": 0.04999999999999999,
+          "other": 0.1,
+          "paired": 0.15,
+          "seed": 5
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.05,
+          "paired": 0.05,
+          "seed": 6
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.0,
+          "paired": 0.0,
+          "seed": 7
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.1,
+          "paired": 0.1,
+          "seed": 8
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.0,
+          "paired": 0.0,
+          "seed": 9
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.05,
+          "paired": 0.05,
+          "seed": 5
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.2,
+          "paired": 0.2,
+          "seed": 6
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.15,
+          "paired": 0.15,
+          "seed": 7
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.2,
+          "paired": 0.2,
+          "seed": 8
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.05,
+          "other": 0.05,
+          "paired": 0.1,
+          "seed": 9
+        }
+      ],
+      "comparator": "explanation_independent",
+      "metric": "far",
+      "n_dataset_seed_clusters": 10,
+      "n_datasets": 2,
+      "paired": "explanation_paired",
+      "point_difference": 0.009999999999999998
+    },
+    "power": {
+      "bootstrap_reps": 5000,
+      "bootstrap_seed": 20260828,
+      "ci_lower": 0.0016666666666666663,
+      "ci_upper": 0.011666666666666676,
+      "cluster_values": [
+        {
+          "dataset": "adult",
+          "difference": 0.01666666666666672,
+          "other": 0.5,
+          "paired": 0.5166666666666667,
+          "seed": 5
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.016666666666666663,
+          "other": 0.48333333333333334,
+          "paired": 0.5,
+          "seed": 6
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.48333333333333334,
+          "paired": 0.48333333333333334,
+          "seed": 7
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.4666666666666667,
+          "paired": 0.4666666666666667,
+          "seed": 8
+        },
+        {
+          "dataset": "adult",
+          "difference": 0.0,
+          "other": 0.48333333333333334,
+          "paired": 0.48333333333333334,
+          "seed": 9
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.2,
+          "paired": 0.2,
+          "seed": 5
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.016666666666666663,
+          "other": 0.31666666666666665,
+          "paired": 0.3333333333333333,
+          "seed": 6
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.16666666666666666,
+          "paired": 0.16666666666666666,
+          "seed": 7
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.0,
+          "other": 0.2,
+          "paired": 0.2,
+          "seed": 8
+        },
+        {
+          "dataset": "electricity",
+          "difference": 0.016666666666666663,
+          "other": 0.31666666666666665,
+          "paired": 0.3333333333333333,
+          "seed": 9
+        }
+      ],
+      "comparator": "explanation_independent",
+      "metric": "power",
+      "n_dataset_seed_clusters": 10,
+      "n_datasets": 2,
+      "paired": "explanation_paired",
+      "point_difference": 0.006666666666666671
+    }
+  },
+  "schema": "f02-gate-c-decision-v1",
+  "scope_note": "Gate C is a held-out detector-utility test. Baseline superiority is not implied by completeness; it requires a supporting paired-minus-baseline interval.",
+  "split_channel_summary": [
+    {
+      "auprc": 0.899155539643156,
+      "auroc": 0.7300694444444444,
+      "channel": "explanation_independent",
+      "confusion": {
+        "fn": 231,
+        "fp": 4,
+        "tn": 116,
+        "tp": 129
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.5666666666666667,
+        "mean_first_alarm_severity_index_censored": 4.116666666666666,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 120,
+        "scenario_mean_delay": {
+          "gradual": 2.9583333333333335,
+          "mean_shift": 3.125,
+          "missing": 5.708333333333333,
+          "noise": 4.291666666666667,
+          "quantize": 4.5
+        }
+      },
+      "far": 0.03333333333333333,
+      "n": 480,
+      "n_null": 120,
+      "n_shift": 360,
+      "power": 0.35833333333333334,
+      "split": "calibration"
+    },
+    {
+      "auprc": 0.8978635751121442,
+      "auroc": 0.7280555555555556,
+      "channel": "explanation_paired",
+      "confusion": {
+        "fn": 232,
+        "fp": 5,
+        "tn": 115,
+        "tp": 128
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.575,
+        "mean_first_alarm_severity_index_censored": 4.141666666666667,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 120,
+        "scenario_mean_delay": {
+          "gradual": 2.9583333333333335,
+          "mean_shift": 3.125,
+          "missing": 5.708333333333333,
+          "noise": 4.333333333333333,
+          "quantize": 4.583333333333333
+        }
+      },
+      "far": 0.041666666666666664,
+      "n": 480,
+      "n_null": 120,
+      "n_shift": 360,
+      "power": 0.35555555555555557,
+      "split": "calibration"
+    },
+    {
+      "auprc": 0.9093896313300329,
+      "auroc": 0.7379282407407407,
+      "channel": "explanation_shift",
+      "confusion": {
+        "fn": 196,
+        "fp": 3,
+        "tn": 117,
+        "tp": 164
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.6083333333333333,
+        "mean_first_alarm_severity_index_censored": 3.6416666666666666,
+        "median_first_alarm_severity_index_censored": 3.0,
+        "n_trajectories": 120,
+        "scenario_mean_delay": {
+          "gradual": 1.9166666666666667,
+          "mean_shift": 1.75,
+          "missing": 5.625,
+          "noise": 5.208333333333333,
+          "quantize": 3.7083333333333335
+        }
+      },
+      "far": 0.025,
+      "n": 480,
+      "n_null": 120,
+      "n_shift": 360,
+      "power": 0.45555555555555555,
+      "split": "calibration"
+    },
+    {
+      "auprc": 0.8857045269072635,
+      "auroc": 0.6796296296296296,
+      "channel": "input",
+      "confusion": {
+        "fn": 220,
+        "fp": 4,
+        "tn": 116,
+        "tp": 140
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.575,
+        "mean_first_alarm_severity_index_censored": 3.925,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 120,
+        "scenario_mean_delay": {
+          "gradual": 2.4166666666666665,
+          "mean_shift": 2.2916666666666665,
+          "missing": 5.083333333333333,
+          "noise": 5.75,
+          "quantize": 4.083333333333333
+        }
+      },
+      "far": 0.03333333333333333,
+      "n": 480,
+      "n_null": 120,
+      "n_shift": 360,
+      "power": 0.3888888888888889,
+      "split": "calibration"
+    },
+    {
+      "auprc": 0.8590265181312532,
+      "auroc": 0.6271296296296296,
+      "channel": "output",
+      "confusion": {
+        "fn": 262,
+        "fp": 4,
+        "tn": 116,
+        "tp": 98
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.48333333333333334,
+        "mean_first_alarm_severity_index_censored": 4.683333333333334,
+        "median_first_alarm_severity_index_censored": 6.0,
+        "n_trajectories": 120,
+        "scenario_mean_delay": {
+          "gradual": 3.75,
+          "mean_shift": 2.75,
+          "missing": 5.833333333333333,
+          "noise": 5.833333333333333,
+          "quantize": 5.25
+        }
+      },
+      "far": 0.03333333333333333,
+      "n": 480,
+      "n_null": 120,
+      "n_shift": 360,
+      "power": 0.2722222222222222,
+      "split": "calibration"
+    },
+    {
+      "auprc": 0.8579986283976299,
+      "auroc": 0.6897666666666668,
+      "channel": "explanation_independent",
+      "confusion": {
+        "fn": 383,
+        "fp": 18,
+        "tn": 182,
+        "tp": 217
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.59,
+        "mean_first_alarm_severity_index_censored": 4.0,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 200,
+        "scenario_mean_delay": {
+          "gradual": 2.8,
+          "mean_shift": 2.85,
+          "missing": 5.05,
+          "noise": 5.125,
+          "quantize": 4.175
+        }
+      },
+      "far": 0.09,
+      "n": 800,
+      "n_null": 200,
+      "n_shift": 600,
+      "power": 0.3616666666666667,
+      "split": "test"
+    },
+    {
+      "auprc": 0.8557620475991226,
+      "auroc": 0.6891166666666666,
+      "channel": "explanation_paired",
+      "confusion": {
+        "fn": 379,
+        "fp": 20,
+        "tn": 180,
+        "tp": 221
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.595,
+        "mean_first_alarm_severity_index_censored": 3.965,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 200,
+        "scenario_mean_delay": {
+          "gradual": 2.8,
+          "mean_shift": 2.7,
+          "missing": 5.05,
+          "noise": 5.1,
+          "quantize": 4.175
+        }
+      },
+      "far": 0.1,
+      "n": 800,
+      "n_null": 200,
+      "n_shift": 600,
+      "power": 0.36833333333333335,
+      "split": "test"
+    },
+    {
+      "auprc": 0.9006728709073166,
+      "auroc": 0.7192708333333334,
+      "channel": "explanation_shift",
+      "confusion": {
+        "fn": 346,
+        "fp": 10,
+        "tn": 190,
+        "tp": 254
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.62,
+        "mean_first_alarm_severity_index_censored": 3.67,
+        "median_first_alarm_severity_index_censored": 3.0,
+        "n_trajectories": 200,
+        "scenario_mean_delay": {
+          "gradual": 2.075,
+          "mean_shift": 2.25,
+          "missing": 4.875,
+          "noise": 5.45,
+          "quantize": 3.7
+        }
+      },
+      "far": 0.05,
+      "n": 800,
+      "n_null": 200,
+      "n_shift": 600,
+      "power": 0.42333333333333334,
+      "split": "test"
+    },
+    {
+      "auprc": 0.8776729162352583,
+      "auroc": 0.6572458333333333,
+      "channel": "input",
+      "confusion": {
+        "fn": 381,
+        "fp": 16,
+        "tn": 184,
+        "tp": 219
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.56,
+        "mean_first_alarm_severity_index_censored": 4.04,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 200,
+        "scenario_mean_delay": {
+          "gradual": 2.45,
+          "mean_shift": 2.4,
+          "missing": 5.45,
+          "noise": 5.45,
+          "quantize": 4.45
+        }
+      },
+      "far": 0.08,
+      "n": 800,
+      "n_null": 200,
+      "n_shift": 600,
+      "power": 0.365,
+      "split": "test"
+    },
+    {
+      "auprc": 0.8566601657292252,
+      "auroc": 0.6363624999999999,
+      "channel": "output",
+      "confusion": {
+        "fn": 445,
+        "fp": 10,
+        "tn": 190,
+        "tp": 155
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.48,
+        "mean_first_alarm_severity_index_censored": 4.7,
+        "median_first_alarm_severity_index_censored": 6.0,
+        "n_trajectories": 200,
+        "scenario_mean_delay": {
+          "gradual": 3.675,
+          "mean_shift": 3.15,
+          "missing": 5.45,
+          "noise": 5.575,
+          "quantize": 5.65
+        }
+      },
+      "far": 0.05,
+      "n": 800,
+      "n_null": 200,
+      "n_shift": 600,
+      "power": 0.25833333333333336,
+      "split": "test"
+    },
+    {
+      "auprc": 0.8983512430771035,
+      "auroc": 0.7515625,
+      "channel": "explanation_independent",
+      "confusion": {
+        "fn": 152,
+        "fp": 3,
+        "tn": 77,
+        "tp": 88
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.575,
+        "mean_first_alarm_severity_index_censored": 3.975,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 80,
+        "scenario_mean_delay": {
+          "gradual": 3.125,
+          "mean_shift": 2.5625,
+          "missing": 5.875,
+          "noise": 4.5625,
+          "quantize": 3.75
+        }
+      },
+      "far": 0.0375,
+      "n": 320,
+      "n_null": 80,
+      "n_shift": 240,
+      "power": 0.36666666666666664,
+      "split": "validation"
+    },
+    {
+      "auprc": 0.8974034530163293,
+      "auroc": 0.7480208333333334,
+      "channel": "explanation_paired",
+      "confusion": {
+        "fn": 150,
+        "fp": 3,
+        "tn": 77,
+        "tp": 90
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.575,
+        "mean_first_alarm_severity_index_censored": 3.975,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 80,
+        "scenario_mean_delay": {
+          "gradual": 3.125,
+          "mean_shift": 2.3125,
+          "missing": 5.875,
+          "noise": 4.5625,
+          "quantize": 4.0
+        }
+      },
+      "far": 0.0375,
+      "n": 320,
+      "n_null": 80,
+      "n_shift": 240,
+      "power": 0.375,
+      "split": "validation"
+    },
+    {
+      "auprc": 0.9135748539125881,
+      "auroc": 0.7404166666666667,
+      "channel": "explanation_shift",
+      "confusion": {
+        "fn": 129,
+        "fp": 2,
+        "tn": 78,
+        "tp": 111
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.6125,
+        "mean_first_alarm_severity_index_censored": 3.5375,
+        "median_first_alarm_severity_index_censored": 3.0,
+        "n_trajectories": 80,
+        "scenario_mean_delay": {
+          "gradual": 1.75,
+          "mean_shift": 1.875,
+          "missing": 5.625,
+          "noise": 4.625,
+          "quantize": 3.8125
+        }
+      },
+      "far": 0.025,
+      "n": 320,
+      "n_null": 80,
+      "n_shift": 240,
+      "power": 0.4625,
+      "split": "validation"
+    },
+    {
+      "auprc": 0.8862816683971415,
+      "auroc": 0.6840364583333335,
+      "channel": "input",
+      "confusion": {
+        "fn": 155,
+        "fp": 7,
+        "tn": 73,
+        "tp": 85
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.55,
+        "mean_first_alarm_severity_index_censored": 4.2,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 80,
+        "scenario_mean_delay": {
+          "gradual": 2.5,
+          "mean_shift": 2.25,
+          "missing": 5.9375,
+          "noise": 5.8125,
+          "quantize": 4.5
+        }
+      },
+      "far": 0.0875,
+      "n": 320,
+      "n_null": 80,
+      "n_shift": 240,
+      "power": 0.3541666666666667,
+      "split": "validation"
+    },
+    {
+      "auprc": 0.8653422165965223,
+      "auroc": 0.6481770833333333,
+      "channel": "output",
+      "confusion": {
+        "fn": 176,
+        "fp": 3,
+        "tn": 77,
+        "tp": 64
+      },
+      "delay": {
+        "censoring_index": 6,
+        "detection_fraction": 0.5375,
+        "mean_first_alarm_severity_index_censored": 4.5375,
+        "median_first_alarm_severity_index_censored": 5.0,
+        "n_trajectories": 80,
+        "scenario_mean_delay": {
+          "gradual": 4.125,
+          "mean_shift": 3.125,
+          "missing": 5.375,
+          "noise": 5.125,
+          "quantize": 4.9375
+        }
+      },
+      "far": 0.0375,
+      "n": 320,
+      "n_null": 80,
+      "n_shift": 240,
+      "power": 0.26666666666666666,
+      "split": "validation"
+    }
+  ],
+  "test_rows": 4000,
+  "thresholds_sha256": "B8FC5A6B9D51D06FB942729D6E6C5518ECC699F27B7AD7A10F45FE141A619687",
+  "unit_row_counts": {
+    "adult_seed0.json": 400,
+    "adult_seed1.json": 400,
+    "adult_seed2.json": 400,
+    "adult_seed3.json": 400,
+    "adult_seed4.json": 400,
+    "adult_seed5.json": 400,
+    "adult_seed6.json": 400,
+    "adult_seed7.json": 400,
+    "adult_seed8.json": 400,
+    "adult_seed9.json": 400,
+    "electricity_seed0.json": 400,
+    "electricity_seed1.json": 400,
+    "electricity_seed2.json": 400,
+    "electricity_seed3.json": 400,
+    "electricity_seed4.json": 400,
+    "electricity_seed5.json": 400,
+    "electricity_seed6.json": 400,
+    "electricity_seed7.json": 400,
+    "electricity_seed8.json": 400,
+    "electricity_seed9.json": 400
+  },
+  "validation_pretest_sha256": "2A74415211030847CD40139A8DD0913AC96F2D022A8ED982960279AD1A8F9544"
+}

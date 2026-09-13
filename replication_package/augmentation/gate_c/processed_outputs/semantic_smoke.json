@@ -1,0 +1,8 @@
+{
+  "independent_mask_difference_pass": true,
+  "official_skshift_logreg_equivalence_pass": true,
+  "official_skshift_logreg_max_abs_diff": 0.0,
+  "paired_mask_identity_pass": true,
+  "score_range_pass": true,
+  "window_disjointness_pass": true
+}

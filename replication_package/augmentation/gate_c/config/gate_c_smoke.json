@@ -1,0 +1,19 @@
+{
+  "schema": "f02-gate-c-config-v1",
+  "run_id": "2026-08-26_codex_local_gate_c_heldout_detection",
+  "phase": "smoke",
+  "datasets": ["electricity"],
+  "models": ["logreg"],
+  "split_seeds": {"calibration": [0], "validation": [3], "test": [5]},
+  "scenarios": ["mean_shift"],
+  "severity_indices": [3],
+  "null_reps": 2,
+  "shift_reps": 2,
+  "window_size": 12,
+  "lime_budget": 64,
+  "detector_folds": 3,
+  "calibration_quantile": 0.95,
+  "bootstrap_reps": 200,
+  "bootstrap_seed": 20260826,
+  "max_sec": 600
+}

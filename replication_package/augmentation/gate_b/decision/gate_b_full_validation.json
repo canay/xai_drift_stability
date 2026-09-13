@@ -1,0 +1,193 @@
+{
+  "checks": [
+    {
+      "check": "unit_count",
+      "expected": 10,
+      "observed": 10,
+      "pass": true
+    },
+    {
+      "check": "row_count",
+      "expected": 7440,
+      "observed": 7440,
+      "pass": true
+    },
+    {
+      "check": "unit_row_count",
+      "expected": 744,
+      "observed": [
+        744,
+        744,
+        744,
+        744,
+        744,
+        744,
+        744,
+        744,
+        744,
+        744
+      ],
+      "pass": true
+    },
+    {
+      "check": "config_hash_commonality",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "source_hash_commonality",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "finite_primary_values",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "positive_queries",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "method_coverage",
+      "expected": [
+        "glime_independent",
+        "kernelshap_independent",
+        "kernelshap_paired",
+        "lime_independent",
+        "lime_paired",
+        "lime_paired_slime_budget",
+        "slime_independent"
+      ],
+      "observed": [
+        "glime_independent",
+        "kernelshap_independent",
+        "kernelshap_paired",
+        "lime_independent",
+        "lime_paired",
+        "lime_paired_slime_budget",
+        "slime_independent"
+      ],
+      "pass": true
+    },
+    {
+      "check": "lime_glime_population_equivalence",
+      "expected": "<1e-10",
+      "observed": 1.9984014443252818e-15,
+      "pass": true
+    },
+    {
+      "check": "paired_mask_identity",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "independent_mask_difference",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "slime_pinned_hashes",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "semantic_smoke",
+      "expected": null,
+      "observed": null,
+      "pass": true
+    },
+    {
+      "check": "B1_LIME_PAIRING",
+      "expected": null,
+      "observed": {
+        "lower": 0.6342356889915721,
+        "point": 0.7098165193936568,
+        "upper": 0.8336257631573704
+      },
+      "pass": true
+    },
+    {
+      "check": "B2_KERNELSHAP_PAIRING",
+      "expected": null,
+      "observed": {
+        "lower": 0.25976948328623356,
+        "point": 0.33143042857550165,
+        "upper": 0.5201711748858663
+      },
+      "pass": true
+    },
+    {
+      "check": "B4_GLIME_NONINFERIORITY",
+      "expected": null,
+      "observed": {
+        "lower": 0.7124499918312505,
+        "point": 0.7659272933336612,
+        "upper": 0.8259675136720809
+      },
+      "pass": true
+    },
+    {
+      "check": "B5_SLIME_COST_NONINFERIORITY",
+      "expected": null,
+      "observed": {
+        "lower": 0.40833505894874467,
+        "point": 0.5996610742676552,
+        "upper": 0.7090559382355441
+      },
+      "pass": true
+    },
+    {
+      "check": "B3_HETEROGENEITY",
+      "expected": ">=0.75",
+      "observed": 1.0,
+      "pass": true
+    },
+    {
+      "check": "B6_NO_SHIFT_FAR",
+      "expected": null,
+      "observed": {
+        "kernelshap": {
+          "independent": 0.485,
+          "paired": 0.0
+        },
+        "lime": {
+          "independent": 0.3125,
+          "paired": 0.0
+        }
+      },
+      "pass": true
+    },
+    {
+      "check": "decision_label",
+      "expected": {
+        "decision": "PASS",
+        "gate_c_authorized": true
+      },
+      "observed": {
+        "decision": "PASS",
+        "gate_c_authorized": true
+      },
+      "pass": true
+    }
+  ],
+  "checks_passed": 20,
+  "checks_total": 20,
+  "hashes": {
+    "criteria_lock": "6522BD00F8C4CDA109F3FCF26E3E618D7F5A66B84C4889839D34FF29EB28F24D",
+    "decision": "FA44D05F43D4897E49C0AD7E1356BB5BDC37C544ED08C7093D32A40A4B97AE07",
+    "full_config": "4D136B934216BC3C04D6559050829F14688EC59CF17AA15DDC64F0D92F1C1E2D",
+    "full_rows_csv": "3D797EFC9D15FE65084BDCA19D88C13C24ECE7810905DCCFA9111F1D67785905",
+    "unit_aggregate": "6CCD80F335FC573960B73D453B64930E2B66A19EDB2DC4E76601512198280A5E"
+  },
+  "pass": true,
+  "schema": "f02-gate-b-independent-validation-v1"
+}

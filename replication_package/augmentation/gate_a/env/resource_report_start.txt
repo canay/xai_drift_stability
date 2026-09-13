@@ -1,0 +1,12 @@
+Date/time: 2026-08-26 15:56 +03:00
+Tool: Codex
+Model, if known: GPT-5
+Operation ID: f02-scientific-augmentation-20260826
+Host: Windows workstation B (pseudonymized)
+CPU: 12th Gen Intel(R) Core(TM) i5-1235U; 10 physical cores; 12 logical processors
+RAM: 16837500928 bytes installed
+GPU: not used
+Python: local conda environment (path redacted in public package); 3.12.7
+NumPy: 2.3.5
+Run policy: one Python process; numerical thread limits pinned to 1
+Expected duration: under five minutes; atomic 240-unit resume checkpoints

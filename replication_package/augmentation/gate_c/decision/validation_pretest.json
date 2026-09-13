@@ -1,0 +1,26 @@
+{
+  "observed": {
+    "independent_far": 0.0375,
+    "independent_power": 0.36666666666666664,
+    "paired_far": 0.0375,
+    "paired_power": 0.375,
+    "power_difference": 0.00833333333333336
+  },
+  "pass": true,
+  "rule": "paired FAR <= independent FAR and paired power difference >= -0.05",
+  "schema": "f02-gate-c-validation-pretest-v1",
+  "test_rows_read": 0,
+  "thresholds_sha256": "B8FC5A6B9D51D06FB942729D6E6C5518ECC699F27B7AD7A10F45FE141A619687",
+  "validation_unit_hashes": {
+    "adult_seed3.json": "727D00E77314B0471FEC97A1FEA25E94DC7E8C1847200F6168E59D397B96C230",
+    "adult_seed4.json": "61257DFB775DD1EC08E74D151CCFFE4E1C8D36C8A1CD2A9CFFFA5C2CDF853959",
+    "electricity_seed3.json": "B90BA508A4258FCD6EAE64335669B53A82353710EF1111E814A1B0924FA97B1C",
+    "electricity_seed4.json": "BFFE3F558298D22AC8F2BD10DD6E36DE2A9F879F59D10DA054B5DCCF653B0F10"
+  },
+  "validation_units": [
+    "raw_outputs\\full\\adult_seed3.json",
+    "raw_outputs\\full\\adult_seed4.json",
+    "raw_outputs\\full\\electricity_seed3.json",
+    "raw_outputs\\full\\electricity_seed4.json"
+  ]
+}

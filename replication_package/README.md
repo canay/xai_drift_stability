@@ -3,9 +3,11 @@
 ## Scope
 
 This package reproduces the controlled tabular-shift grid, paired-LIME
-validation, and two chronological checks used in the study. The public payload
-contains experiment evidence and analysis code only; it is not a manuscript
-source archive.
+validation, and two chronological checks used in the study. The
+`augmentation/` directory separately carries the covariance-conditional
+estimator experiment, cross-explainer strong-baseline validation, and held-out
+detector boundary. The public payload contains experiment evidence and analysis
+code only; it is not a manuscript source archive.
 
 ## Requirements
 
@@ -35,7 +37,15 @@ python scripts/verify_saved_results.py
 Expected final line:
 
 ```text
-PASS: saved main-grid and paired-estimator evidence is complete and internally consistent
+PASS: saved main-grid, paired-estimator, baseline, KS, and budget evidence is complete and internally consistent
+```
+
+Verify the Gate A--C augmentation from saved atomic artifacts:
+
+```bash
+cd augmentation
+python scripts/verify_augmentation.py
+cd ..
 ```
 
 Recompute the two statistical summaries from the archived raw outputs:
@@ -107,11 +117,22 @@ See [`data/README.md`](data/README.md). OpenML records are fetched by
 ## Output map
 
 - `outputs/main_grid/`: 3,510-row corrected controlled grid and clustered summaries
+- `results/raw_all.csv`: legacy-grid snapshot required by the documented
+  corrected-versus-legacy validation path
 - `outputs/crn_validation/`: 3,375 low-tier rows plus 225-row mid/high tiers
 - `outputs/temporal/`: Electricity and Bike chronological outputs
+- `outputs/secondary_audits/`: seed-level baseline BalAcc/AUROC/AP evidence,
+  saved KS alert-ordering comparisons, and corrected selected-condition LIME
+  budget artifacts used by the manuscript
 - `outputs/figures/`: empirical plots generated from the archived evidence
 - `logs/`: completion transcripts for the three corrected main-grid partitions
 - `provenance/`: run registry snapshot, public manifest, and file checksums
+
+The secondary-audit directory preserves the already completed, hash-verified
+artifacts; `scripts/verify_saved_results.py` checks their row coverage and the
+27 rounded baseline values reported in Table 3 (baseline performance,
+`tab:baseline`). Verification does not rerun any
+experiment.
 
 ## Determinism and interpretation
 
@@ -120,4 +141,3 @@ seed, scenario, and severity; paired LIME streams are additionally keyed by the
 reference instance and draw. The three explanation channels are distinct
 estimands: local LIME and SHAP comparisons must not be treated as directly
 rank-equivalent to global grouped permutation importance.
-

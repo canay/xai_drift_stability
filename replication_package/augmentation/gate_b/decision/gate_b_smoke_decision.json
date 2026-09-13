@@ -1,0 +1,212 @@
+{
+  "config_sha256": "12764C8D283E7B34D54CE8B9AFF580288E2081701CFDA7971BA5D59EF3BBBBFD",
+  "criteria": [
+    {
+      "criterion_id": "B1_LIME_PAIRING",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 200,
+        "bootstrap_seed": 20260827,
+        "ci_lower": 0.27145217375324626,
+        "ci_upper": 0.27145217375324626,
+        "denominator": "lime_independent",
+        "n_dataset_seed_clusters": 1,
+        "n_datasets": 1,
+        "numerator": "lime_paired",
+        "point_ratio": 0.27145217375324626
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B2_KERNELSHAP_PAIRING",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 200,
+        "bootstrap_seed": 20260828,
+        "ci_lower": 0.29256730994663244,
+        "ci_upper": 0.29256730994663244,
+        "denominator": "kernelshap_independent",
+        "n_dataset_seed_clusters": 1,
+        "n_datasets": 1,
+        "numerator": "kernelshap_paired",
+        "point_ratio": 0.29256730994663244
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B3_HETEROGENEITY",
+      "observed": {
+        "improving_stratum_fraction": 1.0,
+        "strata": [
+          {
+            "dataset": "electricity",
+            "family": "lime",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.27145217375324626
+          },
+          {
+            "dataset": "electricity",
+            "family": "kernelshap",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.29256730994663244
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B4_GLIME_NONINFERIORITY",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 200,
+        "bootstrap_seed": 20260829,
+        "ci_lower": 0.47795345845047327,
+        "ci_upper": 0.47795345845047327,
+        "denominator": "glime_independent",
+        "n_dataset_seed_clusters": 1,
+        "n_datasets": 1,
+        "numerator": "lime_paired",
+        "point_ratio": 0.47795345845047327
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B5_SLIME_COST_NONINFERIORITY",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 200,
+        "bootstrap_seed": 20260830,
+        "ci_lower": 1.4617642461045703,
+        "ci_upper": 1.4617642461045703,
+        "denominator": "slime_independent",
+        "n_dataset_seed_clusters": 1,
+        "n_datasets": 1,
+        "numerator": "lime_paired_slime_budget",
+        "point_ratio": 1.4617642461045703
+      },
+      "pass": false
+    },
+    {
+      "criterion_id": "B6_NO_SHIFT_FAR",
+      "observed": {
+        "kernelshap": {
+          "independent": 0.25,
+          "paired": 0.0
+        },
+        "lime": {
+          "independent": 0.0,
+          "paired": 0.0
+        }
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B7_SEMANTIC_AND_PROVENANCE",
+      "observed": {
+        "coverage_pass": true,
+        "finite_pass": true,
+        "independent_mask_hash_pass": true,
+        "lime_glime_population_max_abs_diff": 8.881784197001252e-16,
+        "paired_mask_hash_pass": true,
+        "read_errors": [],
+        "semantic": {
+          "balanced_lime_training_pass": true,
+          "glime_empirical_max_marginal_error": 0.0018705549679922662,
+          "glime_marginal_pass": true,
+          "glime_probability": 0.5369694450320077,
+          "independent_mask_difference_pass": true,
+          "paired_mask_identity_pass": true
+        },
+        "slime_hashes_match": true
+      },
+      "pass": true
+    }
+  ],
+  "criteria_lock_sha256": "6522BD00F8C4CDA109F3FCF26E3E618D7F5A66B84C4889839D34FF29EB28F24D",
+  "decision": "SMOKE_PASS",
+  "expected_rows_per_unit": 48,
+  "expected_units": 1,
+  "gate_c_authorized": false,
+  "method_summary": [
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.0011418200593741532,
+      "mean_query_total": 192.0,
+      "mean_runtime_sec": 0.026008937478763983,
+      "mean_topk_overlap": 0.7749999999999999,
+      "median_normalized_vector_mse": 0.0009510648829293004,
+      "method": "glime_independent",
+      "n": 8
+    },
+    {
+      "mean_far": 0.625,
+      "mean_normalized_vector_mse": 0.007466148024785339,
+      "mean_query_total": 196.0,
+      "mean_runtime_sec": 0.03620012497412972,
+      "mean_topk_overlap": 0.75,
+      "median_normalized_vector_mse": 0.0033918104318916955,
+      "method": "kernelshap_independent",
+      "n": 8
+    },
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.0005977778306401424,
+      "mean_query_total": 196.0,
+      "mean_runtime_sec": 0.03495253753499128,
+      "mean_topk_overlap": 0.95,
+      "median_normalized_vector_mse": 0.00019094594058601682,
+      "method": "kernelshap_paired",
+      "n": 8
+    },
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.0017348672253408722,
+      "mean_query_total": 192.0,
+      "mean_runtime_sec": 0.032465800060890615,
+      "mean_topk_overlap": 0.75,
+      "median_normalized_vector_mse": 0.001701859136758335,
+      "method": "lime_independent",
+      "n": 8
+    },
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.0002730637241663425,
+      "mean_query_total": 192.0,
+      "mean_runtime_sec": 0.032196949992794544,
+      "mean_topk_overlap": 0.95,
+      "median_normalized_vector_mse": 7.535287676093641e-05,
+      "method": "lime_paired",
+      "n": 8
+    },
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.00013505186810174887,
+      "mean_query_total": 645.0,
+      "mean_runtime_sec": 0.032811550016049296,
+      "mean_topk_overlap": 0.95,
+      "median_normalized_vector_mse": 0.0001177980691353441,
+      "method": "lime_paired_slime_budget",
+      "n": 4
+    },
+    {
+      "mean_far": 0.5,
+      "mean_normalized_vector_mse": 0.0009353627052570871,
+      "mean_query_total": 645.0,
+      "mean_runtime_sec": 0.07917232508771122,
+      "mean_topk_overlap": 0.75,
+      "median_normalized_vector_mse": 0.0008315492011452309,
+      "method": "slime_independent",
+      "n": 4
+    }
+  ],
+  "observed_rows": 48,
+  "observed_units": 1,
+  "phase": "smoke",
+  "schema": "f02-gate-b-decision-v1",
+  "scope_note": "Gate B supports explainer-family extension only; detector utility remains closed until Gate C.",
+  "unit_row_counts": {
+    "electricity_seed0.json": 48
+  }
+}

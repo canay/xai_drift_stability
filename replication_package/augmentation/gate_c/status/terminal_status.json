@@ -1,0 +1,10 @@
+{
+  "completed_units_this_process": 10,
+  "exit_code": 0,
+  "phase": "full",
+  "requested_splits": [
+    "test"
+  ],
+  "status": "COMPLETE",
+  "wall_sec": 951.5859224000014
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "f02-gate-b-config-v1",
+  "run_id": "2026-08-26_codex_local_gate_b_strong_baselines",
+  "phase": "full",
+  "datasets": ["adult", "electricity"],
+  "models": ["logreg", "hgb"],
+  "seeds": [0, 1, 2, 3, 4],
+  "scenarios": ["null", "mean_shift", "noise"],
+  "severity_index": 3,
+  "n_instances": 4,
+  "draws": 5,
+  "slime_draws": 3,
+  "budget": 256,
+  "top_k": 5,
+  "slime_n0": 128,
+  "slime_nmax": 1024,
+  "slime_alpha": 0.05,
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20260826,
+  "max_sec": 7200,
+  "max_training_rows": 50000
+}

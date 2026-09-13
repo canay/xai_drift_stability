@@ -1,0 +1,56 @@
+{
+  "schema": "f02-gate-c-criteria-v1",
+  "locked_at": "2026-08-26T16:54:00+03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "evidence_rule": "Only phase=full and the once-opened test split may decide Gate C; smoke and validation are not manuscript evidence.",
+  "split_rule": "Seeds 0-2 calibration, 3-4 validation, 5-9 test. Model fitting is seed-local; thresholds never see validation/test outcomes.",
+  "threshold_rule": "For every dataset-model stratum, the 0.95 higher empirical quantile of independent explanation-score no-shift calibration trials is frozen and applied unchanged to both independent and paired channels. Input, output, and Explanation Shift baselines each receive their own calibration-only threshold.",
+  "primary_margin": 0.02,
+  "criteria": [
+    {
+      "criterion_id": "C1_HELDOUT_FAR_REDUCTION",
+      "comparison": "paired minus independent test no-shift FAR under the same independent-calibrated threshold",
+      "point_difference_strictly_below": 0.0,
+      "cluster_bootstrap_upper_max": 0.0,
+      "required": true
+    },
+    {
+      "criterion_id": "C2_POWER_NONINFERIORITY",
+      "comparison": "paired minus independent test power",
+      "noninferiority_margin": -0.02,
+      "cluster_bootstrap_lower_min": -0.02,
+      "required": true
+    },
+    {
+      "criterion_id": "C3_AUROC_NONINFERIORITY",
+      "comparison": "paired minus independent test AUROC",
+      "cluster_bootstrap_lower_min": -0.02,
+      "required": true
+    },
+    {
+      "criterion_id": "C4_AUPRC_NONINFERIORITY",
+      "comparison": "paired minus independent test AUPRC",
+      "cluster_bootstrap_lower_min": -0.02,
+      "required": true
+    },
+    {
+      "criterion_id": "C5_VALIDATION_TRANSFER",
+      "comparison": "validation paired FAR does not exceed independent FAR and paired power loss is no worse than 0.05",
+      "validation_power_margin": -0.05,
+      "required": true
+    },
+    {
+      "criterion_id": "C6_BASELINE_COMPLETENESS",
+      "comparison": "Explanation Shift, input-space, and output-space detector scores, FAR, power, AUROC, AUPRC, confusion counts, and delay are complete on identical trials",
+      "required": true
+    },
+    {
+      "criterion_id": "C7_SEMANTIC_AND_PROVENANCE",
+      "comparison": "split disjointness, frozen threshold hashes, official skshift semantic smoke, marginal-stream identity, atomic coverage, finite values, and independent artefact validation all pass",
+      "required": true
+    }
+  ],
+  "gate_rule": "PASS only if C1-C7 all pass. Detector superiority may be claimed only for a baseline whose paired-minus-baseline interval supports it; baseline completeness alone is not superiority."
+}

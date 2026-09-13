@@ -1,0 +1,11 @@
+{
+  "schema_version": "f02-gate-a-criteria-lock-v1",
+  "locked_at": "2026-08-26 15:36 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "change_id": "MCH-F02-AUG-20260826-01",
+  "source": "config/gate_a_full.json",
+  "config_sha256": "C0FBC8E3785D884A03B46AB48501399F8979E8A8E44E6DB695105DCBAE807EB0",
+  "policy": "Criteria are immutable after the first full-run unit is observed. Failure closes Gate B and narrows the formal estimator claim."
+}

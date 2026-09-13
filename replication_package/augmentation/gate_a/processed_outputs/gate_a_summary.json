@@ -1,0 +1,22 @@
+{
+  "config_sha256": "C0FBC8E3785D884A03B46AB48501399F8979E8A8E44E6DB695105DCBAE807EB0",
+  "coverage_complete": true,
+  "created_at": "2026-08-26T15:57:37+03:00",
+  "metrics": {
+    "eligible_topk_far_cells": 24,
+    "identity_median_relative_error": 0.009345224114527761,
+    "identity_p95_relative_error": 0.040251839964103475,
+    "identity_sign_fraction": 1.0,
+    "margin_bound_implication_violation_max": 0.0,
+    "near_tie_far_gap": 0.45787500000000003,
+    "near_tie_independent_far_median": 0.4829375,
+    "negative_worsening_fraction": 1.0,
+    "positive_mse_reduction_fraction": 1.0,
+    "positive_topk_far_improvement_fraction": 1.0,
+    "separated_independent_far_median": 0.025062499999999998,
+    "split_estimator_median_absolute_bias_z": 0.6443290518779399,
+    "zero_equivalence_fraction": 1.0
+  },
+  "schema_version": "f02-gate-a-summary-v1",
+  "unit_count": 240
+}

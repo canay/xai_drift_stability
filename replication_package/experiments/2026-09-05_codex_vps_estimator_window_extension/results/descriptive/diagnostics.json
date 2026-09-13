@@ -1,0 +1,13 @@
+{
+  "status": "DESCRIPTIVE_NOT_NEW_PRIMARY",
+  "created_at": "2026-09-05T10:12:13.939395+03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-extension-results-verified-20260905",
+  "nonnull_cells": 1280,
+  "null_cells": 640,
+  "null_crn_max_mse": 0.0,
+  "nonnull_crn_worse_cells": 281,
+  "supersedes": "closure/e1_full_strata.csv; closure/e1_all_method_ratios.csv; closure/descriptive_diagnostics.json",
+  "reason": "v1 descriptive parser treated literal null as NA; primary analysis constructs its DataFrame from raw JSON records and independent recompute reads CSV via csv.DictReader; neither is affected."
+}

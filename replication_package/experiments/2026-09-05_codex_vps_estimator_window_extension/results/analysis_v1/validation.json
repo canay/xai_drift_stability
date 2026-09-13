@@ -1,0 +1,11 @@
+{
+  "analysis_source_sha256": "00a0b6c5bde5524efaacca62446f4a9452c9f3a27dd3a695669cdb244ecc0a46",
+  "e1_cells": 1920,
+  "e2_windows": 960,
+  "fingerprint": "6bc56c3fda400b5e1e5412dcea811a13b8f2e8ee9f08246da0b79b98647299d5",
+  "not_independent_recompute": true,
+  "query_receipts": 552960,
+  "source_manifest_sha256": "7074a040390803c0d25165dbbb557160495b48640e219878e310d1d78eee07f4",
+  "status": "PASS",
+  "units": 720
+}

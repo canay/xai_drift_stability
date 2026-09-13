@@ -1,0 +1,21 @@
+{
+  "expected_sha256": {
+    "lime_base.py": "6DC4DA34CC60AD6C4432FABF60E3DD185A01359FBFD6CC1609D74692B07338F1",
+    "lime_tabular.py": "F623376967DFDCE6E8F3ED55BC3878C10F32D79098AB569E2C4DBB5FC5CBCFE4"
+  },
+  "hashes_match": true,
+  "license": "BSD-3-Clause",
+  "observed_sha256": {
+    "lime_base.py": "6DC4DA34CC60AD6C4432FABF60E3DD185A01359FBFD6CC1609D74692B07338F1",
+    "lime_tabular.py": "F623376967DFDCE6E8F3ED55BC3878C10F32D79098AB569E2C4DBB5FC5CBCFE4"
+  },
+  "official_repository": "https://github.com/ZhengzeZhou/slime",
+  "package": "stabilized-lime",
+  "paths": {
+    "lime_base.py": "installed-package/slime/lime_base.py",
+    "lime_tabular.py": "installed-package/slime/lime_tabular.py"
+  },
+  "pinned_commit": "1bd42253693dd4cc50723579e0b3070e51869aec",
+  "pydoe2_boundary": "lhs shim raises; Gate B uses gaussian/categorical sampling only",
+  "version": "0.1.0"
+}

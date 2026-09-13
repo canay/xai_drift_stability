@@ -1,0 +1,8 @@
+{
+  "balanced_lime_training_pass": true,
+  "glime_empirical_max_marginal_error": 0.0018705549679922662,
+  "glime_marginal_pass": true,
+  "glime_probability": 0.5369694450320077,
+  "independent_mask_difference_pass": true,
+  "paired_mask_identity_pass": true
+}

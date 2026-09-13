@@ -1,0 +1,14 @@
+{
+  "summary": "Kullanıcının onayladığı bilimsel augmentation kapsamında Gate A 240/240 hücre ve bütün kilitli/bağımsız kontrollerle PASS oldu; formal covariance-conditional estimator sonucu desteklendi.",
+  "next_step": "Gate B'de S-LIME/GLIME ve sampling KernelSHAP için semantic-equivalence ve matched-budget preflight'i kapat; yalnız smoke PASS ise güçlü-baseline run'ını başlat.",
+  "open_risks": [
+    "Gate A gerçek explainer baseline'larına karşı yöntem yeniliğini tek başına kanıtlamaz.",
+    "S-LIME/GLIME perturbation-budget tanımları semantik olarak eşlenmeden sonuçlar karşılaştırılamaz.",
+    "İkinci stochastic explainer ve held-out detector faydası henüz doğrulanmadı."
+  ],
+  "awaiting_author": [],
+  "recorded_at": "2026-08-26 16:00 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826"
+}

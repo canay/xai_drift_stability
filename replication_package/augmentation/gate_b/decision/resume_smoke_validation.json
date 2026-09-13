@@ -1,0 +1,16 @@
+{
+  "schema": "f02-gate-b-resume-smoke-v1",
+  "date_time": "2026-08-26 16:43 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "interrupted_terminal_status": "INTERRUPTED_FOR_RESUME_SMOKE",
+  "interrupted_recorded_exit_code": 75,
+  "resumed_exit_code": 0,
+  "first_unit_sha256_before": "853882B439530A410CC96F511A9F8927717595AB72AC0F9D0CE51C68E63A07B6",
+  "first_unit_sha256_after": "853882B439530A410CC96F511A9F8927717595AB72AC0F9D0CE51C68E63A07B6",
+  "byte_identical": true,
+  "completed_units": 2,
+  "heartbeat_advancement": "two completed cells per atomic unit",
+  "pass": true
+}

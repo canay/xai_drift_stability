@@ -1,0 +1,40 @@
+{
+  "bootstrap_reps": 200,
+  "bootstrap_seed": 20260826,
+  "calibration_quantile": 0.95,
+  "config_sha256": "2C9FF3F82BE9744629A2577E17925737AE1702ECCEF1D507546BF8D263F8AC6D",
+  "datasets": [
+    "electricity"
+  ],
+  "detector_folds": 3,
+  "lime_budget": 64,
+  "max_sec": 600,
+  "models": [
+    "logreg"
+  ],
+  "null_reps": 2,
+  "phase": "smoke",
+  "run_id": "2026-08-26_codex_local_gate_c_heldout_detection",
+  "scenarios": [
+    "mean_shift"
+  ],
+  "schema": "f02-gate-c-config-v1",
+  "scientific_config_hash": "F12CF9EACF628CA8947289B6C23A7E8E568E6B8D14A035FCB63E554CA11488D3",
+  "severity_indices": [
+    3
+  ],
+  "shift_reps": 2,
+  "source_hash": "B65A44DC5CE7D493C26A066B61B8270B4E66159E5D47AC4D52C438D6FFE00BAB",
+  "split_seeds": {
+    "calibration": [
+      0
+    ],
+    "test": [
+      5
+    ],
+    "validation": [
+      3
+    ]
+  },
+  "window_size": 12
+}

@@ -1,0 +1,11 @@
+{
+  "compatibility_boundary": "skshift 0.1.5 with SHAP 0.52 requires an explicit masker for sklearn LogisticRegression; HistGradientBoosting triggers SHAP's additivity check, so Gate C uses the same explanation-space discriminator with TreeExplainer(check_additivity=False).",
+  "implementation_file": "installed-package/skshift/distributionshift.py",
+  "implementation_sha256": "6266D440D2CB40B16CF5B734DAC0EFAD0DB77BB33BF9812A11C58669FC98A660",
+  "license": "MIT",
+  "package": "skshift",
+  "package_init": "installed-package/skshift/__init__.py",
+  "paper_repository": "https://github.com/cmougan/ExplanationShift",
+  "pypi": "https://pypi.org/project/skshift/0.1.5/",
+  "version": "0.1.5"
+}

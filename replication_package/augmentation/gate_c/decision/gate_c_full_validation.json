@@ -1,0 +1,253 @@
+{
+  "note": "This artefact validates calculations and provenance. Its pass flag does not force the scientific gate to pass when a locked criterion fails.",
+  "pass": true,
+  "recomputed_primary_intervals": {
+    "auprc": {
+      "ci_lower": -0.0029931484705223756,
+      "ci_upper": 0.0004987872495937906,
+      "point_difference": -0.0011639714804441703
+    },
+    "auroc": {
+      "ci_lower": -0.007250000000000012,
+      "ci_upper": 0.003166666666666673,
+      "point_difference": -0.0016666666666666828
+    },
+    "far": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.024999999999999994,
+      "point_difference": 0.009999999999999998
+    },
+    "power": {
+      "ci_lower": 0.0016666666666666663,
+      "ci_upper": 0.011666666666666676,
+      "point_difference": 0.006666666666666671
+    }
+  },
+  "schema": "f02-gate-c-independent-validation-v1",
+  "tests": [
+    {
+      "name": "unit_count",
+      "observed": 20,
+      "pass": true
+    },
+    {
+      "name": "unit_identity",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "unit_row_counts",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "total_row_count",
+      "observed": 8000,
+      "pass": true
+    },
+    {
+      "name": "test_row_count",
+      "observed": 4000,
+      "pass": true
+    },
+    {
+      "name": "channel_set",
+      "observed": [
+        "explanation_independent",
+        "explanation_paired",
+        "explanation_shift",
+        "input",
+        "output"
+      ],
+      "pass": true
+    },
+    {
+      "name": "identical_trial_channel_coverage",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "no_duplicate_trial_channel_rows",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "finite_values",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "paired_mask_identity",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "independent_mask_difference",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "window_disjointness",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "split_seed_disjointness",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "config_lock_hash",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "criteria_lock_hash",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "pretest_threshold_hash",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "pretest_sealed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "threshold_sealed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "calibration_hashes",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "validation_hashes",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "shared_independent_threshold",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "threshold_count",
+      "observed": 20,
+      "pass": true
+    },
+    {
+      "name": "semantic_smoke",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "skshift_provenance",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "far_point_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "far_ci_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "power_point_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "power_ci_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "auroc_point_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "auroc_ci_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "auprc_point_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "auprc_ci_recomputed",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "C1_HELDOUT_FAR_REDUCTION_flag",
+      "observed": {
+        "expected": false,
+        "reported": false
+      },
+      "pass": true
+    },
+    {
+      "name": "C2_POWER_NONINFERIORITY_flag",
+      "observed": {
+        "expected": true,
+        "reported": true
+      },
+      "pass": true
+    },
+    {
+      "name": "C3_AUROC_NONINFERIORITY_flag",
+      "observed": {
+        "expected": true,
+        "reported": true
+      },
+      "pass": true
+    },
+    {
+      "name": "C4_AUPRC_NONINFERIORITY_flag",
+      "observed": {
+        "expected": true,
+        "reported": true
+      },
+      "pass": true
+    },
+    {
+      "name": "C5_VALIDATION_TRANSFER_flag",
+      "observed": {
+        "expected": true,
+        "reported": true
+      },
+      "pass": true
+    },
+    {
+      "name": "baseline_completeness",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "name": "processed_row_count",
+      "observed": 8000,
+      "pass": true
+    },
+    {
+      "name": "processed_score_checksum",
+      "observed": null,
+      "pass": true
+    }
+  ],
+  "tests_passed": 40,
+  "tests_total": 40,
+  "validated_scientific_criteria": "C1-C6 plus the non-circular C7 provenance base"
+}

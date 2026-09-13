@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "config_hash_bound": true,
+    "decision_pass": true,
+    "nonzero_ci95_excludes_zero_in_expected_direction": true,
+    "nonzero_empirical_signs_match": true,
+    "raw_csv_names_match": true,
+    "raw_unit_count_240": true,
+    "row_count_240": true,
+    "terminal_completed": true,
+    "theory_formula_exact": true,
+    "unique_unit_ids": true
+  },
+  "diagnostics": {
+    "formula_errors": [],
+    "interval_errors": [],
+    "sign_errors": []
+  },
+  "hashes": {
+    "cells_csv": "658EBD60450B1125316E6AB21E0C849B48F83DADBB3150A619A823F73EBE12A0",
+    "config": "C0FBC8E3785D884A03B46AB48501399F8979E8A8E44E6DB695105DCBAE807EB0",
+    "decision": "ED55CC4A411F2DE6325E925DCA7B9B459187ACE7A515FB7048520396C098E1B0",
+    "terminal_status": "B4614CB62AF2971047C373378497170E72D02137ADFD50795A79D521946EBACB",
+    "unit_set_aggregate": "64D0AF1ABFEE34CF35857291B5B7973D96F07AABC63719E741E11C0558C017E9"
+  },
+  "schema_version": "f02-gate-a-independent-validation-v1",
+  "status": "PASS",
+  "uses_gate_a_core": false,
+  "validated_at": "2026-08-26T19:00:22+03:00",
+  "validator": "tests/validate_gate_a_outputs.py"
+}

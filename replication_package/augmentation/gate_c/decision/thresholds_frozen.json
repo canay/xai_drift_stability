@@ -1,0 +1,226 @@
+{
+  "calibration_unit_hashes": {
+    "adult_seed0.json": "379A7E7EC096AAC32DA70735FCFB864A0288AB5121770097534F97F5512857E8",
+    "adult_seed1.json": "48DC88C5DF547DD027B57789C9DC994D2A69F4F94A29B1BFF97DD7083C323FDF",
+    "adult_seed2.json": "2FEF4EF6373D130028FE11162630642ED4FFB578A0B76DB8431A76C6D05162A9",
+    "electricity_seed0.json": "5401C76B4CB0788D8C39242B98779C2A51A7A63001D7E7FC517934883751EF15",
+    "electricity_seed1.json": "CBE2A6D729F77C307B52F02178651748023CD03F863E9A6A379FF5EEC610011A",
+    "electricity_seed2.json": "E6AF886B3C75D11CBD2758BB9A17BA548D6D7366AEFDC8B907DC3BA8E07B3715"
+  },
+  "calibration_units": [
+    "raw_outputs\\full\\adult_seed0.json",
+    "raw_outputs\\full\\adult_seed1.json",
+    "raw_outputs\\full\\adult_seed2.json",
+    "raw_outputs\\full\\electricity_seed0.json",
+    "raw_outputs\\full\\electricity_seed1.json",
+    "raw_outputs\\full\\electricity_seed2.json"
+  ],
+  "config_sha256": "18C56D6A5EC4E0D3762C89BF49EA0A007D1FA41F9973706221213ACB4AEE588D",
+  "criteria_sha256": "E5008F62EDDB04ECA0F9D93A2111F4F296C6167C1E04C61529640CF47E9F0A15",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "schema": "f02-gate-c-thresholds-v1",
+  "status": "FROZEN_BEFORE_VALIDATION_AND_TEST",
+  "thresholds": [
+    {
+      "channel": "explanation_independent",
+      "dataset": "adult",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "3FC74A6128D64AAC2986161B91C40D354EBDD3BF179CA6E67701ECAE51E9B083",
+      "source_channel": "explanation_independent",
+      "threshold": 0.894024822893643
+    },
+    {
+      "channel": "explanation_paired",
+      "dataset": "adult",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "3FC74A6128D64AAC2986161B91C40D354EBDD3BF179CA6E67701ECAE51E9B083",
+      "source_channel": "explanation_independent",
+      "threshold": 0.894024822893643
+    },
+    {
+      "channel": "input",
+      "dataset": "adult",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "EC2D48B487151A28FB8B39B201A43CD913C7E375C95EB2D3A22AD28E715171B2",
+      "source_channel": "input",
+      "threshold": 0.6640625
+    },
+    {
+      "channel": "output",
+      "dataset": "adult",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "BB05A66AC207CB602277400924F48CBDFB969832619463D2F91AFA4994472815",
+      "source_channel": "output",
+      "threshold": 0.421875
+    },
+    {
+      "channel": "explanation_shift",
+      "dataset": "adult",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "0E1D6DE85D0E0293FA72143F319535D0958BA751AAE462DD104724F501D9EE44",
+      "source_channel": "explanation_shift",
+      "threshold": 0.5390625
+    },
+    {
+      "channel": "explanation_independent",
+      "dataset": "adult",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "037600C0C5D4381B036A87674AE71EEDE08448341A0534ADB1809D992B903F95",
+      "source_channel": "explanation_independent",
+      "threshold": 0.9527189849109015
+    },
+    {
+      "channel": "explanation_paired",
+      "dataset": "adult",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "037600C0C5D4381B036A87674AE71EEDE08448341A0534ADB1809D992B903F95",
+      "source_channel": "explanation_independent",
+      "threshold": 0.9527189849109015
+    },
+    {
+      "channel": "input",
+      "dataset": "adult",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "308B973F95A33E29DBD7F9498481AF3A8189277248F646CD37E7E85B36D9D21A",
+      "source_channel": "input",
+      "threshold": 0.5859375
+    },
+    {
+      "channel": "output",
+      "dataset": "adult",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "AD1E20883364708608DE33FCA30495716EA0A7D61EF60938C025E60185E226DA",
+      "source_channel": "output",
+      "threshold": 0.46875
+    },
+    {
+      "channel": "explanation_shift",
+      "dataset": "adult",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "A93A2374A9BD4401387EACE9DF502761A79F989021942C7E5CD165DFFEA204BA",
+      "source_channel": "explanation_shift",
+      "threshold": 0.4765625
+    },
+    {
+      "channel": "explanation_independent",
+      "dataset": "electricity",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "1F018EB42F279675E83F82E61A5E46AC059232A26D295B99FA45ED257049F204",
+      "source_channel": "explanation_independent",
+      "threshold": 1.214291684108912
+    },
+    {
+      "channel": "explanation_paired",
+      "dataset": "electricity",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "1F018EB42F279675E83F82E61A5E46AC059232A26D295B99FA45ED257049F204",
+      "source_channel": "explanation_independent",
+      "threshold": 1.214291684108912
+    },
+    {
+      "channel": "input",
+      "dataset": "electricity",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "6EB36DFD14BA4BA68927CBD98EA50023B7C4723225AC9881B059A2F2578A2966",
+      "source_channel": "input",
+      "threshold": 0.375
+    },
+    {
+      "channel": "output",
+      "dataset": "electricity",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "DC69EBF72373604A3927D2822EEBB92CB4C03F846574663308673E57F777D9D9",
+      "source_channel": "output",
+      "threshold": 0.4921875
+    },
+    {
+      "channel": "explanation_shift",
+      "dataset": "electricity",
+      "model": "logreg",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "92986910094ED29552AEC4CF9E983E7E4A8AA220974BB68E841E4A2DBFBC47BE",
+      "source_channel": "explanation_shift",
+      "threshold": 0.5
+    },
+    {
+      "channel": "explanation_independent",
+      "dataset": "electricity",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "58457DF68EAE31C5317AFAB9EF11192EE51BEBBF0830ABA7F7C7CD75003D5568",
+      "source_channel": "explanation_independent",
+      "threshold": 1.0839455926070587
+    },
+    {
+      "channel": "explanation_paired",
+      "dataset": "electricity",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "58457DF68EAE31C5317AFAB9EF11192EE51BEBBF0830ABA7F7C7CD75003D5568",
+      "source_channel": "explanation_independent",
+      "threshold": 1.0839455926070587
+    },
+    {
+      "channel": "input",
+      "dataset": "electricity",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "E96934F0C1FF11D13AAEA9A5CFE9E7A900BDE4A1FDD02126710517F878462796",
+      "source_channel": "input",
+      "threshold": 0.421875
+    },
+    {
+      "channel": "output",
+      "dataset": "electricity",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "2759D7D04A44EE2CA42399FF586B8623F4249D0FC00CA22CD0E9EEB99E4FD178",
+      "source_channel": "output",
+      "threshold": 0.46875
+    },
+    {
+      "channel": "explanation_shift",
+      "dataset": "electricity",
+      "model": "hgb",
+      "n_calibration_null": 30,
+      "quantile": 0.95,
+      "scores_sha256": "A17A88998CE34778AFBBE9106E237303449D1FBC94F692E462C37B0FD74DE204",
+      "source_channel": "explanation_shift",
+      "threshold": 0.46875
+    }
+  ],
+  "validation_or_test_rows_read": 0
+}

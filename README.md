@@ -1,52 +1,63 @@
-# Paired-Sampling Explanation-Drift Estimation Under Tabular Data Shift
+# Explanation Drift under Distribution Shift: Coupling Strong Shapley Estimators and Separating Window Variability
 
-This repository contains the public replication package for the study by
-Özkan Canay, Department of Information Systems and Technologies, Sakarya
-University.
+This repository contains the replication package for the study by Özkan Canay,
+Department of Information Systems and Technologies, Sakarya University.
 
-The study evaluates explanation drift under controlled tabular data shift and
-introduces an instance-keyed common-random-number estimator for paired LIME
-comparisons. In the matched-budget validation, the conventional independent
-estimator has a 0.203 clean-clean top-5 instability floor and 0.022 mean drift
-separation. Pairing gives a zero matched-stream structural floor and 0.142 mean
-drift separation. The low-budget paired estimate has a mean absolute error of
-0.0337 against the finite 150-instance/2000-sample reference.
+The study examines how stochastic explainer error and window sampling affect
+comparisons of feature attributions under distribution shift. It couples the
+random streams of complementary KernelSHAP and fixed-budget LeverageSHAP while
+preserving each estimator's marginal sampler and model-query budget. A separate
+nested experiment measures the contribution of window sampling to signed
+mean-Shapley contrasts.
+
+The package retains null conditions, adverse coupling effects, rank diagnostics,
+and the failed held-out detector gate. These results support a bounded claim
+about estimator precision; they do not establish a universal detector advantage.
 
 ## Repository contents
 
-The [`replication_package`](replication_package/) directory contains:
+The [replication package](replication_package/) contains experiment and analysis
+code, configurations, seed policies, saved outputs, environment records, and
+verification scripts. Its evidence has three complementary parts:
 
-- experiment and analysis code;
-- locked configurations and seed policies;
-- canonical controlled-grid, paired-estimator, and temporal outputs;
-- scientific semantics tests and saved-result validation;
-- environment and run-provenance records.
+- The base package covers the controlled grid, paired-LIME validation, and
+  chronological checks.
+- The [augmentation](replication_package/augmentation/) preserves the synthetic
+  estimator identity, cross-explainer comparison, and held-out detection tests.
+- The [E1/E2 extension](replication_package/experiments/2026-09-05_codex_vps_estimator_window_extension/)
+  contains all 720 completed units for strong-estimator coupling and window
+  variability, with saved-run analysis and integrity verification.
 
-The source datasets are not redistributed. The runners fetch the public OpenML
-and UCI records identified in the data manifest and cache them locally.
+Source datasets are not redistributed. The data manifests identify the public
+OpenML and UCI records and the scripts that obtain them.
 
-## Quick verification
+## Verify saved evidence
 
-```bash
-cd replication_package
-python -m venv .venv
-source .venv/bin/activate            # Windows: .venv\Scripts\activate
-python -m pip install -r requirements.txt
-python scripts/verify_saved_results.py
+The E1/E2 integrity check needs only Python 3.12 or later:
+
+```text
+cd replication_package/experiments/2026-09-05_codex_vps_estimator_window_extension
+python verify_saved.py
 ```
 
-See [`replication_package/README.md`](replication_package/README.md) for the
-analysis and from-scratch execution commands. Full experiment runs take hours;
-use a persistent workstation or server session.
+It checks all release hashes and all archived members without training a model
+or rerunning the analysis. See the extension's README for safe extraction and
+recomputation of its saved results.
 
-## Citation
+For the base package, install its separate requirements in a virtual
+environment and run `python scripts/verify_saved_results.py` from
+`replication_package/`. Then run `python scripts/verify_augmentation.py` from
+`replication_package/augmentation/`. Each component documents its own runtime;
+do not combine their requirements into one environment by assumption.
 
-Please cite the associated article using the metadata in
-[`CITATION.cff`](CITATION.cff). The citation record will be updated when final
-publication metadata is available.
+Full experimental runs can take hours. Use the documented saved-result checks
+first, and use a persistent workstation or server session for new runs.
 
-## License
+## Citation and license
 
-The code and repository documentation are released under the
-[MIT License](LICENSE). Dataset terms remain those of their original providers.
+Use [CITATION.cff](CITATION.cff) to cite the software. Article publication metadata
+will be added when available.
 
+Project code and documentation use the [MIT License](LICENSE). Vendored
+upstream code retains its accompanying license files. Dataset terms remain
+those of the original providers.

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-08-26 15:56 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "host_label": "Windows workstation B (pseudonymized)",
+  "machine_role": "is-laptop",
+  "location": "local_windows",
+  "os": "Windows 11 10.0.26200",
+  "cpu": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "physical_cores": 10,
+  "logical_processors": 12,
+  "ram_bytes": 16837500928,
+  "gpu_used": false,
+  "python_executable": "local conda environment (path redacted in public package)",
+  "python_version": "3.12.7",
+  "numpy_version": "2.3.5",
+  "thread_limits_for_run": {
+    "OMP_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "NUMEXPR_NUM_THREADS": 1
+  },
+  "environment_note": "This host is off the AKIS-2026.08 NumPy 2.5.2 line. Gate A uses only seeded NumPy Gaussian draws and algebraic identities; all manuscript-facing outputs bind explicitly to NumPy 2.3.5 and are not pooled with cross-host stochastic outputs."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "f02-gate-b-config-v1",
+  "run_id": "2026-08-26_codex_local_gate_b_strong_baselines",
+  "phase": "smoke",
+  "datasets": ["electricity"],
+  "models": ["logreg"],
+  "seeds": [0],
+  "scenarios": ["null", "mean_shift"],
+  "severity_index": 3,
+  "n_instances": 2,
+  "draws": 2,
+  "slime_draws": 1,
+  "budget": 96,
+  "top_k": 5,
+  "slime_n0": 64,
+  "slime_nmax": 256,
+  "slime_alpha": 0.05,
+  "bootstrap_reps": 200,
+  "bootstrap_seed": 20260826,
+  "max_sec": 300,
+  "max_training_rows": 50000
+}

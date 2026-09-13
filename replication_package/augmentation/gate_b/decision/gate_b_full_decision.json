@@ -1,0 +1,263 @@
+{
+  "config_sha256": "4D136B934216BC3C04D6559050829F14688EC59CF17AA15DDC64F0D92F1C1E2D",
+  "criteria": [
+    {
+      "criterion_id": "B1_LIME_PAIRING",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260827,
+        "ci_lower": 0.6342356889915728,
+        "ci_upper": 0.8336257631573711,
+        "denominator": "lime_independent",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "numerator": "lime_paired",
+        "point_ratio": 0.7098165193936575
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B2_KERNELSHAP_PAIRING",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260828,
+        "ci_lower": 0.2597694832862341,
+        "ci_upper": 0.5201711748858675,
+        "denominator": "kernelshap_independent",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "numerator": "kernelshap_paired",
+        "point_ratio": 0.3314304285755024
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B3_HETEROGENEITY",
+      "observed": {
+        "improving_stratum_fraction": 1.0,
+        "strata": [
+          {
+            "dataset": "adult",
+            "family": "lime",
+            "improves": true,
+            "model": "hgb",
+            "ratio": 0.6144556957948513
+          },
+          {
+            "dataset": "adult",
+            "family": "lime",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.9117878790181584
+          },
+          {
+            "dataset": "electricity",
+            "family": "lime",
+            "improves": true,
+            "model": "hgb",
+            "ratio": 0.6774182940161798
+          },
+          {
+            "dataset": "electricity",
+            "family": "lime",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.5814685605091856
+          },
+          {
+            "dataset": "adult",
+            "family": "kernelshap",
+            "improves": true,
+            "model": "hgb",
+            "ratio": 0.23185215052128577
+          },
+          {
+            "dataset": "adult",
+            "family": "kernelshap",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.4518885560939363
+          },
+          {
+            "dataset": "electricity",
+            "family": "kernelshap",
+            "improves": true,
+            "model": "hgb",
+            "ratio": 0.5670140031555488
+          },
+          {
+            "dataset": "electricity",
+            "family": "kernelshap",
+            "improves": true,
+            "model": "logreg",
+            "ratio": 0.34684330442204675
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B4_GLIME_NONINFERIORITY",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260829,
+        "ci_lower": 0.7124499918312516,
+        "ci_upper": 0.8259675136720814,
+        "denominator": "glime_independent",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "numerator": "lime_paired",
+        "point_ratio": 0.7659272933336619
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B5_SLIME_COST_NONINFERIORITY",
+      "observed": {
+        "available": true,
+        "bootstrap_reps": 5000,
+        "bootstrap_seed": 20260830,
+        "ci_lower": 0.40833505894874855,
+        "ci_upper": 0.7090559382355447,
+        "denominator": "slime_independent",
+        "n_dataset_seed_clusters": 10,
+        "n_datasets": 2,
+        "numerator": "lime_paired_slime_budget",
+        "point_ratio": 0.5996610742676569
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B6_NO_SHIFT_FAR",
+      "observed": {
+        "kernelshap": {
+          "independent": 0.485,
+          "paired": 0.0
+        },
+        "lime": {
+          "independent": 0.3125,
+          "paired": 0.0
+        }
+      },
+      "pass": true
+    },
+    {
+      "criterion_id": "B7_SEMANTIC_AND_PROVENANCE",
+      "observed": {
+        "coverage_pass": true,
+        "finite_pass": true,
+        "independent_mask_hash_pass": true,
+        "lime_glime_population_max_abs_diff": 1.9984014443252818e-15,
+        "paired_mask_hash_pass": true,
+        "read_errors": [],
+        "semantic": {
+          "balanced_lime_training_pass": true,
+          "glime_empirical_max_marginal_error": 0.0018705549679922662,
+          "glime_marginal_pass": true,
+          "glime_probability": 0.5369694450320077,
+          "independent_mask_difference_pass": true,
+          "paired_mask_identity_pass": true
+        },
+        "slime_hashes_match": true
+      },
+      "pass": true
+    }
+  ],
+  "criteria_lock_sha256": "6522BD00F8C4CDA109F3FCF26E3E618D7F5A66B84C4889839D34FF29EB28F24D",
+  "decision": "PASS",
+  "expected_rows_per_unit": 744,
+  "expected_units": 10,
+  "gate_c_authorized": true,
+  "method_summary": [
+    {
+      "mean_far": 0.755,
+      "mean_normalized_vector_mse": 0.014753161917042984,
+      "mean_query_total": 512.0,
+      "mean_runtime_sec": 0.04601263216871303,
+      "mean_topk_overlap": 0.7691666666666666,
+      "median_normalized_vector_mse": 0.004857763400252905,
+      "method": "glime_independent",
+      "n": 1200
+    },
+    {
+      "mean_far": 0.8183333333333334,
+      "mean_normalized_vector_mse": 0.049193716175328514,
+      "mean_query_total": 516.0,
+      "mean_runtime_sec": 0.0695997128301921,
+      "mean_topk_overlap": 0.6934999999999999,
+      "median_normalized_vector_mse": 0.011297251797869152,
+      "method": "kernelshap_independent",
+      "n": 1200
+    },
+    {
+      "mean_far": 0.6433333333333333,
+      "mean_normalized_vector_mse": 0.009792450808928587,
+      "mean_query_total": 516.0,
+      "mean_runtime_sec": 0.06916637841767322,
+      "mean_topk_overlap": 0.9043333333333332,
+      "median_normalized_vector_mse": 0.0010752332735498712,
+      "method": "kernelshap_paired",
+      "n": 1200
+    },
+    {
+      "mean_far": 0.7558333333333334,
+      "mean_normalized_vector_mse": 0.016281344129564744,
+      "mean_query_total": 512.0,
+      "mean_runtime_sec": 0.05275670492032077,
+      "mean_topk_overlap": 0.7655000000000001,
+      "median_normalized_vector_mse": 0.004993524494000012,
+      "method": "lime_independent",
+      "n": 1200
+    },
+    {
+      "mean_far": 0.6416666666666667,
+      "mean_normalized_vector_mse": 0.008026890629022301,
+      "mean_query_total": 512.0,
+      "mean_runtime_sec": 0.05264573067058033,
+      "mean_topk_overlap": 0.9246666666666667,
+      "median_normalized_vector_mse": 0.0007487348425676387,
+      "method": "lime_paired",
+      "n": 1200
+    },
+    {
+      "mean_far": 0.6416666666666667,
+      "mean_normalized_vector_mse": 0.00256671403153454,
+      "mean_query_total": 3272.411111111111,
+      "mean_runtime_sec": 0.11685719250074018,
+      "mean_topk_overlap": 0.9663888888888889,
+      "median_normalized_vector_mse": 0.00010753141838729479,
+      "method": "lime_paired_slime_budget",
+      "n": 720
+    },
+    {
+      "mean_far": 0.6763888888888889,
+      "mean_normalized_vector_mse": 0.006093402875354378,
+      "mean_query_total": 3272.5069444444443,
+      "mean_runtime_sec": 0.23770867249533897,
+      "mean_topk_overlap": 0.8002777777777779,
+      "median_normalized_vector_mse": 0.001223467738326602,
+      "method": "slime_independent",
+      "n": 720
+    }
+  ],
+  "observed_rows": 7440,
+  "observed_units": 10,
+  "phase": "full",
+  "schema": "f02-gate-b-decision-v1",
+  "scope_note": "Gate B supports explainer-family extension only; detector utility remains closed until Gate C.",
+  "unit_row_counts": {
+    "adult_seed0.json": 744,
+    "adult_seed1.json": 744,
+    "adult_seed2.json": 744,
+    "adult_seed3.json": 744,
+    "adult_seed4.json": 744,
+    "electricity_seed0.json": 744,
+    "electricity_seed1.json": 744,
+    "electricity_seed2.json": 744,
+    "electricity_seed3.json": 744,
+    "electricity_seed4.json": 744
+  }
+}

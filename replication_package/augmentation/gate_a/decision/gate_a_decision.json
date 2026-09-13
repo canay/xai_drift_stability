@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "cells_csv": "processed_outputs/gate_a_cells.csv",
+    "config_sha256": "C0FBC8E3785D884A03B46AB48501399F8979E8A8E44E6DB695105DCBAE807EB0",
+    "summary_json": "processed_outputs/gate_a_summary.json"
+  },
+  "change_id": "MCH-F02-AUG-20260826-01",
+  "claim_boundary": "Formal covariance-conditional estimator claim may proceed to Gate B; no explainer-agnostic or detector-utility claim is yet authorized.",
+  "created_at": "2026-08-26T15:57:37+03:00",
+  "criteria": {
+    "identity_median_relative_error": {
+      "operator": "<=",
+      "passed": true,
+      "threshold": 0.08,
+      "value": 0.009345224114527761
+    },
+    "identity_p95_relative_error": {
+      "operator": "<=",
+      "passed": true,
+      "threshold": 0.2,
+      "value": 0.040251839964103475
+    },
+    "identity_sign_fraction": {
+      "operator": ">=",
+      "passed": true,
+      "threshold": 1.0,
+      "value": 1.0
+    },
+    "margin_bound_implication_violation": {
+      "operator": "<=",
+      "passed": true,
+      "threshold": 0.0,
+      "value": 0.0
+    },
+    "near_tie_far_gap": {
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.05,
+      "value": 0.45787500000000003
+    },
+    "negative_worsening_fraction": {
+      "operator": ">=",
+      "passed": true,
+      "threshold": 1.0,
+      "value": 1.0
+    },
+    "positive_mse_reduction_fraction": {
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.75,
+      "value": 1.0
+    },
+    "positive_topk_far_improvement_fraction": {
+      "eligible_cells": 24,
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.75,
+      "value": 1.0
+    },
+    "split_estimator_median_absolute_bias_z": {
+      "operator": "<=",
+      "passed": true,
+      "threshold": 1.0,
+      "value": 0.6443290518779399
+    },
+    "zero_equivalence_fraction": {
+      "operator": ">=",
+      "passed": true,
+      "threshold": 0.95,
+      "value": 1.0
+    }
+  },
+  "gate": "A-SYNTHETIC-ESTIMAND",
+  "next_gate_authorized": "B-EXPLAINER-BASELINES",
+  "schema_version": "f02-gate-a-decision-v1",
+  "status": "PASS"
+}

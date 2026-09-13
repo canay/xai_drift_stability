@@ -1,0 +1,46 @@
+{
+  "schema": "f02-gate-c-run-manifest-v1",
+  "date_time": "2026-08-26 18:10 +03:00",
+  "tool": "Codex",
+  "model": "GPT-5",
+  "operation_id": "f02-scientific-augmentation-20260826",
+  "change_id": "MCH-F02-AUG-20260826-01",
+  "run_id": "2026-08-26_codex_local_gate_c_heldout_detection",
+  "host": "Windows workstation B (pseudonymized)",
+  "location": "local_windows",
+  "status": "complete_verified",
+  "role": "validation",
+  "decision": "KILL_PIVOT",
+  "gate_d_authorized": false,
+  "coverage": {
+    "datasets": 2,
+    "models": 2,
+    "atomic_units": "20/20",
+    "all_channel_rows": 8000,
+    "once_opened_test_rows": 4000,
+    "independent_validation": "40/40"
+  },
+  "duration_seconds_test_phase": 951.5859224000014,
+  "primary_hashes": {
+    "config": "18C56D6A5EC4E0D3762C89BF49EA0A007D1FA41F9973706221213ACB4AEE588D",
+    "criteria_lock": "E5008F62EDDB04ECA0F9D93A2111F4F296C6167C1E04C61529640CF47E9F0A15",
+    "processed_rows": "2DA4570CD729F5FE086F94B915447CBBDAE4D47666D7873B05A74043CD358799",
+    "decision": "46B35AAD119DFE50B33BD41EA9D5D266C69DF4284A56BF0B9B4B674C2623BFAB",
+    "validation": "32563DAA934E33738E8879E5A760BD58D775956F5F25E4C6249E79F9D0CA1F28",
+    "thresholds": "B8FC5A6B9D51D06FB942729D6E6C5518ECC699F27B7AD7A10F45FE141A619687",
+    "validation_pretest": "2A74415211030847CD40139A8DD0913AC96F2D022A8ED982960279AD1A8F9544",
+    "skshift_provenance": "CE83C9AB1E9758528B21ADB7F45FC336F6074D2670D6FD0CFFFFAA91B23DE893",
+    "terminal_status": "193AE8FB8AC6B4C04344D5016F00C95DA0924B7FED6F73AA7E3223EE3DFC82DD"
+  },
+  "scientific_result": {
+    "far_paired": 0.1,
+    "far_independent": 0.09,
+    "far_difference": 0.01,
+    "far_ci": [0.0, 0.025],
+    "power_difference": 0.006666666666666671,
+    "auroc_difference": -0.0016666666666666828,
+    "auprc_difference": -0.0011639714804441703
+  },
+  "claim_boundary": "Gate C prospectively falsifies held-out false-alarm superiority. Gate A-B estimator and cross-explainer claims remain supported; detector and scale-up claims are closed.",
+  "canonical_evidence": true
+}

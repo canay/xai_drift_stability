@@ -24,26 +24,26 @@
     "seeds": 5
   },
   "errors": [],
-  "generated_at_utc": "2026-07-17T07:21:37.899302+00:00",
+  "generated_at_utc": "2026-08-12T07:07:35.775103+00:00",
   "input_manifest": [
     {
       "bytes": 1011759,
-      "path": "source_reference/results/raw_all.csv (not redistributed)",
+      "path": "<controlled-workspace>\\SCI-f02-xai_drift_stability\\github-xai_drift_stability\\replication_package\\results\\raw_all.csv",
       "sha256": "bfaae8e6552dd3471a3573ca88a158d38292308239616eb81772717714266f73"
     },
     {
       "bytes": 1021509,
-      "path": "outputs/main_grid/raw_outputs/main_grid/raw_adult.csv",
+      "path": "<controlled-workspace>\\SCI-f02-xai_drift_stability\\github-xai_drift_stability\\replication_package\\outputs\\main_grid\\raw_outputs\\main_grid\\raw_adult.csv",
       "sha256": "3f25cdf64f4a63100139aede334d16134d8a6b020db1ab8b68cd00016f3ce194"
     },
     {
       "bytes": 1029119,
-      "path": "outputs/main_grid/raw_outputs/main_grid/raw_bank-marketing.csv",
+      "path": "<controlled-workspace>\\SCI-f02-xai_drift_stability\\github-xai_drift_stability\\replication_package\\outputs\\main_grid\\raw_outputs\\main_grid\\raw_bank-marketing.csv",
       "sha256": "c9b850bdaf1a65d7f556ff1c6678392f100c524a1132541eeb10bb36f959bc9c"
     },
     {
       "bytes": 1026045,
-      "path": "outputs/main_grid/raw_outputs/main_grid/raw_electricity.csv",
+      "path": "<controlled-workspace>\\SCI-f02-xai_drift_stability\\github-xai_drift_stability\\replication_package\\outputs\\main_grid\\raw_outputs\\main_grid\\raw_electricity.csv",
       "sha256": "8c2153965225446ab5f62b0577eda65f661ca31e52e8e057a8374539baa22567"
     }
   ],

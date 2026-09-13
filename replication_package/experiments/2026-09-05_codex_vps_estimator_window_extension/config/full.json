@@ -1,0 +1,22 @@
+{
+  "scope": "prospective_bounded_extension",
+  "change_id": "MCH-F02-EXT-20260905-01",
+  "datasets": ["adult", "electricity"],
+  "splits": [10, 11, 12, 13, 14],
+  "models": ["logreg", "hgb"],
+  "instances": 4,
+  "methods": ["ks_iid", "ks_complement", "leverage", "poly3"],
+  "budgets": {"adult": [512, 1024], "electricity": [128, 192]},
+  "draws": 32,
+  "windows": 12,
+  "window_size": 8,
+  "window_draws": 16,
+  "window_methods": ["ks_complement", "leverage"],
+  "max_seconds": 21600,
+  "total_max_seconds": 43200,
+  "unit_timeout_seconds": 1500,
+  "bootstrap_replicates": 5000,
+  "primary": "both_complementary_KS_and_Leverage_pooled_upper95_below1_and_3of4_strata_below1_plus_Adult_upper95_below1_and_both_Adult_models_below1",
+  "historical_gate_c": "KILL_PIVOT",
+  "historical_gate_d": "not_run_no_scaleup"
+}

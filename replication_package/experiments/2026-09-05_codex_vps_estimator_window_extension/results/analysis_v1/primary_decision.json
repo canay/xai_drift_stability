@@ -1,0 +1,72 @@
+{
+  "detector_superiority": false,
+  "historical_gate_c": "KILL_PIVOT",
+  "interval_scope": "dataset-stratified repeated-split resampling; not independent populations",
+  "methods": {
+    "ks_complement": {
+      "adult_bootstrap": {
+        "ci95": [
+          0.30640988401467484,
+          0.5329735796262003
+        ],
+        "undefined_draws": 0
+      },
+      "adult_ratio": 0.37701692917170715,
+      "checks": {
+        "adult_upper_below_one": true,
+        "both_adult_models": true,
+        "pooled_upper_below_one": true,
+        "three_of_four_strata": true
+      },
+      "pooled_bootstrap": {
+        "ci95": [
+          0.39790490735578393,
+          0.6402986776574644
+        ],
+        "undefined_draws": 0
+      },
+      "pooled_ratio": 0.507497123377166,
+      "strata": {
+        "adult/hgb": 0.3293071221592078,
+        "adult/logreg": 0.5303346317400351,
+        "electricity/hgb": 0.6680671159169284,
+        "electricity/logreg": 0.9488664793514137
+      },
+      "supported": true
+    },
+    "leverage": {
+      "adult_bootstrap": {
+        "ci95": [
+          0.31662753704213215,
+          0.5607137131034365
+        ],
+        "undefined_draws": 0
+      },
+      "adult_ratio": 0.39719577329492034,
+      "checks": {
+        "adult_upper_below_one": true,
+        "both_adult_models": true,
+        "pooled_upper_below_one": true,
+        "three_of_four_strata": true
+      },
+      "pooled_bootstrap": {
+        "ci95": [
+          0.36830073803025803,
+          0.6050183980001915
+        ],
+        "undefined_draws": 0
+      },
+      "pooled_ratio": 0.46181626220509914,
+      "strata": {
+        "adult/hgb": 0.35215482739058074,
+        "adult/logreg": 0.5336972309183353,
+        "electricity/hgb": 0.6833388401714852,
+        "electricity/logreg": 0.9663847665626842
+      },
+      "supported": true
+    }
+  },
+  "replicates": 5000,
+  "seed": 684217,
+  "status": "SUPPORTED_BOUNDED"
+}

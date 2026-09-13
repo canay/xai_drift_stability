@@ -1,0 +1,29 @@
+{
+  "schema_version": "f02-gate-a-config-v1",
+  "base_seed": 20260826,
+  "replications": 8000,
+  "dimensions": [8, 32],
+  "budgets": [16, 32, 64, 128],
+  "rhos": [-0.75, -0.25, 0.0, 0.25, 0.75],
+  "signals": ["null", "weak", "moderate"],
+  "margins": {
+    "near_tie": 0.05,
+    "separated": 0.50
+  },
+  "top_k": 3,
+  "criteria": {
+    "identity_sign_fraction_min": 1.0,
+    "identity_median_relative_error_max": 0.08,
+    "identity_p95_relative_error_max": 0.20,
+    "positive_mse_reduction_min": 0.20,
+    "positive_mse_reduction_fraction_min": 0.75,
+    "negative_worsening_fraction_min": 1.0,
+    "zero_normalized_difference_max": 0.08,
+    "zero_equivalence_fraction_min": 0.95,
+    "near_tie_far_gap_min": 0.05,
+    "margin_bound_violation_max": 0.0,
+    "topk_far_eligibility_floor": 0.01,
+    "positive_topk_far_improvement_fraction_min": 0.75,
+    "split_bias_median_z_max": 1.0
+  }
+}

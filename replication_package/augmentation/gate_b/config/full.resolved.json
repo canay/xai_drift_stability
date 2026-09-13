@@ -1,0 +1,41 @@
+{
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20260826,
+  "budget": 256,
+  "config_sha256": "4D136B934216BC3C04D6559050829F14688EC59CF17AA15DDC64F0D92F1C1E2D",
+  "datasets": [
+    "adult",
+    "electricity"
+  ],
+  "draws": 5,
+  "max_sec": 7200,
+  "max_training_rows": 50000,
+  "models": [
+    "logreg",
+    "hgb"
+  ],
+  "n_instances": 4,
+  "phase": "full",
+  "run_id": "2026-08-26_codex_local_gate_b_strong_baselines",
+  "scenarios": [
+    "null",
+    "mean_shift",
+    "noise"
+  ],
+  "schema": "f02-gate-b-config-v1",
+  "scientific_config_hash": "99D20C9F99D1A8FADCD10E676228C165DF02BD17F66B0D8E1AD37456163B42C9",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "severity_index": 3,
+  "slime_alpha": 0.05,
+  "slime_draws": 3,
+  "slime_n0": 128,
+  "slime_nmax": 1024,
+  "source_hash": "6AED67D5A10605A11858EABA30358F5A3A425B1F370C0E85DAA78C9E2D47BB7E",
+  "top_k": 5
+}

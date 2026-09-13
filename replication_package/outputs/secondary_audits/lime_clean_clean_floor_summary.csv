@@ -1,0 +1,2 @@
+rows,top5_similarity_mean,top5_similarity_std,top5_instability_mean,cosine_similarity_mean,cosine_similarity_std,cosine_instability_mean,runtime_median_s
+45,0.7195555555555557,0.09752906844586999,0.28044444444444433,0.9293022373691219,0.05944801257221818,0.07069776263087801,0.6571412086486816

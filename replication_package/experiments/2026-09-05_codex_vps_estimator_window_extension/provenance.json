@@ -1,0 +1,56 @@
+{
+  "completed_units": 720,
+  "config_sha256": "62c137a5c7642384d0bf62865ce7df8cd6576af4227310e98e4d96c717b58ba1",
+  "original_code_sha256": {
+    "analyze.py": "00a0b6c5bde5524efaacca62446f4a9452c9f3a27dd3a695669cdb244ecc0a46",
+    "core.py": "6ef4977c11b0a04386b588da05e02b4e3b712e551d4e086b7671107fddf0bd4c",
+    "run.py": "c2aefe96585119a419df50146d8395a88629c2f20ddf8700b45af706d71da4a5",
+    "worker.py": "985e07ceda7c3fd9b4cadca706c17c707e02c6feb8a8dd2bf641b46976f79b0c"
+  },
+  "original_scientific_fingerprint": "6bc56c3fda400b5e1e5412dcea811a13b8f2e8ee9f08246da0b79b98647299d5",
+  "portable_changes": [
+    "Notification callback disabled.",
+    "Saved-analysis input binding uses this manifest, preserving all scientific formulas.",
+    "Environment host replaced consistently; runtime logs, local paths and private planning files excluded.",
+    "Eleven LaTeX table-rule string literals use equivalent adjacent raw/newline literals to distinguish them from UNC paths; the complete Python AST is identical."
+  ],
+  "public_code_sha256": {
+    "analyze.py": "6b604812748383a3ff98539c8247d4627921538eeac94787a26af23b7dbb358c",
+    "core.py": "6ef4977c11b0a04386b588da05e02b4e3b712e551d4e086b7671107fddf0bd4c",
+    "run.py": "134bd01a83a926ea11b272315117864c266ae9b33efaa01fb2dc5d96ad55a3a6",
+    "worker.py": "985e07ceda7c3fd9b4cadca706c17c707e02c6feb8a8dd2bf641b46976f79b0c"
+  },
+  "unchanged_analysis_functions": [
+    "variance",
+    "ratio",
+    "metrics",
+    "bootstrap_cluster_ratio",
+    "primary"
+  ],
+  "upstream": [
+    {
+      "repository": "https://github.com/rtealwitter/leverageshap",
+      "revision": "766107218179475915a2656e277ba7e0bd03db77"
+    },
+    {
+      "repository": "https://github.com/FFmgll/PolySHAP",
+      "revision": "690a0eef1244b656981b963761d27d78a2a4fd16"
+    }
+  ],
+  "vendor_representation_changes": [
+    {
+      "after_sha256": "adcd54125f9bd8c1c8effd0e377ea296e5e2b50e60a265c04d7e09e684380616",
+      "ast_identical": true,
+      "before_sha256": "ee9f5b1b2eb2181243f83a3093d930c14b96d343c753bc7ae21dee9a262833d4",
+      "literal_count": 3,
+      "path": "vendor/leverageshap-766107218179475915a2656e277ba7e0bd03db77/leverageshap/benchmark.py"
+    },
+    {
+      "after_sha256": "09620050c6cb3046227d59d822c76f8971757e7e906843149a9742b561f28d28",
+      "ast_identical": true,
+      "before_sha256": "19d4c3a6933e42a70b1566745cffb639d3404c43e55c9abea53535ba3074f285",
+      "literal_count": 8,
+      "path": "vendor/leverageshap-766107218179475915a2656e277ba7e0bd03db77/leverageshap/utils.py"
+    }
+  ]
+}

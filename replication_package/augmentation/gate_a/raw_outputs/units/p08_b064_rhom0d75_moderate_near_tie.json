@@ -1,0 +1,79 @@
+{
+  "config_sha256": "C0FBC8E3785D884A03B46AB48501399F8979E8A8E44E6DB695105DCBAE807EB0",
+  "empirical": {
+    "difference_ci95_high": -0.17989722303340122,
+    "difference_ci95_low": -0.1908680254485307,
+    "difference_mcse": 0.0027986740854922198,
+    "independent_minus_paired_vector_mse": -0.18538262424096597,
+    "independent_vector_mse": 0.2518062902903653,
+    "independent_vector_mse_mcse": 0.0013961667871642467,
+    "paired_cross_covariance_trace": -0.09356139667599739,
+    "paired_vector_mse": 0.43718891453133124,
+    "paired_vector_mse_mcse": 0.002425550440461954,
+    "relative_reduction": -0.7362112520191444,
+    "twice_paired_cross_covariance_trace": -0.18712279335199478
+  },
+  "replications": 8000,
+  "schema_version": "f02-gate-a-unit-v1",
+  "seed": 3725242991,
+  "squared_drift": {
+    "independent_plugin_bias": 0.24984559154621827,
+    "independent_plugin_mcse": 0.0025885969476029487,
+    "independent_plugin_mean": 0.5523455915462182,
+    "independent_plugin_mse": 0.11602279203803698,
+    "independent_split_bias": -0.00441759473396236,
+    "independent_split_mcse": 0.0029201248981524023,
+    "independent_split_mean": 0.2980824052660376,
+    "independent_split_mse": 0.06822802338028935,
+    "paired_plugin_bias": 0.43729610279449066,
+    "paired_plugin_mcse": 0.0037774378143048066,
+    "paired_plugin_mean": 0.7397961027944906,
+    "paired_plugin_mse": 0.30536590401032776,
+    "paired_split_bias": -0.0032769364948754265,
+    "paired_split_mcse": 0.0045302155195303525,
+    "paired_split_mean": 0.2992230635051245,
+    "paired_split_mse": 0.1641730366872874
+  },
+  "theory": {
+    "independent_minus_paired_vector_mse": -0.1875,
+    "independent_vector_mse": 0.25,
+    "paired_cross_covariance_trace": -0.09375,
+    "paired_vector_mse": 0.4375,
+    "relative_reduction": -0.75
+  },
+  "topk": {
+    "independent": {
+      "estimated_topk_disagreement": 0.6155,
+      "margin_bound_implication_violation": 0.0,
+      "margin_bound_satisfied": 0.0,
+      "minimum_true_margin": 0.04999999999999993,
+      "topk_change_accuracy": 0.6155,
+      "topk_condition_error": 0.386875,
+      "truth_topk_changed": true
+    },
+    "paired": {
+      "estimated_topk_disagreement": 0.613625,
+      "margin_bound_implication_violation": 0.0,
+      "margin_bound_satisfied": 0.0,
+      "minimum_true_margin": 0.04999999999999993,
+      "topk_change_accuracy": 0.613625,
+      "topk_condition_error": 0.39025,
+      "truth_topk_changed": true
+    }
+  },
+  "truth": {
+    "margin0": 0.04999999999999993,
+    "margin1": 0.5,
+    "theta": 0.30249999999999994,
+    "topk_changed": true
+  },
+  "unit": {
+    "budget": 64,
+    "dimension": 8,
+    "margin": 0.05,
+    "margin_name": "near_tie",
+    "rho": -0.75,
+    "signal": "moderate",
+    "unit_id": "p08_b064_rhom0d75_moderate_near_tie"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "bootstrap_reps": 200,
+  "bootstrap_seed": 20260826,
+  "budget": 96,
+  "config_sha256": "12764C8D283E7B34D54CE8B9AFF580288E2081701CFDA7971BA5D59EF3BBBBFD",
+  "datasets": [
+    "electricity"
+  ],
+  "draws": 2,
+  "max_sec": 300,
+  "max_training_rows": 50000,
+  "models": [
+    "logreg"
+  ],
+  "n_instances": 2,
+  "phase": "smoke",
+  "run_id": "2026-08-26_codex_local_gate_b_strong_baselines",
+  "scenarios": [
+    "null",
+    "mean_shift"
+  ],
+  "schema": "f02-gate-b-config-v1",
+  "scientific_config_hash": "4363B3CDDCB4D65C378472F508111FFF8865D5F916A6AC1168F7CFED44D893CB",
+  "seeds": [
+    0
+  ],
+  "severity_index": 3,
+  "slime_alpha": 0.05,
+  "slime_draws": 1,
+  "slime_n0": 64,
+  "slime_nmax": 256,
+  "source_hash": "6AED67D5A10605A11858EABA30358F5A3A425B1F370C0E85DAA78C9E2D47BB7E",
+  "top_k": 5
+}
