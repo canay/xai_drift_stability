@@ -48,6 +48,13 @@ python scripts/verify_augmentation.py
 cd ..
 ```
 
+Recompute the KS alert-ordering table (Table 7) from the paired grid; the
+script first reproduces the legacy ordering as a positive control:
+
+```bash
+python scripts/recompute_table7_paired.py
+```
+
 Recompute the two statistical summaries from the archived raw outputs:
 
 ```bash
@@ -122,8 +129,9 @@ See [`data/README.md`](data/README.md). OpenML records are fetched by
 - `outputs/crn_validation/`: 3,375 low-tier rows plus 225-row mid/high tiers
 - `outputs/temporal/`: Electricity and Bike chronological outputs
 - `outputs/secondary_audits/`: seed-level baseline BalAcc/AUROC/AP evidence,
-  saved KS alert-ordering comparisons, and corrected selected-condition LIME
-  budget artifacts used by the manuscript
+  saved KS alert-ordering comparisons (legacy grid), the paired-grid KS
+  alert-ordering recomputation behind Table 7 (`table7_paired/`), and corrected
+  selected-condition LIME budget artifacts used by the manuscript
 - `outputs/figures/`: empirical plots generated from the archived evidence
 - `logs/`: completion transcripts for the three corrected main-grid partitions
 - `provenance/`: run registry snapshot, public manifest, and file checksums

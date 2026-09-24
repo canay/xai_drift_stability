@@ -1,0 +1,130 @@
+{
+  "input_sha256": {
+    "outputs/main_grid/processed_outputs/main_grid_v2.csv": "b110ba888dafd1ddd9cac0be80464916ff8dc4b4e23371fc2cce60cb32645d35",
+    "outputs/secondary_audits/explanation_vs_standard_monitor_leads.csv": "3c523734b1309c26fafc54dee455c6b4befdc46d9685eccffb06bc5c5a65c28f",
+    "outputs/secondary_audits/standard_drift_monitor_cells.csv": "89e74529383a3c7320d71753da3f44918d0e292205aad845b6e5c13a328b31ee",
+    "results/raw_all.csv": "bfaae8e6552dd3471a3573ca88a158d38292308239616eb81772717714266f73"
+  },
+  "legacy_counts_reproduced": {
+    "lime/feature_ks_alert": [
+      0,
+      45,
+      0
+    ],
+    "lime/prediction_ks_alert": [
+      13,
+      32,
+      0
+    ],
+    "pi/feature_ks_alert": [
+      0,
+      16,
+      29
+    ],
+    "pi/prediction_ks_alert": [
+      3,
+      15,
+      27
+    ],
+    "shap/feature_ks_alert": [
+      0,
+      22,
+      23
+    ],
+    "shap/prediction_ks_alert": [
+      1,
+      23,
+      21
+    ]
+  },
+  "manuscript_table": {
+    "lime/feature_ks_alert": [
+      0,
+      14,
+      31
+    ],
+    "lime/prediction_ks_alert": [
+      0,
+      15,
+      30
+    ],
+    "pi/feature_ks_alert": [
+      0,
+      12,
+      33
+    ],
+    "pi/prediction_ks_alert": [
+      2,
+      11,
+      32
+    ],
+    "shap/feature_ks_alert": [
+      0,
+      21,
+      24
+    ],
+    "shap/prediction_ks_alert": [
+      1,
+      22,
+      22
+    ]
+  },
+  "matches_manuscript_table": true,
+  "monitor_statements": {
+    "feature_ks_first_alert_all_index_1": true,
+    "prediction_ks_first_alert_mean_index": 1.4
+  },
+  "paired_counts": {
+    "lime/feature_ks_alert": [
+      0,
+      14,
+      31
+    ],
+    "lime/prediction_ks_alert": [
+      0,
+      15,
+      30
+    ],
+    "pi/feature_ks_alert": [
+      0,
+      12,
+      33
+    ],
+    "pi/prediction_ks_alert": [
+      2,
+      11,
+      32
+    ],
+    "shap/feature_ks_alert": [
+      0,
+      21,
+      24
+    ],
+    "shap/prediction_ks_alert": [
+      1,
+      22,
+      22
+    ]
+  },
+  "population": {
+    "combinations_per_method_and_monitor": 45,
+    "excluded": "baseline rows (severity index 0) only",
+    "grid_cells": 675,
+    "grid_rows_read": 3510,
+    "monitor_rows": 1125
+  },
+  "positive_control": {
+    "legacy_counts_equal_published": true,
+    "legacy_lead_rows_mismatched": 0,
+    "passed": true
+  },
+  "rule": {
+    "explanation_first": "smallest severity index k in 1..5 with 1 - seed-mean top5_all > 0.10, else 6",
+    "monitor_first_alert": "smallest k in 1..5 at which any of the five seed rows alerts, else 6",
+    "no_alert_code": 6,
+    "ordering": "before/same/after = explanation first alert <, ==, > monitor first alert",
+    "threshold": 0.1
+  },
+  "script_sha256": "75994a588e3d09ff83c5ced4465a2df2d92ce617bdd9aefd21703b9c33ff720a",
+  "status": "PASS"
+}

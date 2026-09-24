@@ -26,3 +26,25 @@ a second copy of that evidence.
 The documented corrected-versus-legacy analysis command also requires
 `results/raw_all.csv`; the package copy is byte-identical to the project archive
 (`BFAAE8E6552DD3471A3573CA88A158D38292308239616EB81772717714266F73`).
+
+## KS alert-ordering table (Table 7), 2026-09-24
+
+`explanation_vs_standard_monitor_leads.csv` and
+`explanation_vs_standard_monitor_summary.csv` were computed from the legacy
+independent-stream grid (`results/raw_all.csv`). The manuscript's KS
+alert-ordering table (Table 7, `tab:ks-ordering`) is computed from the corrected
+paired grid (`outputs/main_grid/processed_outputs/main_grid_v2.csv`) with the
+same rule, the same 0.10 threshold, and the same saved monitor cells
+(`standard_drift_monitor_cells.csv`, whose noise and missingness realizations are
+seeded separately from the grid). `scripts/recompute_table7_paired.py` performs
+this recomputation with the csv module and plain Python, first reproducing the
+published legacy counts and all 270 legacy lead rows as a positive control, and
+writes `outputs/secondary_audits/table7_paired/`:
+
+- `table7_paired_counts.csv`: before/same/after counts per method and monitor (paired and legacy);
+- `table7_paired_detail.csv`: first-alert indices for all 270 method-monitor-combination rows;
+- `paired_seed_mean_instability.csv`: seed-mean top-5 instability for every drifted paired-grid cell;
+- `verification.json`: rule, population, positive control, and input hashes.
+
+No experiment was rerun. The legacy files are kept unchanged because the
+positive control depends on them.

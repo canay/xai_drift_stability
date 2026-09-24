@@ -64,6 +64,29 @@ def verify_secondary_audits() -> None:
         raise AssertionError("KS comparator evidence must contain 1125 cells")
     if csv_rows(base + "explanation_vs_standard_monitor_summary.csv") != 6:
         raise AssertionError("KS ordering summary must contain six rows")
+    # Table 7 (tab:ks-ordering) is computed from the paired grid by
+    # scripts/recompute_table7_paired.py; the two files above keep the legacy
+    # independent-stream ordering that the recomputation reproduces as its
+    # positive control.
+    table7 = csv_records(base + "table7_paired/table7_paired_counts.csv")
+    if len(table7) != 6:
+        raise AssertionError("paired KS ordering table must contain six rows")
+    expected_table7 = {
+        ("lime", "feature_ks_alert"): ("0", "14", "31"),
+        ("lime", "prediction_ks_alert"): ("0", "15", "30"),
+        ("shap", "feature_ks_alert"): ("0", "21", "24"),
+        ("shap", "prediction_ks_alert"): ("1", "22", "22"),
+        ("pi", "feature_ks_alert"): ("0", "12", "33"),
+        ("pi", "prediction_ks_alert"): ("2", "11", "32"),
+    }
+    observed_table7 = {
+        (row["method"], row["monitor"]): (row["before"], row["same"], row["after"])
+        for row in table7
+    }
+    if observed_table7 != expected_table7:
+        raise AssertionError("paired KS ordering counts do not match Table 7 (tab:ks-ordering)")
+    if load_json(base + "table7_paired/verification.json").get("status") != "PASS":
+        raise AssertionError("paired KS ordering recomputation did not pass its checks")
     if csv_rows(base + "lime_budget_raw_corrected.csv") != 810:
         raise AssertionError("corrected LIME budget evidence must contain 810 rows")
     correction = load_json(base + "lime_budget_correction_summary.json")
